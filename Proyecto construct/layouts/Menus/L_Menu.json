@@ -128,7 +128,7 @@
 					"properties": {
 						"text": "Jugar",
 						"enable-bbcode": true,
-						"font": "Arial",
+						"font": "font",
 						"size": 48,
 						"line-height": 0,
 						"bold": false,
@@ -183,7 +183,7 @@
 					"properties": {
 						"text": "Opciones",
 						"enable-bbcode": true,
-						"font": "Arial",
+						"font": "font",
 						"size": 48,
 						"line-height": 0,
 						"bold": false,
@@ -238,7 +238,7 @@
 					"properties": {
 						"text": "Creditos",
 						"enable-bbcode": true,
-						"font": "Arial",
+						"font": "font",
 						"size": 48,
 						"line-height": 0,
 						"bold": false,

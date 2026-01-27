@@ -50,7 +50,7 @@
 					"properties": {
 						"text": "Volver",
 						"enable-bbcode": true,
-						"font": "Arial",
+						"font": "font",
 						"size": 48,
 						"line-height": 0,
 						"bold": false,
