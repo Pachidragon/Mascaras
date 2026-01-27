@@ -1,0 +1,56 @@
+{
+	"name": "logo_equipo",
+	"plugin-id": "Sprite",
+	"sid": 734508374602131,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 3049,
+						"height": 2882,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3604351,
+						"collisionPoly": {
+							"points": [
+								0.46408658576582484,
+								0.00034698126301179735,
+								0.8061659560511644,
+								0.12491325468424705,
+								0.9993440472285995,
+								0.9659958362248439,
+								0.9465398491308625,
+								0.9920194309507286,
+								0.010823220728107576,
+								0.9809160305343512,
+								0.13512627090849458,
+								0.12456627342123526
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 748530985924206,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

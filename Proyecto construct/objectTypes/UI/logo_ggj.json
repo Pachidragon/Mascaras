@@ -1,0 +1,56 @@
+{
+	"name": "logo_ggj",
+	"plugin-id": "Sprite",
+	"sid": 173941000302377,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1000,
+						"height": 534,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8110029,
+						"collisionPoly": {
+							"points": [
+								0.511,
+								0.003745318352059925,
+								0.582,
+								0.052434456928838954,
+								1,
+								0.8932584269662921,
+								0.962,
+								0.99812734082397,
+								0,
+								0.9138576779026217,
+								0.258,
+								0.08052434456928839
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 912859019037324,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

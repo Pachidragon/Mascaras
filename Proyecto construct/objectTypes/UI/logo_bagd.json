@@ -1,0 +1,64 @@
+{
+	"name": "logo_bagd",
+	"plugin-id": "Sprite",
+	"sid": 849567669218807,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 2660,
+						"height": 1948,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 904367,
+						"collisionPoly": {
+							"points": [
+								0.5150375939849624,
+								0,
+								0.95,
+								0.01591375770020534,
+								1,
+								0.4717659137577002,
+								1,
+								0.919917864476386,
+								0.9454887218045113,
+								0.9933264887063655,
+								0.5951127819548873,
+								1,
+								0.02218045112781955,
+								0.9681724845995893,
+								0,
+								0.6883983572895277,
+								0.14172932330827068,
+								0.1740246406570842,
+								0.187593984962406,
+								0.12012320328542095
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 634724336293712,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

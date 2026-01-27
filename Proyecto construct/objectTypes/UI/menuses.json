@@ -1,0 +1,18 @@
+{
+	"name": "menuses",
+	"plugin-id": "Text",
+	"sid": 984371495028230,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "Texto",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 805473495182111
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

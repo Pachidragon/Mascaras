@@ -29,6 +29,20 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Touch",
 			"name": "Touch",
 			"author": "Scirra",
@@ -56,6 +70,17 @@
 				],
 				"subfolders": [],
 				"name": "controladores"
+			},
+			{
+				"items": [
+					"b_boton",
+					"menuses",
+					"logo_equipo",
+					"logo_ggj",
+					"logo_bagd"
+				],
+				"subfolders": [],
+				"name": "UI"
 			}
 		]
 	},
@@ -99,7 +124,8 @@
 		"items": [
 			"Menuses",
 			"oficina",
-			"audio"
+			"audio",
+			"Variables"
 		],
 		"subfolders": []
 	},
@@ -121,7 +147,16 @@
 			"subfolders": []
 		},
 		"font": {
-			"items": [],
+			"items": [
+				{
+					"name": "font.ttf",
+					"type": "application/font-sfnt",
+					"sid": 874484645605350,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"icon": {
