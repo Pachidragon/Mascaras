@@ -1,5 +1,63 @@
 {
 	"name": "oficina",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "P_1",
+					"sid": 115060009465542,
+					"parameters": {
+						"instance-variable": "camino",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "find-path",
+					"objectClass": "P_1",
+					"sid": 245523583030491,
+					"behaviorType": "Pathfinding",
+					"parameters": {
+						"x": "500",
+						"y": "500"
+					}
+				}
+			],
+			"sid": 509269120798841
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-path-found",
+					"objectClass": "P_1",
+					"sid": 143677935773687,
+					"behaviorType": "Pathfinding"
+				}
+			],
+			"actions": [
+				{
+					"id": "move-along-path",
+					"objectClass": "P_1",
+					"sid": 632502964997655,
+					"behaviorType": "Pathfinding"
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "P_1",
+					"sid": 699400593425124,
+					"parameters": {
+						"instance-variable": "camino",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 279350876303256
+		}
+	],
 	"sid": 324755378402390
 }

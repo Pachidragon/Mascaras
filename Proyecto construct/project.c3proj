@@ -54,6 +54,34 @@
 			"name": "Gamepad",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Direction",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pathfinding",
+			"name": "Pathfinding",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "bound",
+			"name": "Bound to layout",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"bundled": false
 		}
 	],
 	"uniqueId": "2bgrqoca75u",
@@ -81,7 +109,36 @@
 					"Text"
 				],
 				"subfolders": [],
-				"name": "UI"
+				"name": "UI_menuses"
+			},
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"o_fotocopiadora",
+							"o_estanteria",
+							"o_escritorio"
+						],
+						"subfolders": [],
+						"name": "objetos"
+					},
+					{
+						"items": [
+							"P_1"
+						],
+						"subfolders": [],
+						"name": "personos"
+					}
+				],
+				"name": "ofi"
+			},
+			{
+				"items": [
+					"Jugadore"
+				],
+				"subfolders": [],
+				"name": "jugadore"
 			}
 		]
 	},
