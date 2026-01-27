@@ -1,5 +1,16 @@
 {
 	"name": "Variables",
-	"events": [],
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "v_celu",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 602937434487823
+		}
+	],
 	"sid": 627737672315670
 }

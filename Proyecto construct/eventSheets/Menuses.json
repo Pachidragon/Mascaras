@@ -1,5 +1,305 @@
 {
 	"name": "Menuses",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 700184553175062
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 899680493145667,
+					"parameters": {
+						"variable": "v_celu",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 227451113152671
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-touch-start",
+					"objectClass": "Touch",
+					"sid": 936182932488453
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 166718029901422,
+					"parameters": {
+						"variable": "v_celu",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 882598311546397
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Botones",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 870359499758724,
+							"parameters": {
+								"object": "b_boton",
+								"type": "end"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 991729667104379,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "b_boton",
+									"sid": 994896562047037,
+									"parameters": {
+										"instance-variable": "boton",
+										"comparison": 0,
+										"value": "\"Creditos\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 997475968782760,
+									"parameters": {
+										"layout": "L_creditos"
+									}
+								}
+							],
+							"sid": 868947795685490
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "b_boton",
+									"sid": 468758177409326,
+									"parameters": {
+										"instance-variable": "boton",
+										"comparison": 0,
+										"value": "\"Jugar\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 468354195927586,
+									"parameters": {
+										"layout": "L_oficina"
+									}
+								}
+							],
+							"sid": 708992816336276
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "b_boton",
+									"sid": 352004294521553,
+									"parameters": {
+										"instance-variable": "boton",
+										"comparison": 0,
+										"value": "\"Opciones\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 965921174460633,
+									"parameters": {
+										"layout": "L_opciones"
+									}
+								}
+							],
+							"sid": 565299953997311
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "b_boton",
+									"sid": 927095369984765,
+									"parameters": {
+										"instance-variable": "boton",
+										"comparison": 0,
+										"value": "\"Volver\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 794672156366481,
+									"parameters": {
+										"layout": "L_Menu"
+									}
+								}
+							],
+							"sid": 817537559484122
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 878155594534648,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "b_boton"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 300985300500686,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "b_boton",
+									"sid": 340253495661734,
+									"parameters": {
+										"instance-variable": "boton",
+										"comparison": 0,
+										"value": "\"Creditos\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 246220660791870,
+									"parameters": {
+										"layout": "L_creditos"
+									}
+								}
+							],
+							"sid": 968003307812206
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "b_boton",
+									"sid": 406000919174312,
+									"parameters": {
+										"instance-variable": "boton",
+										"comparison": 0,
+										"value": "\"Jugar\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 875903058900174,
+									"parameters": {
+										"layout": "L_oficina"
+									}
+								}
+							],
+							"sid": 657137749401426
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "b_boton",
+									"sid": 601437890537647,
+									"parameters": {
+										"instance-variable": "boton",
+										"comparison": 0,
+										"value": "\"Opciones\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 289270290320245,
+									"parameters": {
+										"layout": "L_opciones"
+									}
+								}
+							],
+							"sid": 833672510636934
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "b_boton",
+									"sid": 912589837349752,
+									"parameters": {
+										"instance-variable": "boton",
+										"comparison": 0,
+										"value": "\"Volver\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 292335880206362,
+									"parameters": {
+										"layout": "L_Menu"
+									}
+								}
+							],
+							"sid": 269770133351604
+						}
+					]
+				}
+			],
+			"sid": 883854685854139
+		}
+	],
 	"sid": 146252143284568
 }
