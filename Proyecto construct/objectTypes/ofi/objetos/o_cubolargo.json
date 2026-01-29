@@ -1,7 +1,7 @@
 {
-	"name": "o_escritorio",
+	"name": "o_cubolargo",
 	"plugin-id": "Sprite",
-	"sid": 474415668680336,
+	"sid": 983457011316016,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -9,7 +9,7 @@
 		{
 			"behaviorId": "solid",
 			"name": "Solid",
-			"sid": 405684161215017
+			"sid": 825400865224586
 		}
 	],
 	"effectTypes": [],
@@ -18,21 +18,21 @@
 			{
 				"frames": [
 					{
-						"width": 453,
-						"height": 218,
+						"width": 139,
+						"height": 245,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9568938,
+						"imageSpriteId": 2887004,
 						"collisionPoly": {
 							"points": [
 								0,
 								0,
 								1,
-								1,
+								0,
 								1,
 								1,
 								1,
@@ -50,7 +50,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 236634028844570,
+				"sid": 513643931004505,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
