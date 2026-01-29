@@ -121,8 +121,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 367,
-						"y": 180,
+						"x": 281,
+						"y": 171,
 						"width": 224.79151385903128,
 						"height": 212.4792203810193,
 						"originX": 0.5,
@@ -158,8 +158,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 356,
-						"y": 804,
+						"x": 298,
+						"y": 797,
 						"width": 375.8864022897085,
 						"height": 201.09922522499406,
 						"originX": 0.5,
@@ -195,8 +195,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 358,
-						"y": 480,
+						"x": 289,
+						"y": 490,
 						"width": 287.1138959174183,
 						"height": 210.26235685982365,
 						"originX": 0.5,
@@ -214,7 +214,7 @@
 				{
 					"type": "Text",
 					"properties": {
-						"text": "Programación: Paz Rozen\nArte: Camila Martorelli\nAudio:Malena Martorelli\nGame Designer: Azul Eguren\n\n\n",
+						"text": "Programación: Paz Rozen\nArte: Camila Martorelli\nAudio:Malena Martorelli\nGame Designer: Azul Eguren\nActor estrella invitado: Osvaldo\n\n\n",
 						"enable-bbcode": true,
 						"font": "font",
 						"size": 48,
@@ -248,10 +248,63 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 698,
-						"y": 117,
+						"x": 615,
+						"y": 57,
 						"width": 1224,
 						"height": 443,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Text",
+					"properties": {
+						"text": "Este juego fue hecho durante la Global Game Jam 2026 en la sede de BAGD",
+						"enable-bbcode": true,
+						"font": "font",
+						"size": 48,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 27,
+					"sid": 436354337855509,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 436354337855509,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 622,
+						"y": 505,
+						"width": 1224,
+						"height": 253,
 						"originX": 0,
 						"originY": 0,
 						"color": [
