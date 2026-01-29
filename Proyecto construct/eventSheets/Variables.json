@@ -10,6 +10,20 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 602937434487823
+		},
+		{
+			"eventType": "variable",
+			"name": "fase_juego",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 208593802082798
+		},
+		{
+			"eventType": "comment",
+			"text": "0= normi, 1=rage"
 		}
 	],
 	"sid": 627737672315670

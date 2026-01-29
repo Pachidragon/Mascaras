@@ -27,7 +27,8 @@
 					}
 				}
 			],
-			"sid": 509269120798841
+			"sid": 509269120798841,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -56,7 +57,35 @@
 					}
 				}
 			],
-			"sid": 279350876303256
+			"sid": 279350876303256,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 680330821053995,
+					"parameters": {
+						"variable": "fase_juego",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "scroll-to-position",
+					"objectClass": "System",
+					"sid": 122853633832118,
+					"parameters": {
+						"x": "Jugadore.X",
+						"y": "Jugadore.Y"
+					}
+				}
+			],
+			"sid": 517360224610697
 		}
 	],
 	"sid": 324755378402390
