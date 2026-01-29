@@ -57,6 +57,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Anchor",
+			"name": "Anchor",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "EightDir",
 			"name": "8 Direction",
 			"author": "Scirra",
@@ -172,6 +179,16 @@
 				],
 				"subfolders": [],
 				"name": "jugadore"
+			},
+			{
+				"items": [
+					"ofi",
+					"pasillo",
+					"banio",
+					"pared"
+				],
+				"subfolders": [],
+				"name": "zonas"
 			}
 		]
 	},

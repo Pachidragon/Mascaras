@@ -4,8 +4,22 @@
 	"sid": 893898054406442,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
-	"behaviorTypes": [],
+	"instanceVariables": [
+		{
+			"name": "vida",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 529898745228416
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 136298001136272
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
