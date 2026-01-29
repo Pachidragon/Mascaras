@@ -106,7 +106,8 @@
 					"logo_equipo",
 					"logo_ggj",
 					"logo_bagd",
-					"Text"
+					"Text",
+					"Sprite"
 				],
 				"subfolders": [],
 				"name": "UI_menuses"
