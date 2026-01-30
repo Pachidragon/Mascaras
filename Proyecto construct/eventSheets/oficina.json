@@ -592,6 +592,15 @@
 								"animation": "\"rage\"",
 								"from": "beginning"
 							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 204838184716348,
+							"parameters": {
+								"variable": "fase_juego",
+								"value": "1"
+							}
 						}
 					],
 					"sid": 765628013144950

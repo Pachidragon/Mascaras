@@ -22,6 +22,10 @@
 			"sid": 208593802082798
 		},
 		{
+			"eventType": "comment",
+			"text": "0= normi, 1=rage"
+		},
+		{
 			"eventType": "variable",
 			"name": "v_paciencia",
 			"type": "number",
@@ -50,10 +54,6 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 873498319791241
-		},
-		{
-			"eventType": "comment",
-			"text": "0= normi, 1=rage"
 		}
 	],
 	"sid": 627737672315670
