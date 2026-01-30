@@ -853,7 +853,7 @@
 					"world": {
 						"x": 2326,
 						"y": 1224,
-						"width": 213.02973518085398,
+						"width": 213.029735180854,
 						"height": 401.1304587979911,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -1033,7 +1033,7 @@
 					"world": {
 						"x": 2662,
 						"y": 1217,
-						"width": 220.6298872121337,
+						"width": 220.62988721213367,
 						"height": 249.31177254971107,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -1484,7 +1484,7 @@
 						"x": 1155,
 						"y": 745,
 						"width": 113.56522180073003,
-						"height": 116.6554319177567,
+						"height": 116.65543191775669,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -2254,6 +2254,90 @@
 						"height": 126,
 						"originX": 0.4432624113475177,
 						"originY": 0.3134920634920635,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "atras",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 74,
+					"sid": 686317563380721,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Anchor": {
+							"properties": {
+								"left-edge": "window-left",
+								"top-edge": "window-top",
+								"right-edge": "none",
+								"bottom-edge": "none",
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 686317563380721,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 683,
+						"y": 92,
+						"width": 780.1578365946215,
+						"height": 100.6655273025318,
+						"originX": 0,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "delante",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 75,
+					"sid": 936693216033096,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 936693216033096,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 692,
+						"y": 89,
+						"width": 470.48293994014693,
+						"height": 84.57844386324476,
+						"originX": 0,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

@@ -56,6 +56,13 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "progressbar",
+			"name": "Progress bar",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Anchor",
 			"name": "Anchor",
@@ -167,7 +174,16 @@
 							"e_mancha",
 							"UI_mascaras"
 						],
-						"subfolders": [],
+						"subfolders": [
+							{
+								"items": [
+									"atras",
+									"delante"
+								],
+								"subfolders": [],
+								"name": "barra"
+							}
+						],
 						"name": "interact"
 					}
 				],
@@ -175,7 +191,8 @@
 			},
 			{
 				"items": [
-					"Jugadore"
+					"Jugadore",
+					"b_paciencia"
 				],
 				"subfolders": [],
 				"name": "jugadore"

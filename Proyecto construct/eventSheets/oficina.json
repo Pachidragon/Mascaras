@@ -86,6 +86,146 @@
 				}
 			],
 			"sid": 517360224610697
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 934042252784694,
+					"parameters": {
+						"interval-seconds": "0.5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 289729445363682,
+					"parameters": {
+						"variable": "v_paciencia",
+						"value": "2"
+					}
+				},
+				{
+					"id": "set-progress",
+					"objectClass": "b_paciencia",
+					"sid": 897955927775628,
+					"parameters": {
+						"value": "v_paciencia"
+					}
+				},
+				{
+					"id": "set-elem-attribute",
+					"objectClass": "b_paciencia",
+					"sid": 222337226590521,
+					"parameters": {
+						"attribute-name": "\"background-color\"",
+						"attribute-value": "\"blue\""
+					}
+				}
+			],
+			"sid": 691283306986553
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 563853586295741,
+					"parameters": {
+						"variable": "v_paciencia",
+						"comparison": 4,
+						"value": "30"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 467700303568551,
+					"parameters": {
+						"variable": "v_paciencia",
+						"comparison": 2,
+						"value": "50"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 741018145429901
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 809590282650546,
+					"parameters": {
+						"variable": "v_paciencia",
+						"comparison": 4,
+						"value": "50"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 852444486662463,
+					"parameters": {
+						"variable": "v_paciencia",
+						"comparison": 2,
+						"value": "75"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 433711897313578
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 606372243690493,
+					"parameters": {
+						"variable": "v_paciencia",
+						"comparison": 4,
+						"value": "75"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 675271705354917,
+					"parameters": {
+						"variable": "v_paciencia",
+						"comparison": 2,
+						"value": "99"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 452366227555853
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 111938785341088,
+					"parameters": {
+						"variable": "v_paciencia",
+						"comparison": 0,
+						"value": "100"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 739487532627545
 		}
 	],
 	"sid": 324755378402390
