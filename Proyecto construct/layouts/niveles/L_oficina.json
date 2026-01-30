@@ -2118,153 +2118,6 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "UI_mascaras",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 71,
-					"sid": 752289430956447,
-					"tags": "",
-					"instanceVariables": {
-						"vida": 0
-					},
-					"behaviors": {
-						"Anchor": {
-							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-top",
-								"right-edge": "window-right",
-								"bottom-edge": "window-bottom",
-								"enabled": true
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 752289430956447,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 117,
-						"y": 72,
-						"width": 141,
-						"height": 126,
-						"originX": 0.4432624113475177,
-						"originY": 0.3134920634920635,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "UI_mascaras",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 72,
-					"sid": 776983868719923,
-					"tags": "",
-					"instanceVariables": {
-						"vida": 1
-					},
-					"behaviors": {
-						"Anchor": {
-							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-top",
-								"right-edge": "window-right",
-								"bottom-edge": "window-bottom",
-								"enabled": true
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 776983868719923,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 296,
-						"y": 69,
-						"width": 141,
-						"height": 126,
-						"originX": 0.4432624113475177,
-						"originY": 0.3134920634920635,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "UI_mascaras",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 73,
-					"sid": 917326493598512,
-					"tags": "",
-					"instanceVariables": {
-						"vida": 2
-					},
-					"behaviors": {
-						"Anchor": {
-							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-top",
-								"right-edge": "window-right",
-								"bottom-edge": "window-bottom",
-								"enabled": true
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 917326493598512,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 478,
-						"y": 69,
-						"width": 141,
-						"height": 126,
-						"originX": 0.4432624113475177,
-						"originY": 0.3134920634920635,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "b_delante",
 					"properties": {
 						"initially-visible": true,
@@ -2573,6 +2426,55 @@
 							1
 						],
 						"angle": 0.03490658503988659,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UI_mascaras",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 71,
+					"sid": 752289430956447,
+					"tags": "",
+					"instanceVariables": {
+						"vida": 0
+					},
+					"behaviors": {
+						"Anchor": {
+							"properties": {
+								"left-edge": "window-left",
+								"top-edge": "window-top",
+								"right-edge": "window-right",
+								"bottom-edge": "window-bottom",
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 752289430956447,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 147.02119139694963,
+						"y": 74.48539296287217,
+						"width": 163.62533071146748,
+						"height": 146.21838063577945,
+						"originX": 0.4432624113475177,
+						"originY": 0.3134920634920635,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
 						"zElevation": 0
 					}
 				}

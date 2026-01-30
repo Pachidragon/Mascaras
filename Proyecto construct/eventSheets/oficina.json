@@ -113,650 +113,723 @@
 			"sid": 691283306986553
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Barra de ansiedad",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 113471395006706
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 853709793391533
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "b_delante",
+							"sid": 344589947108097,
+							"parameters": {
+								"x": "b_atras.X",
+								"y": "b_atras.Y"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "b_delante",
+							"sid": 728406998957778,
+							"parameters": {
+								"width": "v_paciencia",
+								"height": "b_atras.Height-10"
+							}
+						}
+					],
+					"sid": 569563261986490
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 752711542434206,
+							"parameters": {
+								"variable": "v_paciencia",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "b_delante",
+							"sid": 460073669249077,
+							"parameters": {
+								"animation": "\"Animation 1\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-spraying",
+							"objectClass": "P_barravida",
+							"sid": 430296777301513,
+							"parameters": {
+								"state": "not-spraying"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "b_rotaizq",
+							"sid": 828088503414510,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "b_rotader",
+							"sid": 992137463116722,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "b_rotaizq",
+							"sid": 997109986198881,
+							"behaviorType": "Rotate",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "b_rotaizq",
+							"sid": 428012333406234,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "b_rotader",
+							"sid": 895169124200501,
+							"behaviorType": "Rotate",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "b_rotader",
+							"sid": 531795805464947,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "b_rotaizq",
+							"sid": 689718775462516,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"enabled": false
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "b_rotader",
+							"sid": 670032928275214,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"enabled": false
+							}
+						}
+					],
+					"sid": 195334308349290
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 928233369597862,
+							"parameters": {
+								"variable": "v_paciencia",
+								"comparison": 4,
+								"value": "1"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 185396752106908,
+							"parameters": {
+								"variable": "v_paciencia",
+								"comparison": 2,
+								"value": "195"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "b_delante",
+							"sid": 669266090005270,
+							"parameters": {
+								"animation": "\"Animation 1\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "UI_mascaras",
+							"sid": 393205351474865,
+							"parameters": {
+								"animation": "\"Animation 1\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 885736916359168
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 916524280329846,
+							"parameters": {
+								"variable": "v_paciencia",
+								"comparison": 4,
+								"value": "195"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 886502422275531,
+							"parameters": {
+								"variable": "v_paciencia",
+								"comparison": 2,
+								"value": "390"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "b_delante",
+							"sid": 652218295402862,
+							"parameters": {
+								"animation": "\"Animation 2\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "b_atras",
+							"sid": 583435967616311,
+							"parameters": {
+								"animation": "\"Animation 1\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 769473863765515
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 637376898332893,
+							"parameters": {
+								"variable": "v_paciencia",
+								"comparison": 4,
+								"value": "390"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 341807801168026,
+							"parameters": {
+								"variable": "v_paciencia",
+								"comparison": 2,
+								"value": "585"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "b_delante",
+							"sid": 468357310728109,
+							"parameters": {
+								"animation": "\"Animation 3\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "b_atras",
+							"sid": 185395891419557,
+							"parameters": {
+								"animation": "\"Animation 2\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "UI_mascaras",
+							"sid": 483106326370984,
+							"parameters": {
+								"animation": "\"Animation 2\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 724742803510280
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 593989141790931,
+							"parameters": {
+								"variable": "v_paciencia",
+								"comparison": 4,
+								"value": "585"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 215396190023838,
+							"parameters": {
+								"variable": "v_paciencia",
+								"comparison": 2,
+								"value": "650"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "b_delante",
+							"sid": 246297591373989,
+							"parameters": {
+								"animation": "\"Animation 4\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "b_atras",
+							"sid": 775580987592397,
+							"parameters": {
+								"animation": "\"Animation 3\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 816977726505587
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 849915346074810,
+							"parameters": {
+								"variable": "v_paciencia",
+								"comparison": 4,
+								"value": "650"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 116312887297401,
+							"parameters": {
+								"variable": "v_paciencia",
+								"comparison": 2,
+								"value": "740"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "b_delante",
+							"sid": 485004297622164,
+							"parameters": {
+								"animation": "\"Animation 5\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "b_atras",
+							"sid": 806620165513551,
+							"parameters": {
+								"animation": "\"Animation 4\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 931473490931788
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 586539706836515,
+							"parameters": {
+								"variable": "v_paciencia",
+								"comparison": 4,
+								"value": "760"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 602211309588785
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 154845294350900,
+							"parameters": {
+								"variable": "v_ansiedad",
+								"value": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 972190259490919,
+							"parameters": {
+								"seconds": "1.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "b_atras",
+							"sid": 908422973232739,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "b_delante",
+							"sid": 105963245364418,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "b_rotaizq",
+							"sid": 342655720102457,
+							"parameters": {
+								"x": "b_atras.BBoxLeft",
+								"y": "b_atras.Y"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "b_rotader",
+							"sid": 866828032930458,
+							"parameters": {
+								"x": "b_atras.BBoxRight",
+								"y": "b_atras.Y"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 758254262022232,
+							"parameters": {
+								"variable": "crashbarra",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "UI_mascaras",
+							"sid": 992570564623728,
+							"parameters": {
+								"animation": "\"Animation 3\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Jugadore",
+							"sid": 903064658119739,
+							"parameters": {
+								"animation": "\"rage\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 765628013144950
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 817808878973975,
+							"parameters": {
+								"variable": "crashbarra"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "b_rotaizq",
+							"sid": 243559794836132,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "b_rotader",
+							"sid": 567096647219264,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "b_rotaizq",
+							"sid": 617435734527167,
+							"behaviorType": "Rotate",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "b_rotader",
+							"sid": 296475486766166,
+							"behaviorType": "Rotate",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "b_rotaizq",
+							"sid": 803784358655811,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"enabled": true
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "b_rotader",
+							"sid": 885472823016702,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"enabled": true
+							}
+						},
+						{
+							"id": "move-to-position",
+							"objectClass": "b_rotader",
+							"sid": 173554455864674,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"x": "3000",
+								"y": "2300",
+								"mode": "direct"
+							}
+						},
+						{
+							"id": "move-to-position",
+							"objectClass": "b_rotaizq",
+							"sid": 869204941461670,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"x": "-200",
+								"y": "2300",
+								"mode": "direct"
+							}
+						},
+						{
+							"id": "set-spraying",
+							"objectClass": "P_barravida",
+							"sid": 463017502916128,
+							"parameters": {
+								"state": "spraying"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "P_barravida",
+							"sid": 226752201202593,
+							"parameters": {
+								"x": "b_atras.BBoxMidX",
+								"y": "b_atras.BBoxMidY"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 599927401836332,
+							"parameters": {
+								"seconds": "1.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-spraying",
+							"objectClass": "P_barravida",
+							"sid": 891639420624213,
+							"parameters": {
+								"state": "not-spraying"
+							}
+						}
+					],
+					"sid": 810207559431021
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-arrived",
+							"objectClass": "b_rotaizq",
+							"sid": 562504292125903,
+							"behaviorType": "MoveTo"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-spraying",
+							"objectClass": "P_barravida",
+							"sid": 253944517334655,
+							"parameters": {
+								"state": "not-spraying"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "b_rotaizq",
+							"sid": 715647222626581,
+							"behaviorType": "Rotate",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "b_rotaizq",
+							"sid": 931196695845885,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "b_rotaizq",
+							"sid": 598971324481027,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"enabled": false
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "b_rotaizq",
+							"sid": 819865583239328
+						}
+					],
+					"sid": 405159137300867
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-arrived",
+							"objectClass": "b_rotader",
+							"sid": 759849457717267,
+							"behaviorType": "MoveTo"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-spraying",
+							"objectClass": "P_barravida",
+							"sid": 297328854441641,
+							"parameters": {
+								"state": "not-spraying"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "b_rotader",
+							"sid": 166559900631337,
+							"behaviorType": "Rotate",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "b_rotader",
+							"sid": 817540534899032,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "b_rotader",
+							"sid": 755886292341889,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"enabled": false
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "b_rotader",
+							"sid": 123141113656932
+						}
+					],
+					"sid": 757747433764879
 				}
 			],
-			"actions": [
-				{
-					"id": "set-position",
-					"objectClass": "b_delante",
-					"sid": 510254740400885,
-					"parameters": {
-						"x": "b_atras.X",
-						"y": "b_atras.Y"
-					}
-				},
-				{
-					"id": "set-size",
-					"objectClass": "b_delante",
-					"sid": 871485744472134,
-					"parameters": {
-						"width": "v_paciencia",
-						"height": "b_atras.Height-10"
-					}
-				}
-			],
-			"sid": 836263198035194
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 238630987789486,
-					"parameters": {
-						"variable": "v_paciencia",
-						"comparison": 0,
-						"value": "0"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "b_delante",
-					"sid": 205771090820237,
-					"parameters": {
-						"animation": "\"Animation 1\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-spraying",
-					"objectClass": "P_barravida",
-					"sid": 582767522807887,
-					"parameters": {
-						"state": "not-spraying"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "b_rotaizq",
-					"sid": 719797611316381,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "b_rotader",
-					"sid": 893396420027396,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "b_rotaizq",
-					"sid": 762183060958593,
-					"behaviorType": "Rotate",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
-					"id": "set-active",
-					"objectClass": "b_rotaizq",
-					"sid": 964463752923245,
-					"behaviorType": "Sine",
-					"parameters": {
-						"state": "inactive"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "b_rotader",
-					"sid": 758285705149362,
-					"behaviorType": "Rotate",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
-					"id": "set-active",
-					"objectClass": "b_rotader",
-					"sid": 188818332241159,
-					"behaviorType": "Sine",
-					"parameters": {
-						"state": "inactive"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "b_rotaizq",
-					"sid": 452456337153577,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"enabled": false
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "b_rotader",
-					"sid": 114834374961930,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"enabled": false
-					}
-				}
-			],
-			"sid": 673213087825341
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 406795648815093,
-					"parameters": {
-						"variable": "v_paciencia",
-						"comparison": 4,
-						"value": "1"
-					}
-				},
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 841983245806897,
-					"parameters": {
-						"variable": "v_paciencia",
-						"comparison": 2,
-						"value": "195"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "b_delante",
-					"sid": 930960406181865,
-					"parameters": {
-						"animation": "\"Animation 1\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 982731022536093
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 665322516619006,
-					"parameters": {
-						"variable": "v_paciencia",
-						"comparison": 4,
-						"value": "195"
-					}
-				},
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 406848687087542,
-					"parameters": {
-						"variable": "v_paciencia",
-						"comparison": 2,
-						"value": "390"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "b_delante",
-					"sid": 352608642157543,
-					"parameters": {
-						"animation": "\"Animation 2\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "b_atras",
-					"sid": 548669046901553,
-					"parameters": {
-						"animation": "\"Animation 1\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 741018145429901
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 464917891589803,
-					"parameters": {
-						"variable": "v_paciencia",
-						"comparison": 4,
-						"value": "390"
-					}
-				},
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 968026094053564,
-					"parameters": {
-						"variable": "v_paciencia",
-						"comparison": 2,
-						"value": "585"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "b_delante",
-					"sid": 731580344963048,
-					"parameters": {
-						"animation": "\"Animation 3\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "b_atras",
-					"sid": 748225141882291,
-					"parameters": {
-						"animation": "\"Animation 2\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 433711897313578
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 164787860853882,
-					"parameters": {
-						"variable": "v_paciencia",
-						"comparison": 4,
-						"value": "585"
-					}
-				},
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 205835366476151,
-					"parameters": {
-						"variable": "v_paciencia",
-						"comparison": 2,
-						"value": "650"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "b_delante",
-					"sid": 248728488181148,
-					"parameters": {
-						"animation": "\"Animation 4\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "b_atras",
-					"sid": 401169787735225,
-					"parameters": {
-						"animation": "\"Animation 3\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 452366227555853
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 779083425045372,
-					"parameters": {
-						"variable": "v_paciencia",
-						"comparison": 4,
-						"value": "650"
-					}
-				},
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 523333876089883,
-					"parameters": {
-						"variable": "v_paciencia",
-						"comparison": 2,
-						"value": "740"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "b_delante",
-					"sid": 208743781939373,
-					"parameters": {
-						"animation": "\"Animation 5\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "b_atras",
-					"sid": 709104986117677,
-					"parameters": {
-						"animation": "\"Animation 4\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 149136387471061
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 660310185895329,
-					"parameters": {
-						"variable": "v_paciencia",
-						"comparison": 4,
-						"value": "760"
-					}
-				},
-				{
-					"id": "trigger-once-while-true",
-					"objectClass": "System",
-					"sid": 424197471950114
-				}
-			],
-			"actions": [
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 540600345413134,
-					"parameters": {
-						"variable": "v_ansiedad",
-						"value": "0"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 218595602757117,
-					"parameters": {
-						"seconds": "1.0",
-						"use-timescale": true
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "b_atras",
-					"sid": 351772277440631,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "b_delante",
-					"sid": 119465265257042,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 460139709605026,
-					"parameters": {
-						"variable": "crashbarra",
-						"value": "true"
-					}
-				}
-			],
-			"sid": 739487532627545
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 507921913311293,
-					"parameters": {
-						"variable": "crashbarra"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-visible",
-					"objectClass": "b_rotaizq",
-					"sid": 608082342664323,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "b_rotader",
-					"sid": 510608410204183,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "b_rotaizq",
-					"sid": 701456030123540,
-					"behaviorType": "Rotate",
-					"parameters": {
-						"state": "enabled"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "b_rotader",
-					"sid": 203523265446440,
-					"behaviorType": "Rotate",
-					"parameters": {
-						"state": "enabled"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "b_rotaizq",
-					"sid": 751416755501483,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"enabled": true
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "b_rotader",
-					"sid": 682555741790048,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"enabled": true
-					}
-				},
-				{
-					"id": "move-to-position",
-					"objectClass": "b_rotader",
-					"sid": 432051100575704,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"x": "3000",
-						"y": "2300",
-						"mode": "direct"
-					}
-				},
-				{
-					"id": "move-to-position",
-					"objectClass": "b_rotaizq",
-					"sid": 994048522652347,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"x": "-200",
-						"y": "2300",
-						"mode": "direct"
-					}
-				},
-				{
-					"id": "set-spraying",
-					"objectClass": "P_barravida",
-					"sid": 251602759247781,
-					"parameters": {
-						"state": "spraying"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 947817792577086,
-					"parameters": {
-						"seconds": "1.0",
-						"use-timescale": true
-					}
-				},
-				{
-					"id": "set-spraying",
-					"objectClass": "P_barravida",
-					"sid": 256558489275332,
-					"parameters": {
-						"state": "not-spraying"
-					}
-				}
-			],
-			"sid": 745588664500904
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-arrived",
-					"objectClass": "b_rotaizq",
-					"sid": 869525178516751,
-					"behaviorType": "MoveTo"
-				}
-			],
-			"actions": [
-				{
-					"id": "set-spraying",
-					"objectClass": "P_barravida",
-					"sid": 224975299932812,
-					"parameters": {
-						"state": "not-spraying"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "b_rotaizq",
-					"sid": 295159321996260,
-					"behaviorType": "Rotate",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
-					"id": "set-active",
-					"objectClass": "b_rotaizq",
-					"sid": 319168598220928,
-					"behaviorType": "Sine",
-					"parameters": {
-						"state": "inactive"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "b_rotaizq",
-					"sid": 579961250466405,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"enabled": false
-					}
-				},
-				{
-					"id": "destroy",
-					"objectClass": "b_rotaizq",
-					"sid": 502638388735922
-				}
-			],
-			"sid": 330465031959915
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-arrived",
-					"objectClass": "b_rotader",
-					"sid": 977942210386456,
-					"behaviorType": "MoveTo"
-				}
-			],
-			"actions": [
-				{
-					"id": "set-spraying",
-					"objectClass": "P_barravida",
-					"sid": 976883661677291,
-					"parameters": {
-						"state": "not-spraying"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "b_rotader",
-					"sid": 881343631262674,
-					"behaviorType": "Rotate",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
-					"id": "set-active",
-					"objectClass": "b_rotader",
-					"sid": 514365406828847,
-					"behaviorType": "Sine",
-					"parameters": {
-						"state": "inactive"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "b_rotader",
-					"sid": 898845333538706,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"enabled": false
-					}
-				},
-				{
-					"id": "destroy",
-					"objectClass": "b_rotader",
-					"sid": 340945715264690
-				}
-			],
-			"sid": 492783864991726
+			"sid": 186029145508208
 		}
 	],
 	"sid": 324755378402390
