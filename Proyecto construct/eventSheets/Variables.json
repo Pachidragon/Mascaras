@@ -32,6 +32,26 @@
 			"sid": 918966361390311
 		},
 		{
+			"eventType": "variable",
+			"name": "v_ansiedad",
+			"type": "number",
+			"initialValue": "50",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 416271763337976
+		},
+		{
+			"eventType": "variable",
+			"name": "crashbarra",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 873498319791241
+		},
+		{
 			"eventType": "comment",
 			"text": "0= normi, 1=rage"
 		}

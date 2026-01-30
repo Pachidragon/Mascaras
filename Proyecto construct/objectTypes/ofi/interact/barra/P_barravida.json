@@ -1,0 +1,23 @@
+{
+	"name": "P_barravida",
+	"plugin-id": "Particles",
+	"sid": 163385518509072,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 35,
+		"height": 33,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 3729807,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

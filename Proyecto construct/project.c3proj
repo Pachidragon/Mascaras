@@ -29,6 +29,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Particles",
+			"name": "Particles",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
@@ -56,13 +63,6 @@
 			"bundled": false
 		},
 		{
-			"type": "plugin",
-			"id": "progressbar",
-			"name": "Progress bar",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
 			"type": "behavior",
 			"id": "Anchor",
 			"name": "Anchor",
@@ -78,8 +78,29 @@
 		},
 		{
 			"type": "behavior",
+			"id": "MoveTo",
+			"name": "Move To",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Pathfinding",
 			"name": "Pathfinding",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Rotate",
+			"name": "Rotate",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -94,6 +115,13 @@
 			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "hsladjust",
+			"name": "Adjust HSL",
 			"author": "Scirra",
 			"bundled": false
 		}
@@ -177,8 +205,11 @@
 						"subfolders": [
 							{
 								"items": [
-									"atras",
-									"delante"
+									"b_atras",
+									"b_delante",
+									"P_barravida",
+									"b_rotaizq",
+									"b_rotader"
 								],
 								"subfolders": [],
 								"name": "barra"
@@ -191,8 +222,7 @@
 			},
 			{
 				"items": [
-					"Jugadore",
-					"b_paciencia"
+					"Jugadore"
 				],
 				"subfolders": [],
 				"name": "jugadore"

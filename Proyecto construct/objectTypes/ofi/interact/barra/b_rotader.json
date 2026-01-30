@@ -1,0 +1,88 @@
+{
+	"name": "b_rotader",
+	"plugin-id": "Sprite",
+	"sid": 331243517425218,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "roto",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 346752443937303
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 872492024162018
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 983751180609794
+		},
+		{
+			"behaviorId": "Rotate",
+			"name": "Rotate",
+			"sid": 350091981773868
+		},
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 886419273217279
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 117,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 638468,
+						"collisionPoly": {
+							"points": [
+								1,
+								1,
+								0,
+								1,
+								0,
+								0,
+								1,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0,
+								"y": 0.5
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 109432274838670,
+				"name": "Animation 4",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

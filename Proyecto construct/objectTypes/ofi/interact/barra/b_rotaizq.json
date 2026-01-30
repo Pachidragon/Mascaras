@@ -1,15 +1,38 @@
 {
-	"name": "atras",
+	"name": "b_rotaizq",
 	"plugin-id": "Sprite",
-	"sid": 799184136839538,
+	"sid": 810753609458186,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "roto",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 684072042068025
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Anchor",
 			"name": "Anchor",
-			"sid": 434218653747388
+			"sid": 204083536489900
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 650183588255882
+		},
+		{
+			"behaviorId": "Rotate",
+			"name": "Rotate",
+			"sid": 439103469276875
+		},
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 248474192823872
 		}
 	],
 	"effectTypes": [],
@@ -18,20 +41,20 @@
 			{
 				"frames": [
 					{
-						"width": 248,
+						"width": 117,
 						"height": 32,
-						"originX": 0,
+						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8992857,
+						"imageSpriteId": 622608,
 						"useCollisionPoly": true,
 						"imagePoints": [
 							{
 								"name": "Image Point 1",
-								"x": 0,
+								"x": 1,
 								"y": 0.5
 							}
 						],
@@ -39,8 +62,8 @@
 						"tag": ""
 					}
 				],
-				"sid": 685341449349242,
-				"name": "Animation 1",
+				"sid": 524643105018643,
+				"name": "Animation 4",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
