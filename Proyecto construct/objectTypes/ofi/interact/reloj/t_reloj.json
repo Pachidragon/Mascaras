@@ -1,0 +1,16 @@
+{
+	"name": "t_reloj",
+	"plugin-id": "Text",
+	"sid": 379375877986102,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 341709921218645
+		}
+	],
+	"effectTypes": []
+}

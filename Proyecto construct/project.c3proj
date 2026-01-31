@@ -220,6 +220,14 @@
 								],
 								"subfolders": [],
 								"name": "barra"
+							},
+							{
+								"items": [
+									"f_reloj",
+									"t_reloj"
+								],
+								"subfolders": [],
+								"name": "reloj"
 							}
 						],
 						"name": "interact"
@@ -314,6 +322,14 @@
 					"name": "font.ttf",
 					"type": "application/font-sfnt",
 					"sid": 874484645605350,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "RELOJ.ttf",
+					"type": "application/font-sfnt",
+					"sid": 795666867055085,
 					"file-info": {
 						"purpose": "none"
 					}

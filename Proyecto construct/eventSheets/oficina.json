@@ -26,6 +26,41 @@
 								"variable": "fase_juego",
 								"value": "0"
 							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "f_reloj",
+							"sid": 408357637855404,
+							"behaviorType": "Anchor",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "b_rotader",
+							"sid": 592255722909460,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"enabled": false
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "f_reloj",
+							"sid": 645609019097051,
+							"behaviorType": "Rotate",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "t_reloj",
+							"sid": 610492403392535,
+							"parameters": {
+								"visibility": "visible"
+							}
 						}
 					],
 					"sid": 912885989253601
@@ -1148,64 +1183,12 @@
 							}
 						},
 						{
-							"id": "set-visible",
-							"objectClass": "b_atras",
-							"sid": 908422973232739,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "b_delante",
-							"sid": 105963245364418,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "b_rotaizq",
-							"sid": 342655720102457,
-							"parameters": {
-								"x": "b_atras.BBoxLeft",
-								"y": "b_atras.Y"
-							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "b_rotader",
-							"sid": 866828032930458,
-							"parameters": {
-								"x": "b_atras.BBoxRight",
-								"y": "b_atras.Y"
-							}
-						},
-						{
 							"id": "set-boolean-eventvar",
 							"objectClass": "System",
 							"sid": 758254262022232,
 							"parameters": {
 								"variable": "crashbarra",
 								"value": "true"
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "UI_mascaras",
-							"sid": 992570564623728,
-							"parameters": {
-								"animation": "\"Animation 3\"",
-								"from": "beginning"
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "Jugadore",
-							"sid": 903064658119739,
-							"parameters": {
-								"animation": "\"rage\"",
-								"from": "beginning"
 							}
 						},
 						{
@@ -1230,13 +1213,170 @@
 							"parameters": {
 								"variable": "crashbarra"
 							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 448865030783912
 						}
 					],
 					"actions": [
 						{
+							"id": "set-position",
+							"objectClass": "b_rotaizq",
+							"sid": 150233834273499,
+							"parameters": {
+								"x": "b_atras.BBoxLeft",
+								"y": "b_atras.Y"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "b_rotader",
+							"sid": 660163041235411,
+							"parameters": {
+								"x": "b_atras.BBoxRight",
+								"y": "b_atras.Y"
+							}
+						}
+					],
+					"sid": 810207559431021
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 311932889981180,
+							"parameters": {
+								"variable": "crashbarra"
+							}
+						}
+					],
+					"actions": [
+						{
+							"type": "comment",
+							"text": "ocultar barra de vida"
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "b_atras",
+							"sid": 681719776565869,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "b_delante",
+							"sid": 705864166207734,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"type": "comment",
+							"text": "mascara"
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "UI_mascaras",
+							"sid": 129685085139492,
+							"parameters": {
+								"animation": "\"Animation 3\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"type": "comment",
+							"text": "cambio apariencia del personaje"
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Jugadore",
+							"sid": 196377293317817,
+							"parameters": {
+								"animation": "\"rage\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"type": "comment",
+							"text": "reloj se rompe"
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "f_reloj",
+							"sid": 334035381405609,
+							"behaviorType": "Anchor",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "f_reloj",
+							"sid": 918403654452439,
+							"parameters": {
+								"animation": "\"roto\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "f_reloj",
+							"sid": 889802185432259,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"enabled": true
+							}
+						},
+						{
+							"id": "move-to-position",
+							"objectClass": "f_reloj",
+							"sid": 478106277975260,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"x": "3000",
+								"y": "2300",
+								"mode": "direct"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "f_reloj",
+							"sid": 921248333442445,
+							"behaviorType": "Rotate",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "f_reloj",
+							"sid": 247805093920298,
+							"behaviorType": "Rotate",
+							"parameters": {
+								"speed": "180"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "t_reloj",
+							"sid": 345915455298747,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"type": "comment",
+							"text": "barra se rompe"
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "b_rotaizq",
-							"sid": 243559794836132,
+							"sid": 559407424528724,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -1244,7 +1384,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "b_rotader",
-							"sid": 567096647219264,
+							"sid": 408413983612049,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -1252,7 +1392,7 @@
 						{
 							"id": "set-enabled",
 							"objectClass": "b_rotaizq",
-							"sid": 617435734527167,
+							"sid": 417752166200386,
 							"behaviorType": "Rotate",
 							"parameters": {
 								"state": "enabled"
@@ -1261,7 +1401,7 @@
 						{
 							"id": "set-enabled",
 							"objectClass": "b_rotader",
-							"sid": 296475486766166,
+							"sid": 927870579366417,
 							"behaviorType": "Rotate",
 							"parameters": {
 								"state": "enabled"
@@ -1270,7 +1410,7 @@
 						{
 							"id": "set-enabled",
 							"objectClass": "b_rotaizq",
-							"sid": 803784358655811,
+							"sid": 681867488788574,
 							"behaviorType": "MoveTo",
 							"parameters": {
 								"enabled": true
@@ -1279,7 +1419,7 @@
 						{
 							"id": "set-enabled",
 							"objectClass": "b_rotader",
-							"sid": 885472823016702,
+							"sid": 865650184216000,
 							"behaviorType": "MoveTo",
 							"parameters": {
 								"enabled": true
@@ -1288,7 +1428,7 @@
 						{
 							"id": "move-to-position",
 							"objectClass": "b_rotader",
-							"sid": 173554455864674,
+							"sid": 709918485962750,
 							"behaviorType": "MoveTo",
 							"parameters": {
 								"x": "3000",
@@ -1299,7 +1439,7 @@
 						{
 							"id": "move-to-position",
 							"objectClass": "b_rotaizq",
-							"sid": 869204941461670,
+							"sid": 574167975300427,
 							"behaviorType": "MoveTo",
 							"parameters": {
 								"x": "-200",
@@ -1310,7 +1450,7 @@
 						{
 							"id": "set-spraying",
 							"objectClass": "P_barravida",
-							"sid": 463017502916128,
+							"sid": 197481602649087,
 							"parameters": {
 								"state": "spraying"
 							}
@@ -1318,7 +1458,7 @@
 						{
 							"id": "set-position",
 							"objectClass": "P_barravida",
-							"sid": 226752201202593,
+							"sid": 498479364200803,
 							"parameters": {
 								"x": "b_atras.BBoxMidX",
 								"y": "b_atras.BBoxMidY"
@@ -1327,7 +1467,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 599927401836332,
+							"sid": 431927417050355,
 							"parameters": {
 								"seconds": "1.0",
 								"use-timescale": true
@@ -1336,13 +1476,13 @@
 						{
 							"id": "set-spraying",
 							"objectClass": "P_barravida",
-							"sid": 891639420624213,
+							"sid": 652102225905204,
 							"parameters": {
 								"state": "not-spraying"
 							}
 						}
 					],
-					"sid": 810207559431021
+					"sid": 375834847325479
 				},
 				{
 					"eventType": "block",
@@ -1454,6 +1594,94 @@
 				}
 			],
 			"sid": 186029145508208
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "reloj",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 602735487844576,
+							"parameters": {
+								"variable": "crashbarra"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 387296570412778,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 839393454102900,
+									"parameters": {
+										"variable": "t_reloj",
+										"comparison": 3,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 237068535446635,
+									"parameters": {
+										"variable": "crashbarra",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 608745434863766
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 532066564968647,
+									"parameters": {
+										"interval-seconds": "1.0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "subtract-from-eventvar",
+									"objectClass": "System",
+									"sid": 786850566819172,
+									"parameters": {
+										"variable": "t_reloj",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "t_reloj",
+									"sid": 967935296737336,
+									"parameters": {
+										"text": "t_reloj"
+									}
+								}
+							],
+							"sid": 748137629990260
+						}
+					]
+				}
+			],
+			"sid": 934018579735330
 		},
 		{
 			"eventType": "group",
