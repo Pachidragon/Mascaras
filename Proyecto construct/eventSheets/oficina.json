@@ -4077,9 +4077,19 @@
 					"id": "set-eventvar-value",
 					"objectClass": "System",
 					"sid": 132375127754426,
+					"disabled": true,
 					"parameters": {
 						"variable": "t_reloj",
 						"value": "2"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 633741360063309,
+					"parameters": {
+						"variable": "crashbarra",
+						"value": "true"
 					}
 				}
 			],
