@@ -2592,25 +2592,74 @@
 								}
 							],
 							"sid": 726612471994830
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 920211855566703,
+									"parameters": {
+										"key": 32
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Jugadore",
+									"sid": 501928257874643,
+									"parameters": {
+										"object": "o_armario3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-enabled",
+									"objectClass": "o_armario3",
+									"sid": 587152261368531,
+									"behaviorType": "Rotate",
+									"parameters": {
+										"state": "enabled"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_armario3",
+									"sid": 213356673640784,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"enabled": true
+									}
+								},
+								{
+									"id": "move-to-position",
+									"objectClass": "o_armario3",
+									"sid": 991035384763267,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"x": "-500",
+										"y": "random(0, LayoutHeight)",
+										"mode": "direct"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 881318505176515,
+									"parameters": {
+										"object-to-create": "p_rage",
+										"layer": "4",
+										"x": "o_armario3.BBoxMidX",
+										"y": "o_armario3.BBoxMidY",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 325960093621986
 						}
 					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 145545525757118,
-							"parameters": {
-								"variable": "fase_juego",
-								"comparison": 0,
-								"value": "2"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 102536073088073
 				}
 			],
 			"sid": 758795650613997
