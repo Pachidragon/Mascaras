@@ -108,6 +108,16 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 619061596508558
+		},
+		{
+			"eventType": "variable",
+			"name": "huearcoiris",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 959673279328539
 		}
 	],
 	"sid": 627737672315670

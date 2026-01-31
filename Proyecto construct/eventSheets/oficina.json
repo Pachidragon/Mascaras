@@ -4,7 +4,7 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "camara",
+			"title": "camara e inicio",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
@@ -145,6 +145,46 @@
 						}
 					],
 					"sid": 308613079822321
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 961541045382273
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "o_armario3",
+							"sid": 493916540834598,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"enabled": false
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "o_armario3",
+							"sid": 375760866824479,
+							"behaviorType": "Rotate",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "o_armario3",
+							"sid": 160776583898405,
+							"behaviorType": "Solid",
+							"parameters": {
+								"state": "enabled"
+							}
+						}
+					],
+					"sid": 538973889277266
 				}
 			],
 			"sid": 588675078900572
@@ -257,18 +297,55 @@
 								"variable": "v_ansiedad",
 								"value": "3"
 							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 502480459461029,
-							"parameters": {
-								"variable": "tiempoEnElBanio",
-								"value": "0"
-							}
 						}
 					],
-					"sid": 913302475209361
+					"sid": 913302475209361,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 875381872446102,
+									"parameters": {
+										"variable": "tiempoEnElBanio",
+										"comparison": 4,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 251587847273237,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 193911060404348,
+											"parameters": {
+												"interval-seconds": "1.0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "subtract-from-eventvar",
+											"objectClass": "System",
+											"sid": 858826900473265,
+											"parameters": {
+												"variable": "tiempoEnElBanio",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 518572543379324
+								}
+							]
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -1155,6 +1232,16 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
+									"sid": 475289789487888,
+									"parameters": {
+										"variable": "fase_juego",
+										"comparison": 0,
+										"value": "0"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
 									"sid": 893011051182577,
 									"parameters": {
 										"variable": "v_paciencia",
@@ -1179,6 +1266,16 @@
 						{
 							"eventType": "block",
 							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 381555984741785,
+									"parameters": {
+										"variable": "fase_juego",
+										"comparison": 0,
+										"value": "0"
+									}
+								},
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
@@ -1311,595 +1408,623 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 752711542434206,
+							"sid": 737229213142049,
 							"parameters": {
-								"variable": "v_paciencia",
+								"variable": "fase_juego",
 								"comparison": 0,
 								"value": "0"
 							}
 						}
 					],
 					"actions": [],
-					"sid": 195334308349290
-				},
-				{
-					"eventType": "block",
-					"conditions": [
+					"sid": 824369027585643,
+					"children": [
 						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 928233369597862,
-							"parameters": {
-								"variable": "v_paciencia",
-								"comparison": 4,
-								"value": "1"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 642859327942382,
+									"parameters": {
+										"variable": "v_paciencia",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 838202650732430
 						},
 						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 185396752106908,
-							"parameters": {
-								"variable": "v_paciencia",
-								"comparison": 2,
-								"value": "195"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 610621213535301,
+									"parameters": {
+										"variable": "v_paciencia",
+										"comparison": 4,
+										"value": "1"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 907413867651832,
+									"parameters": {
+										"variable": "v_paciencia",
+										"comparison": 2,
+										"value": "195"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "b_delante",
+									"sid": 471860418567317,
+									"parameters": {
+										"animation": "\"Animation 1\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "UI_mascaras",
+									"sid": 129512644957884,
+									"parameters": {
+										"animation": "\"Animation 1\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 898270631431987
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 531852725195998,
+									"parameters": {
+										"variable": "v_paciencia",
+										"comparison": 4,
+										"value": "195"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 789054668810927,
+									"parameters": {
+										"variable": "v_paciencia",
+										"comparison": 2,
+										"value": "390"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "b_delante",
+									"sid": 970374191083674,
+									"parameters": {
+										"animation": "\"Animation 2\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "b_atras",
+									"sid": 481215504225748,
+									"parameters": {
+										"animation": "\"Animation 1\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 803120998935530
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 823447178918722,
+									"parameters": {
+										"variable": "v_paciencia",
+										"comparison": 4,
+										"value": "390"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 776920812562452,
+									"parameters": {
+										"variable": "v_paciencia",
+										"comparison": 2,
+										"value": "585"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "b_delante",
+									"sid": 712746601395631,
+									"parameters": {
+										"animation": "\"Animation 3\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "b_atras",
+									"sid": 830963602415100,
+									"parameters": {
+										"animation": "\"Animation 2\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "UI_mascaras",
+									"sid": 604642039305382,
+									"parameters": {
+										"animation": "\"Animation 2\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 491568980645499
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 522636866699300,
+									"parameters": {
+										"variable": "v_paciencia",
+										"comparison": 4,
+										"value": "585"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 754301530097090,
+									"parameters": {
+										"variable": "v_paciencia",
+										"comparison": 2,
+										"value": "650"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "b_delante",
+									"sid": 188167113049686,
+									"parameters": {
+										"animation": "\"Animation 4\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "b_atras",
+									"sid": 596296028973504,
+									"parameters": {
+										"animation": "\"Animation 3\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 570709723824271
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 757706746928924,
+									"parameters": {
+										"variable": "v_paciencia",
+										"comparison": 4,
+										"value": "650"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 205039779300059,
+									"parameters": {
+										"variable": "v_paciencia",
+										"comparison": 2,
+										"value": "740"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "b_delante",
+									"sid": 502829634749148,
+									"parameters": {
+										"animation": "\"Animation 5\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "b_atras",
+									"sid": 994900820129875,
+									"parameters": {
+										"animation": "\"Animation 4\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 956523103618273
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 744519558276230,
+									"parameters": {
+										"variable": "v_paciencia",
+										"comparison": 4,
+										"value": "760"
+									}
+								},
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 755683546173327
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 825192389265594,
+									"parameters": {
+										"variable": "v_ansiedad",
+										"value": "0"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 876713007405735,
+									"parameters": {
+										"seconds": "1.0",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 634919432317743,
+									"parameters": {
+										"variable": "crashbarra",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 689358612822298,
+									"parameters": {
+										"variable": "fase_juego",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 374218142738936
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 174187843897225,
+									"parameters": {
+										"variable": "crashbarra"
+									}
+								},
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 980537291751824
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "b_rotaizq",
+									"sid": 211648827022646,
+									"parameters": {
+										"x": "b_atras.BBoxLeft",
+										"y": "b_atras.Y"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "b_rotader",
+									"sid": 247008093960960,
+									"parameters": {
+										"x": "b_atras.BBoxRight",
+										"y": "b_atras.Y"
+									}
+								}
+							],
+							"sid": 463779606163208
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 772993323664605,
+									"parameters": {
+										"variable": "crashbarra"
+									}
+								}
+							],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "ocultar barra de vida"
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "b_atras",
+									"sid": 323747519457718,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "b_delante",
+									"sid": 128266758540692,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"type": "comment",
+									"text": "mascara"
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "UI_mascaras",
+									"sid": 182552396858358,
+									"parameters": {
+										"animation": "\"Animation 3\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"type": "comment",
+									"text": "cambio apariencia del personaje"
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 493834440539218,
+									"parameters": {
+										"variable": "fase_juego",
+										"value": "2"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Jugadore",
+									"sid": 592411797376563,
+									"parameters": {
+										"animation": "\"rage\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"type": "comment",
+									"text": "reloj se rompe"
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "f_reloj",
+									"sid": 151316920992954,
+									"behaviorType": "Anchor",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "f_reloj",
+									"sid": 358465061271450,
+									"parameters": {
+										"animation": "\"roto\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "f_reloj",
+									"sid": 626783038096585,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"enabled": true
+									}
+								},
+								{
+									"id": "move-to-position",
+									"objectClass": "f_reloj",
+									"sid": 330488235506569,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"x": "3000",
+										"y": "2300",
+										"mode": "direct"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "f_reloj",
+									"sid": 786708585177585,
+									"behaviorType": "Rotate",
+									"parameters": {
+										"state": "enabled"
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "f_reloj",
+									"sid": 246138759976235,
+									"behaviorType": "Rotate",
+									"parameters": {
+										"speed": "180"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "t_reloj",
+									"sid": 820389072853404,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"type": "comment",
+									"text": "barra se rompe"
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "b_rotaizq",
+									"sid": 890375730593333,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "b_rotader",
+									"sid": 197479916718813,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "b_rotaizq",
+									"sid": 932259751621997,
+									"behaviorType": "Rotate",
+									"parameters": {
+										"state": "enabled"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "b_rotader",
+									"sid": 164310522508622,
+									"behaviorType": "Rotate",
+									"parameters": {
+										"state": "enabled"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "b_rotaizq",
+									"sid": 229789245187344,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"enabled": true
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "b_rotader",
+									"sid": 544450196820805,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"enabled": true
+									}
+								},
+								{
+									"id": "move-to-position",
+									"objectClass": "b_rotader",
+									"sid": 960438805946213,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"x": "3000",
+										"y": "2300",
+										"mode": "direct"
+									}
+								},
+								{
+									"id": "move-to-position",
+									"objectClass": "b_rotaizq",
+									"sid": 937909923408992,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"x": "-200",
+										"y": "2300",
+										"mode": "direct"
+									}
+								},
+								{
+									"id": "set-spraying",
+									"objectClass": "P_barravida",
+									"sid": 302778869826466,
+									"parameters": {
+										"state": "spraying"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "P_barravida",
+									"sid": 190347779442489,
+									"parameters": {
+										"x": "b_atras.BBoxMidX",
+										"y": "b_atras.BBoxMidY"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 956243600912281,
+									"parameters": {
+										"seconds": "1.0",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-spraying",
+									"objectClass": "P_barravida",
+									"sid": 224335027217388,
+									"parameters": {
+										"state": "not-spraying"
+									}
+								}
+							],
+							"sid": 223074930132195
 						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "b_delante",
-							"sid": 669266090005270,
-							"parameters": {
-								"animation": "\"Animation 1\"",
-								"from": "beginning"
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "UI_mascaras",
-							"sid": 393205351474865,
-							"parameters": {
-								"animation": "\"Animation 1\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 885736916359168
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 916524280329846,
-							"parameters": {
-								"variable": "v_paciencia",
-								"comparison": 4,
-								"value": "195"
-							}
-						},
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 886502422275531,
-							"parameters": {
-								"variable": "v_paciencia",
-								"comparison": 2,
-								"value": "390"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "b_delante",
-							"sid": 652218295402862,
-							"parameters": {
-								"animation": "\"Animation 2\"",
-								"from": "beginning"
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "b_atras",
-							"sid": 583435967616311,
-							"parameters": {
-								"animation": "\"Animation 1\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 769473863765515
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 637376898332893,
-							"parameters": {
-								"variable": "v_paciencia",
-								"comparison": 4,
-								"value": "390"
-							}
-						},
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 341807801168026,
-							"parameters": {
-								"variable": "v_paciencia",
-								"comparison": 2,
-								"value": "585"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "b_delante",
-							"sid": 468357310728109,
-							"parameters": {
-								"animation": "\"Animation 3\"",
-								"from": "beginning"
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "b_atras",
-							"sid": 185395891419557,
-							"parameters": {
-								"animation": "\"Animation 2\"",
-								"from": "beginning"
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "UI_mascaras",
-							"sid": 483106326370984,
-							"parameters": {
-								"animation": "\"Animation 2\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 724742803510280
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 593989141790931,
-							"parameters": {
-								"variable": "v_paciencia",
-								"comparison": 4,
-								"value": "585"
-							}
-						},
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 215396190023838,
-							"parameters": {
-								"variable": "v_paciencia",
-								"comparison": 2,
-								"value": "650"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "b_delante",
-							"sid": 246297591373989,
-							"parameters": {
-								"animation": "\"Animation 4\"",
-								"from": "beginning"
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "b_atras",
-							"sid": 775580987592397,
-							"parameters": {
-								"animation": "\"Animation 3\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 816977726505587
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 849915346074810,
-							"parameters": {
-								"variable": "v_paciencia",
-								"comparison": 4,
-								"value": "650"
-							}
-						},
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 116312887297401,
-							"parameters": {
-								"variable": "v_paciencia",
-								"comparison": 2,
-								"value": "740"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "b_delante",
-							"sid": 485004297622164,
-							"parameters": {
-								"animation": "\"Animation 5\"",
-								"from": "beginning"
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "b_atras",
-							"sid": 806620165513551,
-							"parameters": {
-								"animation": "\"Animation 4\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 931473490931788
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 586539706836515,
-							"parameters": {
-								"variable": "v_paciencia",
-								"comparison": 4,
-								"value": "760"
-							}
-						},
-						{
-							"id": "trigger-once-while-true",
-							"objectClass": "System",
-							"sid": 602211309588785
-						}
-					],
-					"actions": [
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 154845294350900,
-							"parameters": {
-								"variable": "v_ansiedad",
-								"value": "0"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 972190259490919,
-							"parameters": {
-								"seconds": "1.0",
-								"use-timescale": true
-							}
-						},
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 758254262022232,
-							"parameters": {
-								"variable": "crashbarra",
-								"value": "true"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 204838184716348,
-							"parameters": {
-								"variable": "fase_juego",
-								"value": "1"
-							}
-						}
-					],
-					"sid": 765628013144950
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 817808878973975,
-							"parameters": {
-								"variable": "crashbarra"
-							}
-						},
-						{
-							"id": "trigger-once-while-true",
-							"objectClass": "System",
-							"sid": 448865030783912
-						}
-					],
-					"actions": [
-						{
-							"id": "set-position",
-							"objectClass": "b_rotaizq",
-							"sid": 150233834273499,
-							"parameters": {
-								"x": "b_atras.BBoxLeft",
-								"y": "b_atras.Y"
-							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "b_rotader",
-							"sid": 660163041235411,
-							"parameters": {
-								"x": "b_atras.BBoxRight",
-								"y": "b_atras.Y"
-							}
-						}
-					],
-					"sid": 810207559431021
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 311932889981180,
-							"parameters": {
-								"variable": "crashbarra"
-							}
-						}
-					],
-					"actions": [
-						{
-							"type": "comment",
-							"text": "ocultar barra de vida"
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "b_atras",
-							"sid": 681719776565869,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "b_delante",
-							"sid": 705864166207734,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"type": "comment",
-							"text": "mascara"
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "UI_mascaras",
-							"sid": 129685085139492,
-							"parameters": {
-								"animation": "\"Animation 3\"",
-								"from": "beginning"
-							}
-						},
-						{
-							"type": "comment",
-							"text": "cambio apariencia del personaje"
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "Jugadore",
-							"sid": 196377293317817,
-							"parameters": {
-								"animation": "\"rage\"",
-								"from": "beginning"
-							}
-						},
-						{
-							"type": "comment",
-							"text": "reloj se rompe"
-						},
-						{
-							"id": "set-enabled",
-							"objectClass": "f_reloj",
-							"sid": 334035381405609,
-							"behaviorType": "Anchor",
-							"parameters": {
-								"state": "disabled"
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "f_reloj",
-							"sid": 918403654452439,
-							"parameters": {
-								"animation": "\"roto\"",
-								"from": "beginning"
-							}
-						},
-						{
-							"id": "set-enabled",
-							"objectClass": "f_reloj",
-							"sid": 889802185432259,
-							"behaviorType": "MoveTo",
-							"parameters": {
-								"enabled": true
-							}
-						},
-						{
-							"id": "move-to-position",
-							"objectClass": "f_reloj",
-							"sid": 478106277975260,
-							"behaviorType": "MoveTo",
-							"parameters": {
-								"x": "3000",
-								"y": "2300",
-								"mode": "direct"
-							}
-						},
-						{
-							"id": "set-enabled",
-							"objectClass": "f_reloj",
-							"sid": 921248333442445,
-							"behaviorType": "Rotate",
-							"parameters": {
-								"state": "enabled"
-							}
-						},
-						{
-							"id": "set-speed",
-							"objectClass": "f_reloj",
-							"sid": 247805093920298,
-							"behaviorType": "Rotate",
-							"parameters": {
-								"speed": "180"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "t_reloj",
-							"sid": 345915455298747,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"type": "comment",
-							"text": "barra se rompe"
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "b_rotaizq",
-							"sid": 559407424528724,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "b_rotader",
-							"sid": 408413983612049,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-enabled",
-							"objectClass": "b_rotaizq",
-							"sid": 417752166200386,
-							"behaviorType": "Rotate",
-							"parameters": {
-								"state": "enabled"
-							}
-						},
-						{
-							"id": "set-enabled",
-							"objectClass": "b_rotader",
-							"sid": 927870579366417,
-							"behaviorType": "Rotate",
-							"parameters": {
-								"state": "enabled"
-							}
-						},
-						{
-							"id": "set-enabled",
-							"objectClass": "b_rotaizq",
-							"sid": 681867488788574,
-							"behaviorType": "MoveTo",
-							"parameters": {
-								"enabled": true
-							}
-						},
-						{
-							"id": "set-enabled",
-							"objectClass": "b_rotader",
-							"sid": 865650184216000,
-							"behaviorType": "MoveTo",
-							"parameters": {
-								"enabled": true
-							}
-						},
-						{
-							"id": "move-to-position",
-							"objectClass": "b_rotader",
-							"sid": 709918485962750,
-							"behaviorType": "MoveTo",
-							"parameters": {
-								"x": "3000",
-								"y": "2300",
-								"mode": "direct"
-							}
-						},
-						{
-							"id": "move-to-position",
-							"objectClass": "b_rotaizq",
-							"sid": 574167975300427,
-							"behaviorType": "MoveTo",
-							"parameters": {
-								"x": "-200",
-								"y": "2300",
-								"mode": "direct"
-							}
-						},
-						{
-							"id": "set-spraying",
-							"objectClass": "P_barravida",
-							"sid": 197481602649087,
-							"parameters": {
-								"state": "spraying"
-							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "P_barravida",
-							"sid": 498479364200803,
-							"parameters": {
-								"x": "b_atras.BBoxMidX",
-								"y": "b_atras.BBoxMidY"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 431927417050355,
-							"parameters": {
-								"seconds": "1.0",
-								"use-timescale": true
-							}
-						},
-						{
-							"id": "set-spraying",
-							"objectClass": "P_barravida",
-							"sid": 652102225905204,
-							"parameters": {
-								"state": "not-spraying"
-							}
-						}
-					],
-					"sid": 375834847325479
+					]
 				},
 				{
 					"eventType": "block",
@@ -2108,58 +2233,176 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
-					"eventType": "block",
-					"conditions": [
+					"eventType": "group",
+					"disabled": false,
+					"title": "set fase 2",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
 						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 574683108528289,
-							"parameters": {
-								"variable": "fase_juego",
-								"comparison": 0,
-								"value": "1"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 315018537211776,
+									"parameters": {
+										"variable": "fase_juego",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "scroll-to-position",
+									"objectClass": "System",
+									"sid": 858317241301631,
+									"parameters": {
+										"x": "Jugadore.X",
+										"y": "Jugadore.Y"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "Jugadore",
+									"sid": 739006708420242,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"state": "enabled"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_aguadisp",
+									"sid": 986898689849540,
+									"behaviorType": "Solid",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_aguadisp2",
+									"sid": 691183149581750,
+									"behaviorType": "Solid",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_armario",
+									"sid": 161912331312342,
+									"behaviorType": "Solid",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_armario2",
+									"sid": 687814126404338,
+									"behaviorType": "Solid",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_armario3",
+									"sid": 443731915599224,
+									"behaviorType": "Solid",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_cubo2",
+									"sid": 312020783829403,
+									"behaviorType": "Solid",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_cubolargo",
+									"sid": 356147642536717,
+									"behaviorType": "Solid",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_escritorio3",
+									"sid": 636522548422420,
+									"behaviorType": "Solid",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_escritoriov",
+									"sid": 360051677273275,
+									"behaviorType": "Solid",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_estanteria",
+									"sid": 553783755903017,
+									"behaviorType": "Solid",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_fotocopiadora",
+									"sid": 943649834211818,
+									"behaviorType": "Solid",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_fotocopiadora2",
+									"sid": 134331568555619,
+									"behaviorType": "Solid",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_maceta",
+									"sid": 604289857951986,
+									"behaviorType": "Solid",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_maceta2",
+									"sid": 485255758213459,
+									"behaviorType": "Solid",
+									"parameters": {
+										"state": "disabled"
+									}
+								}
+							],
+							"sid": 362155827192068
 						}
 					],
-					"actions": [
-						{
-							"id": "scroll-to-position",
-							"objectClass": "System",
-							"sid": 142593969924413,
-							"parameters": {
-								"x": "Jugadore.X",
-								"y": "Jugadore.Y"
-							}
-						},
-						{
-							"id": "set-enabled",
-							"objectClass": "Jugadore",
-							"sid": 943175495971405,
-							"behaviorType": "8Direction",
-							"parameters": {
-								"state": "disabled"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 997002796684738,
-							"parameters": {
-								"seconds": "1.0",
-								"use-timescale": true
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 885078639853196,
-							"parameters": {
-								"variable": "fase_juego",
-								"value": "2"
-							}
-						}
-					],
-					"sid": 293691534643652
+					"sid": 117447144965392
 				},
 				{
 					"eventType": "block",
@@ -2167,7 +2410,7 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 292976475277672,
+							"sid": 679682994009866,
 							"parameters": {
 								"variable": "fase_juego",
 								"comparison": 0,
@@ -2177,28 +2420,225 @@
 					],
 					"actions": [
 						{
-							"id": "scroll-to-position",
-							"objectClass": "System",
-							"sid": 995597587908681,
-							"parameters": {
-								"x": "Jugadore.X",
-								"y": "Jugadore.Y"
-							}
-						},
+							"type": "comment",
+							"text": "particulas arcoiris"
+						}
+					],
+					"sid": 836212246632640,
+					"children": [
 						{
-							"id": "set-enabled",
-							"objectClass": "Jugadore",
-							"sid": 125045862651562,
-							"behaviorType": "8Direction",
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 212481863920885,
+									"parameters": {
+										"interval-seconds": "0.01"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-parameter",
+									"objectClass": "sp_particula",
+									"sid": 203201942781773,
+									"parameters": {
+										"effect": "\"AdjustHSL\"",
+										"parameter-index": "0",
+										"value": "huearcoiris"
+									}
+								}
+							],
+							"sid": 921352881523869,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 873395097878743,
+											"parameters": {
+												"variable": "huearcoiris",
+												"comparison": 5,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 160873011220957,
+											"parameters": {
+												"variable": "huearcoiris",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 307437488290529
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 234987929303525,
+											"parameters": {
+												"variable": "huearcoiris",
+												"comparison": 5,
+												"value": "100"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 123330346151423,
+											"parameters": {
+												"variable": "huearcoiris",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 567345628649697
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 816994591692754,
 							"parameters": {
-								"state": "enabled"
+								"variable": "fase_juego",
+								"comparison": 0,
+								"value": "2"
 							}
 						}
 					],
-					"sid": 770644336136513
+					"actions": [],
+					"sid": 757910501451943,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 266253939197078,
+									"parameters": {
+										"key": 32
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Jugadore",
+									"sid": 458278711130381,
+									"parameters": {
+										"object": "o_armario3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-enabled",
+									"objectClass": "o_armario3",
+									"sid": 805896161286977,
+									"behaviorType": "Rotate",
+									"parameters": {
+										"state": "enabled"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_armario3",
+									"sid": 610428595013182,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"enabled": true
+									}
+								},
+								{
+									"id": "move-to-position",
+									"objectClass": "o_armario3",
+									"sid": 102137516776949,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"x": "-500",
+										"y": "random(0, LayoutHeight)",
+										"mode": "direct"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 131144751467790,
+									"parameters": {
+										"object-to-create": "p_rage",
+										"layer": "4",
+										"x": "o_armario3.BBoxMidX",
+										"y": "o_armario3.BBoxMidY",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 726612471994830
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 145545525757118,
+							"parameters": {
+								"variable": "fase_juego",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 102536073088073
 				}
 			],
 			"sid": 758795650613997
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 322194853657531,
+					"parameters": {
+						"key": 75
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 687218844234534,
+					"parameters": {
+						"variable": "t_reloj",
+						"value": "2"
+					}
+				}
+			],
+			"sid": 726833249103810
 		}
 	],
 	"sid": 324755378402390

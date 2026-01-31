@@ -10,6 +10,16 @@
 			"behaviorId": "solid",
 			"name": "Solid",
 			"sid": 145499233020603
+		},
+		{
+			"behaviorId": "Rotate",
+			"name": "Rotate",
+			"sid": 918212011922906
+		},
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 624221866989527
 		}
 	],
 	"effectTypes": [],

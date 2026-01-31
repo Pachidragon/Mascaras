@@ -247,6 +247,25 @@
 								"use-instance-tags": false,
 								"tags": ""
 							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
 						}
 					},
 					"instanceFolderItem": {
@@ -291,6 +310,25 @@
 								"enabled": true,
 								"use-instance-tags": false,
 								"tags": ""
+							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
 							}
 						}
 					},
@@ -337,6 +375,25 @@
 								"use-instance-tags": false,
 								"tags": ""
 							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
 						}
 					},
 					"instanceFolderItem": {
@@ -381,6 +438,25 @@
 								"enabled": true,
 								"use-instance-tags": false,
 								"tags": ""
+							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
 							}
 						}
 					},
@@ -427,6 +503,25 @@
 								"use-instance-tags": false,
 								"tags": ""
 							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
 						}
 					},
 					"instanceFolderItem": {
@@ -471,6 +566,25 @@
 								"enabled": true,
 								"use-instance-tags": true,
 								"tags": ""
+							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
 							}
 						}
 					},
@@ -517,6 +631,25 @@
 								"use-instance-tags": true,
 								"tags": ""
 							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
 						}
 					},
 					"instanceFolderItem": {
@@ -561,6 +694,25 @@
 								"enabled": true,
 								"use-instance-tags": false,
 								"tags": ""
+							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
 							}
 						}
 					},
@@ -607,6 +759,25 @@
 								"use-instance-tags": false,
 								"tags": ""
 							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
 						}
 					},
 					"instanceFolderItem": {
@@ -651,6 +822,25 @@
 								"enabled": true,
 								"use-instance-tags": false,
 								"tags": ""
+							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
 							}
 						}
 					},
@@ -697,6 +887,25 @@
 								"use-instance-tags": false,
 								"tags": ""
 							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
 						}
 					},
 					"instanceFolderItem": {
@@ -741,6 +950,25 @@
 								"enabled": true,
 								"use-instance-tags": false,
 								"tags": ""
+							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
 							}
 						}
 					},
@@ -787,6 +1015,25 @@
 								"use-instance-tags": false,
 								"tags": ""
 							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
 						}
 					},
 					"instanceFolderItem": {
@@ -831,6 +1078,25 @@
 								"enabled": true,
 								"use-instance-tags": true,
 								"tags": ""
+							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
 							}
 						}
 					},
@@ -877,6 +1143,25 @@
 								"use-instance-tags": true,
 								"tags": ""
 							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
 						}
 					},
 					"instanceFolderItem": {
@@ -921,6 +1206,25 @@
 								"enabled": true,
 								"use-instance-tags": false,
 								"tags": ""
+							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
 							}
 						}
 					},
@@ -967,6 +1271,25 @@
 								"use-instance-tags": true,
 								"tags": ""
 							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
 						}
 					},
 					"instanceFolderItem": {
@@ -1011,6 +1334,25 @@
 								"enabled": true,
 								"use-instance-tags": false,
 								"tags": ""
+							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
 							}
 						}
 					},
@@ -1057,6 +1399,25 @@
 								"use-instance-tags": false,
 								"tags": ""
 							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
 						}
 					},
 					"instanceFolderItem": {
@@ -1101,6 +1462,25 @@
 								"enabled": true,
 								"use-instance-tags": false,
 								"tags": ""
+							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
 							}
 						}
 					},
@@ -1147,6 +1527,25 @@
 								"use-instance-tags": false,
 								"tags": ""
 							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
 						}
 					},
 					"instanceFolderItem": {
@@ -1191,6 +1590,25 @@
 								"enabled": true,
 								"use-instance-tags": false,
 								"tags": ""
+							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
 							}
 						}
 					},
@@ -1237,6 +1655,25 @@
 								"use-instance-tags": false,
 								"tags": ""
 							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
 						}
 					},
 					"instanceFolderItem": {
@@ -1281,6 +1718,25 @@
 								"enabled": true,
 								"use-instance-tags": false,
 								"tags": ""
+							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
 							}
 						}
 					},
@@ -1327,6 +1783,25 @@
 								"use-instance-tags": false,
 								"tags": ""
 							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
 						}
 					},
 					"instanceFolderItem": {
@@ -1371,6 +1846,25 @@
 								"enabled": true,
 								"use-instance-tags": false,
 								"tags": ""
+							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
 							}
 						}
 					},
@@ -1417,6 +1911,25 @@
 								"use-instance-tags": false,
 								"tags": ""
 							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
 						}
 					},
 					"instanceFolderItem": {
@@ -1461,6 +1974,25 @@
 								"enabled": true,
 								"use-instance-tags": false,
 								"tags": ""
+							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
 							}
 						}
 					},
@@ -1507,6 +2039,25 @@
 								"use-instance-tags": false,
 								"tags": ""
 							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
 						}
 					},
 					"instanceFolderItem": {
@@ -1551,6 +2102,25 @@
 								"enabled": true,
 								"use-instance-tags": false,
 								"tags": ""
+							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
 							}
 						}
 					},
@@ -1597,6 +2167,25 @@
 								"use-instance-tags": false,
 								"tags": ""
 							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
 						}
 					},
 					"instanceFolderItem": {
@@ -1641,6 +2230,25 @@
 								"enabled": true,
 								"use-instance-tags": false,
 								"tags": ""
+							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
 							}
 						}
 					},
@@ -1687,6 +2295,25 @@
 								"use-instance-tags": false,
 								"tags": ""
 							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
 						}
 					},
 					"instanceFolderItem": {
@@ -1731,6 +2358,25 @@
 								"enabled": true,
 								"use-instance-tags": false,
 								"tags": ""
+							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
 							}
 						}
 					},
@@ -1777,6 +2423,25 @@
 								"use-instance-tags": false,
 								"tags": ""
 							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
 						}
 					},
 					"instanceFolderItem": {
@@ -1821,6 +2486,25 @@
 								"enabled": true,
 								"use-instance-tags": false,
 								"tags": ""
+							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 360,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 600,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
 							}
 						}
 					},
@@ -2322,6 +3006,107 @@
 						"height": 73.23755788113817,
 						"originX": 0.4421965317919075,
 						"originY": 0.5512820512820513,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "sp_particula",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 83,
+					"sid": 364855948252638,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"AdjustHSL": {
+							"isEnabled": true,
+							"parameters": {
+								"hue": 0,
+								"saturation": 1,
+								"luminosity": 1
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 364855948252638,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": -806,
+						"y": -902,
+						"width": 108.39806661131195,
+						"height": 109.94661042004498,
+						"originX": 0.5928571428571429,
+						"originY": 0.704225352112676,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "p_rage",
+					"properties": {
+						"rate": 360,
+						"spray-cone": 360,
+						"type": "one-shot",
+						"object": 113660060855283,
+						"initially-visible": true,
+						"live-preview": false,
+						"speed": 200,
+						"size": 10,
+						"opacity": 100,
+						"grow-rate": 0,
+						"x-randomiser": 0,
+						"y-randomiser": 0,
+						"initial-speed-randomiser": 100,
+						"size-randomiser": 20,
+						"grow-rate-randomiser": 0,
+						"acceleration": 0,
+						"gravity": 0,
+						"angle-randomiser": 0,
+						"life-speed-randomiser": 800,
+						"opacity-randomiser": 0,
+						"destroy-mode": "fade-to-invisible",
+						"timeout": 2
+					},
+					"uid": 85,
+					"sid": 636147339775242,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 636147339775242,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": -1024,
+						"y": -927,
+						"width": 100,
+						"height": 100,
+						"originX": 0,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -2877,8 +3662,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1399,
-						"y": -325,
+						"x": -652,
+						"y": -922,
 						"width": 100,
 						"height": 100,
 						"originX": 0,

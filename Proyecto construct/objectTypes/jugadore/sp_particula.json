@@ -1,56 +1,37 @@
 {
-	"name": "o_escritorio1",
+	"name": "sp_particula",
 	"plugin-id": "Sprite",
-	"sid": 474415668680336,
+	"sid": 113660060855283,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [
+	"behaviorTypes": [],
+	"effectTypes": [
 		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 405684161215017
+			"effectId": "hsladjust",
+			"name": "AdjustHSL"
 		}
 	],
-	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 453,
-						"height": 218,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 140,
+						"height": 142,
+						"originX": 0.5928571428571429,
+						"originY": 0.704225352112676,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9568938,
-						"collisionPoly": {
-							"points": [
-								0,
-								0,
-								1,
-								1,
-								1,
-								1,
-								1,
-								1,
-								0,
-								1,
-								0,
-								1,
-								0,
-								1
-							]
-						},
+						"imageSpriteId": 408522,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 236634028844570,
+				"sid": 564066966894044,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

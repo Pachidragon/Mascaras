@@ -177,17 +177,14 @@
 						"items": [
 							"o_fotocopiadora",
 							"o_estanteria",
-							"o_escritorio1",
 							"o_armario",
 							"o_armario2",
 							"o_aguadisp",
-							"o_escritorio2",
 							"o_maceta",
 							"o_maceta2",
 							"o_fotocopiadora2",
 							"o_armario3",
 							"o_escritoriov",
-							"o_cubo",
 							"o_cubolargo",
 							"o_aguadisp2",
 							"o_escritorio3",
@@ -238,7 +235,9 @@
 			},
 			{
 				"items": [
-					"Jugadore"
+					"Jugadore",
+					"sp_particula",
+					"p_rage"
 				],
 				"subfolders": [],
 				"name": "jugadore"
