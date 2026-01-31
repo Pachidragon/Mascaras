@@ -3137,9 +3137,9 @@
 								{
 									"id": "is-overlapping-another-object",
 									"objectClass": "Jugadore",
-									"sid": 501928257874643,
+									"sid": 533412213563254,
 									"parameters": {
-										"object": "o_armario3"
+										"object": "o_aguadisp"
 									}
 								}
 							],
@@ -3198,9 +3198,569 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 915444684434513
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "o_aguadisp",
+					"sid": 288239545446829,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"enabled": false
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "o_aguadisp",
+					"sid": 567723816295331,
+					"behaviorType": "Rotate",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "o_aguadisp",
+					"sid": 782179542998429,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 127785866819163
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 390344221817609
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "o_aguadisp2",
+					"sid": 580623038811595,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"enabled": false
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "o_aguadisp2",
+					"sid": 204768905092090,
+					"behaviorType": "Rotate",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "o_aguadisp2",
+					"sid": 981430568996771,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 740492371177827
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 291628777341819
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "o_armario",
+					"sid": 806012707233925,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"enabled": false
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "o_armario",
+					"sid": 570924264708991,
+					"behaviorType": "Rotate",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "o_armario",
+					"sid": 612153805395657,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 261580140830418
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 547524766309972
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "o_armario2",
+					"sid": 303938425403643,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"enabled": false
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "o_armario2",
+					"sid": 587032269888763,
+					"behaviorType": "Rotate",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "o_armario2",
+					"sid": 785578699293026,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 968803335310989
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 615705789278693
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "o_armario3",
+					"sid": 739451228328944,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"enabled": false
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "o_armario3",
+					"sid": 514428210157779,
+					"behaviorType": "Rotate",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "o_armario3",
+					"sid": 447438975453897,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 514473945541158
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 820588822448727
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "o_cubo2",
+					"sid": 741211399591890,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"enabled": false
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "o_cubo2",
+					"sid": 337216906845210,
+					"behaviorType": "Rotate",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "o_cubo2",
+					"sid": 142462309959135,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 349745756887204
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 678354264407626
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "o_cubolargo",
+					"sid": 719817110807379,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"enabled": false
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "o_cubolargo",
+					"sid": 379481761850212,
+					"behaviorType": "Rotate",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "o_cubolargo",
+					"sid": 931438390939335,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 656604368395803
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 107868433060328
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "o_escritorio3",
+					"sid": 842697232024361,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"enabled": false
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "o_escritorio3",
+					"sid": 156867359668577,
+					"behaviorType": "Rotate",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "o_escritorio3",
+					"sid": 784385600275908,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 415223724085488
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 830312757701105
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "o_escritoriov",
+					"sid": 231236440293567,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"enabled": false
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "o_escritoriov",
+					"sid": 530693512344890,
+					"behaviorType": "Rotate",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "o_escritoriov",
+					"sid": 725045689046955,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 367864713637823
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 657474938227309
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "o_estanteria",
+					"sid": 827439921230536,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"enabled": false
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "o_estanteria",
+					"sid": 137237292188858,
+					"behaviorType": "Rotate",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "o_estanteria",
+					"sid": 194278592797856,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 162204459073485
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 974132931913757
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "o_fotocopiadora",
+					"sid": 267431562882228,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"enabled": false
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "o_fotocopiadora",
+					"sid": 392451616926926,
+					"behaviorType": "Rotate",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "o_fotocopiadora",
+					"sid": 391634245560340,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 563941258904978
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 466896775002619
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "o_fotocopiadora2",
+					"sid": 488695922639898,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"enabled": false
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "o_fotocopiadora2",
+					"sid": 399045777368668,
+					"behaviorType": "Rotate",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "o_fotocopiadora2",
+					"sid": 218859001753306,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 509718835000679
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 479073333742651
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "o_maceta",
+					"sid": 940329777567904,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"enabled": false
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "o_maceta",
+					"sid": 242686515084295,
+					"behaviorType": "Rotate",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "o_maceta",
+					"sid": 418580318279798,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 408122151245911
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 350757218756540
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "o_maceta2",
+					"sid": 634570632448773,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"enabled": false
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "o_maceta2",
+					"sid": 509389026416948,
+					"behaviorType": "Rotate",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "o_maceta2",
+					"sid": 396266739641044,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 507847722611774
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-key-pressed",
 					"objectClass": "Keyboard",
-					"sid": 322194853657531,
+					"sid": 313455815464683,
 					"parameters": {
 						"key": 75
 					}
@@ -3210,14 +3770,14 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 687218844234534,
+					"sid": 132375127754426,
 					"parameters": {
 						"variable": "t_reloj",
 						"value": "2"
 					}
 				}
 			],
-			"sid": 726833249103810
+			"sid": 670473954844559
 		}
 	],
 	"sid": 324755378402390
