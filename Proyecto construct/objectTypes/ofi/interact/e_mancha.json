@@ -4,8 +4,22 @@
 	"sid": 568657012490632,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
-	"behaviorTypes": [],
+	"instanceVariables": [
+		{
+			"name": "mancha",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 429061387968290
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 962081522845716
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [

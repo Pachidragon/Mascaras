@@ -106,6 +106,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "bound",
 			"name": "Bound to layout",
 			"author": "Scirra",
@@ -229,9 +236,9 @@
 			},
 			{
 				"items": [
-					"ofi",
-					"pasillo",
-					"banio",
+					"z_ofi",
+					"z_pasillo",
+					"z_banio",
 					"pared"
 				],
 				"subfolders": [],

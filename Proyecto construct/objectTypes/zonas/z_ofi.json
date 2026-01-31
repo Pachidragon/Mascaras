@@ -1,7 +1,7 @@
 {
-	"name": "banio",
+	"name": "z_ofi",
 	"plugin-id": "Sprite",
-	"sid": 845155125562424,
+	"sid": 333614400367885,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7778164,
+						"imageSpriteId": 5028633,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 567001762919443,
+				"sid": 803678186815595,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

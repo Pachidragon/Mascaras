@@ -23,7 +23,7 @@
 		},
 		{
 			"eventType": "comment",
-			"text": "0= normi, 1=rage"
+			"text": "0= normi, 1= animacion, 1=rage"
 		},
 		{
 			"eventType": "variable",
@@ -39,7 +39,7 @@
 			"eventType": "variable",
 			"name": "v_ansiedad",
 			"type": "number",
-			"initialValue": "50",
+			"initialValue": "5",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -54,6 +54,40 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 873498319791241
+		},
+		{
+			"eventType": "comment",
+			"text": "manchas"
+		},
+		{
+			"eventType": "variable",
+			"name": "mancha_x",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 307616592418342
+		},
+		{
+			"eventType": "variable",
+			"name": "mancha_y",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 595088893744376
+		},
+		{
+			"eventType": "variable",
+			"name": "mancha_spot",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 869262664790465
 		}
 	],
 	"sid": 627737672315670

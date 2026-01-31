@@ -2,115 +2,718 @@
 	"name": "oficina",
 	"events": [
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "camara",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "compare-instance-variable",
-					"objectClass": "P_1",
-					"sid": 115060009465542,
-					"parameters": {
-						"instance-variable": "camino",
-						"comparison": 0,
-						"value": "0"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "find-path",
-					"objectClass": "P_1",
-					"sid": 245523583030491,
-					"behaviorType": "Pathfinding",
-					"parameters": {
-						"x": "500",
-						"y": "500"
-					}
-				}
-			],
-			"sid": 509269120798841,
-			"disabled": true
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-path-found",
-					"objectClass": "P_1",
-					"sid": 143677935773687,
-					"behaviorType": "Pathfinding"
-				}
-			],
-			"actions": [
-				{
-					"id": "move-along-path",
-					"objectClass": "P_1",
-					"sid": 632502964997655,
-					"behaviorType": "Pathfinding"
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 793329140873157
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 330642001115431,
+							"parameters": {
+								"variable": "fase_juego",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 912885989253601
 				},
 				{
-					"id": "set-instvar-value",
-					"objectClass": "P_1",
-					"sid": 699400593425124,
-					"parameters": {
-						"instance-variable": "camino",
-						"value": "1"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 571081808246466,
+							"parameters": {
+								"variable": "fase_juego",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "scroll-to-position",
+							"objectClass": "System",
+							"sid": 226495803637127,
+							"parameters": {
+								"x": "Jugadore.X",
+								"y": "Jugadore.Y"
+							}
+						}
+					],
+					"sid": 894034994927122
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 114830167654122,
+							"parameters": {
+								"variable": "fase_juego",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "scroll-to-position",
+							"objectClass": "System",
+							"sid": 456624650431197,
+							"parameters": {
+								"x": "Jugadore.X",
+								"y": "Jugadore.Y"
+							}
+						}
+					],
+					"sid": 287789420709662
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 134770116611706,
+							"parameters": {
+								"variable": "fase_juego",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "scroll-to-position",
+							"objectClass": "System",
+							"sid": 131674942525128,
+							"parameters": {
+								"x": "Jugadore.X",
+								"y": "Jugadore.Y"
+							}
+						}
+					],
+					"sid": 308613079822321
 				}
 			],
-			"sid": 279350876303256,
-			"disabled": true
+			"sid": 588675078900572
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "mecanica zonas",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 680330821053995,
-					"parameters": {
-						"variable": "fase_juego",
-						"comparison": 0,
-						"value": "0"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 808106003129711,
+							"parameters": {
+								"interval-seconds": "0.1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 397147611975131,
+							"parameters": {
+								"variable": "v_paciencia",
+								"value": "v_ansiedad"
+							}
+						}
+					],
+					"sid": 281560586063884
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Jugadore",
+							"sid": 731712509117441,
+							"parameters": {
+								"object": "z_ofi"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 508481893225096,
+							"parameters": {
+								"variable": "v_ansiedad",
+								"value": "5"
+							}
+						}
+					],
+					"sid": 913302475209361
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Jugadore",
+							"sid": 148787435662881,
+							"parameters": {
+								"object": "z_banio"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 347534506307203,
+							"parameters": {
+								"variable": "v_ansiedad",
+								"value": "-5"
+							}
+						}
+					],
+					"sid": 197206328058044
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Jugadore",
+							"sid": 845062422822269,
+							"parameters": {
+								"object": "z_pasillo"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 547619210749158,
+							"parameters": {
+								"variable": "v_ansiedad",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 769242107038448
 				}
 			],
-			"actions": [
-				{
-					"id": "scroll-to-position",
-					"objectClass": "System",
-					"sid": 122853633832118,
-					"parameters": {
-						"x": "Jugadore.X",
-						"y": "Jugadore.Y"
-					}
-				}
-			],
-			"sid": 517360224610697
+			"sid": 973640652180768
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "mecanica manchas",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "every-x-seconds",
-					"objectClass": "System",
-					"sid": 934042252784694,
-					"parameters": {
-						"interval-seconds": "0.5"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 621511360270516,
+							"parameters": {
+								"variable": "fase_juego",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "scroll-to-position",
+							"objectClass": "System",
+							"sid": 160375862238710,
+							"parameters": {
+								"x": "Jugadore.X",
+								"y": "Jugadore.Y"
+							}
+						}
+					],
+					"sid": 349343749681735,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 987582533003751,
+									"parameters": {
+										"interval-seconds": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 978327633321503,
+									"parameters": {
+										"variable": "mancha_spot",
+										"value": "floor(random(1,7))"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 498958671114564,
+									"parameters": {
+										"object-to-create": "e_mancha",
+										"layer": "2",
+										"x": "mancha_x",
+										"y": "mancha_y",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 942292583874639,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-created",
+											"objectClass": "e_mancha",
+											"sid": 999398192506192
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "e_mancha",
+											"sid": 105237470589487,
+											"parameters": {
+												"instance-variable": "mancha",
+												"value": "floor(random(1,3))"
+											}
+										}
+									],
+									"sid": 541982119136288,
+									"disabled": true
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 463522909480777,
+									"parameters": {
+										"key": 32
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Jugadore",
+									"sid": 680170188799952,
+									"parameters": {
+										"object": "e_mancha"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-one-property",
+									"objectClass": "e_mancha",
+									"sid": 869524170465804,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetHeight",
+										"end-value": "0",
+										"time": "1",
+										"ease": "default",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 309428404252790,
+									"parameters": {
+										"seconds": "1.0",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "e_mancha",
+									"sid": 550886208388953,
+									"parameters": {
+										"instance-variable": "mancha",
+										"value": "3"
+									}
+								}
+							],
+							"sid": 747699235951090
+						}
+					]
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "variables manchas",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 782465357915962,
+									"parameters": {
+										"variable": "mancha_spot",
+										"comparison": 0,
+										"value": "6"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 560253150191908,
+									"parameters": {
+										"variable": "mancha_x",
+										"value": "585"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 192473997685877,
+									"parameters": {
+										"variable": "mancha_y",
+										"value": "696"
+									}
+								}
+							],
+							"sid": 622329347145284
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 541416092150733,
+									"parameters": {
+										"variable": "mancha_spot",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 874065608771891,
+									"parameters": {
+										"variable": "mancha_x",
+										"value": "1575"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 976491264099656,
+									"parameters": {
+										"variable": "mancha_y",
+										"value": "752"
+									}
+								}
+							],
+							"sid": 290263148554235
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 739738257812975,
+									"parameters": {
+										"variable": "mancha_spot",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 986586201287338,
+									"parameters": {
+										"variable": "mancha_x",
+										"value": "1803"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 777623681581423,
+									"parameters": {
+										"variable": "mancha_y",
+										"value": "1378"
+									}
+								}
+							],
+							"sid": 696025589308585
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 652448430818051,
+									"parameters": {
+										"variable": "mancha_spot",
+										"comparison": 0,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 244253432550994,
+									"parameters": {
+										"variable": "mancha_x",
+										"value": "544"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 412756157192590,
+									"parameters": {
+										"variable": "mancha_y",
+										"value": "1649"
+									}
+								}
+							],
+							"sid": 658570419334965
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 904093153967820,
+									"parameters": {
+										"variable": "mancha_spot",
+										"comparison": 0,
+										"value": "4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 525390513656617,
+									"parameters": {
+										"variable": "mancha_x",
+										"value": "2303"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 840560653031287,
+									"parameters": {
+										"variable": "mancha_y",
+										"value": "114"
+									}
+								}
+							],
+							"sid": 104037307018117
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 189704318040479,
+									"parameters": {
+										"variable": "mancha_spot",
+										"comparison": 0,
+										"value": "5"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 500643011993766,
+									"parameters": {
+										"variable": "mancha_x",
+										"value": "2243"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 209059585660450,
+									"parameters": {
+										"variable": "mancha_y",
+										"value": "937"
+									}
+								}
+							],
+							"sid": 161695982008690
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "e_mancha",
+									"sid": 969156500678259,
+									"parameters": {
+										"instance-variable": "mancha",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "e_mancha",
+									"sid": 353043680771513,
+									"parameters": {
+										"animation": "\"Animation 1\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 528246823654523
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "e_mancha",
+									"sid": 727565073049700,
+									"parameters": {
+										"instance-variable": "mancha",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "e_mancha",
+									"sid": 347752681548552,
+									"parameters": {
+										"animation": "\"Animation 2\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 771179783058174
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "e_mancha",
+									"sid": 521261695660051,
+									"parameters": {
+										"instance-variable": "mancha",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "e_mancha",
+									"sid": 713978519820125,
+									"parameters": {
+										"animation": "\"Animation 3\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 418002101066904
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "e_mancha",
+									"sid": 107724536485630,
+									"parameters": {
+										"instance-variable": "mancha",
+										"comparison": 0,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "e_mancha",
+									"sid": 304180653829504
+								}
+							],
+							"sid": 635983556072286
+						}
+					],
+					"sid": 148171306678220
 				}
 			],
-			"actions": [
-				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 559488493622047,
-					"parameters": {
-						"variable": "v_paciencia",
-						"value": "v_ansiedad"
-					}
-				}
-			],
-			"sid": 691283306986553
+			"sid": 494479610785606
 		},
 		{
 			"eventType": "group",
@@ -154,6 +757,106 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 564783712291083
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "b_delante",
+							"sid": 860872381772715,
+							"parameters": {
+								"animation": "\"Animation 1\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-spraying",
+							"objectClass": "P_barravida",
+							"sid": 321361206669219,
+							"parameters": {
+								"state": "not-spraying"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "b_rotaizq",
+							"sid": 501343055209061,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "b_rotader",
+							"sid": 299819878571496,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "b_rotaizq",
+							"sid": 579477643799215,
+							"behaviorType": "Rotate",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "b_rotaizq",
+							"sid": 866589442441289,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "b_rotader",
+							"sid": 786323679172678,
+							"behaviorType": "Rotate",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "b_rotader",
+							"sid": 321116736338700,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "b_rotaizq",
+							"sid": 981969057856864,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"enabled": false
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "b_rotader",
+							"sid": 547346068254234,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"enabled": false
+							}
+						}
+					],
+					"sid": 506384549551524
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
 							"sid": 752711542434206,
@@ -164,95 +867,7 @@
 							}
 						}
 					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "b_delante",
-							"sid": 460073669249077,
-							"parameters": {
-								"animation": "\"Animation 1\"",
-								"from": "beginning"
-							}
-						},
-						{
-							"id": "set-spraying",
-							"objectClass": "P_barravida",
-							"sid": 430296777301513,
-							"parameters": {
-								"state": "not-spraying"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "b_rotaizq",
-							"sid": 828088503414510,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "b_rotader",
-							"sid": 992137463116722,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-enabled",
-							"objectClass": "b_rotaizq",
-							"sid": 997109986198881,
-							"behaviorType": "Rotate",
-							"parameters": {
-								"state": "disabled"
-							}
-						},
-						{
-							"id": "set-active",
-							"objectClass": "b_rotaizq",
-							"sid": 428012333406234,
-							"behaviorType": "Sine",
-							"parameters": {
-								"state": "inactive"
-							}
-						},
-						{
-							"id": "set-enabled",
-							"objectClass": "b_rotader",
-							"sid": 895169124200501,
-							"behaviorType": "Rotate",
-							"parameters": {
-								"state": "disabled"
-							}
-						},
-						{
-							"id": "set-active",
-							"objectClass": "b_rotader",
-							"sid": 531795805464947,
-							"behaviorType": "Sine",
-							"parameters": {
-								"state": "inactive"
-							}
-						},
-						{
-							"id": "set-enabled",
-							"objectClass": "b_rotaizq",
-							"sid": 689718775462516,
-							"behaviorType": "MoveTo",
-							"parameters": {
-								"enabled": false
-							}
-						},
-						{
-							"id": "set-enabled",
-							"objectClass": "b_rotader",
-							"sid": 670032928275214,
-							"behaviorType": "MoveTo",
-							"parameters": {
-								"enabled": false
-							}
-						}
-					],
+					"actions": [],
 					"sid": 195334308349290
 				},
 				{
@@ -839,6 +1454,106 @@
 				}
 			],
 			"sid": 186029145508208
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "fase 2 - furia",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 574683108528289,
+							"parameters": {
+								"variable": "fase_juego",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "scroll-to-position",
+							"objectClass": "System",
+							"sid": 142593969924413,
+							"parameters": {
+								"x": "Jugadore.X",
+								"y": "Jugadore.Y"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Jugadore",
+							"sid": 943175495971405,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 997002796684738,
+							"parameters": {
+								"seconds": "1.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 885078639853196,
+							"parameters": {
+								"variable": "fase_juego",
+								"value": "2"
+							}
+						}
+					],
+					"sid": 293691534643652
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 292976475277672,
+							"parameters": {
+								"variable": "fase_juego",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "scroll-to-position",
+							"objectClass": "System",
+							"sid": 995597587908681,
+							"parameters": {
+								"x": "Jugadore.X",
+								"y": "Jugadore.Y"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Jugadore",
+							"sid": 125045862651562,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"state": "enabled"
+							}
+						}
+					],
+					"sid": 770644336136513
+				}
+			],
+			"sid": 758795650613997
 		}
 	],
 	"sid": 324755378402390
