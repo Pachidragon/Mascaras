@@ -168,18 +168,73 @@
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 281560586063884,
+					"children": [
 						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 397147611975131,
-							"parameters": {
-								"variable": "v_paciencia",
-								"value": "v_ansiedad"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 336128917240865,
+									"parameters": {
+										"variable": "v_paciencia",
+										"comparison": 3,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 282994273763785,
+									"parameters": {
+										"variable": "v_paciencia",
+										"value": "0"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 250813282427085,
+									"parameters": {
+										"variable": "v_paciencia",
+										"value": "v_ansiedad"
+									}
+								}
+							],
+							"sid": 719905562308243
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 709040817529115,
+									"parameters": {
+										"variable": "v_paciencia",
+										"comparison": 4,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 855670099076250,
+									"parameters": {
+										"variable": "v_paciencia",
+										"value": "v_ansiedad"
+									}
+								}
+							],
+							"sid": 670224303229996
 						}
-					],
-					"sid": 281560586063884
+					]
 				},
 				{
 					"eventType": "block",
@@ -197,39 +252,23 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 508481893225096,
+							"sid": 641466268352336,
 							"parameters": {
 								"variable": "v_ansiedad",
-								"value": "5"
+								"value": "3"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 502480459461029,
+							"parameters": {
+								"variable": "tiempoEnElBanio",
+								"value": "0"
 							}
 						}
 					],
 					"sid": 913302475209361
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "Jugadore",
-							"sid": 148787435662881,
-							"parameters": {
-								"object": "z_banio"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 347534506307203,
-							"parameters": {
-								"variable": "v_ansiedad",
-								"value": "-5"
-							}
-						}
-					],
-					"sid": 197206328058044
 				},
 				{
 					"eventType": "block",
@@ -254,7 +293,259 @@
 							}
 						}
 					],
-					"sid": 769242107038448
+					"sid": 769242107038448,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 941933443161642,
+									"parameters": {
+										"variable": "tiempoEnElBanio",
+										"comparison": 2,
+										"value": "7"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 828166876727617,
+									"parameters": {
+										"variable": "v_ansiedad",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 254380843774876
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 706437560387843,
+									"parameters": {
+										"variable": "tiempoEnElBanio",
+										"comparison": 4,
+										"value": "7"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 662059875935574,
+									"parameters": {
+										"variable": "tiempoEnElBanio",
+										"comparison": 2,
+										"value": "13"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 244451351251395,
+									"parameters": {
+										"variable": "v_ansiedad",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 966274167840459
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 644265238837779,
+									"parameters": {
+										"variable": "tiempoEnElBanio",
+										"comparison": 4,
+										"value": "10"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 213002269723890,
+									"parameters": {
+										"variable": "v_ansiedad",
+										"value": "3"
+									}
+								}
+							],
+							"sid": 635420191498654
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Jugadore",
+							"sid": 659169680599509,
+							"parameters": {
+								"object": "z_banio"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 717371882948971,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 760278870285746,
+									"parameters": {
+										"variable": "tiempoEnElBanio",
+										"comparison": 2,
+										"value": "7"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 317982759939847,
+									"parameters": {
+										"variable": "v_ansiedad",
+										"value": "-6"
+									}
+								}
+							],
+							"sid": 912794587148020
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 537289798793474,
+									"parameters": {
+										"variable": "tiempoEnElBanio",
+										"comparison": 4,
+										"value": "7"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 795594221992284,
+									"parameters": {
+										"variable": "tiempoEnElBanio",
+										"comparison": 2,
+										"value": "13"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 586522025628819,
+									"parameters": {
+										"variable": "v_ansiedad",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 659679006839047
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 268866680221895,
+									"parameters": {
+										"variable": "tiempoEnElBanio",
+										"comparison": 4,
+										"value": "10"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 115302622531661,
+									"parameters": {
+										"variable": "v_ansiedad",
+										"value": "3"
+									}
+								}
+							],
+							"sid": 500815337149157
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Jugadore",
+							"sid": 407304848753823,
+							"parameters": {
+								"object": "z_pasillo"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Jugadore",
+							"sid": 563303431861483,
+							"parameters": {
+								"object": "z_banio"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 265731239798442,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 996327223996092,
+									"parameters": {
+										"interval-seconds": "1.0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 279376985340024,
+									"parameters": {
+										"variable": "tiempoEnElBanio",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 750600548137375
+						}
+					],
+					"isOrBlock": true
 				}
 			],
 			"sid": 973640652180768
@@ -299,7 +590,7 @@
 								{
 									"id": "every-x-seconds",
 									"objectClass": "System",
-									"sid": 987582533003751,
+									"sid": 818200783682232,
 									"parameters": {
 										"interval-seconds": "3"
 									}
@@ -326,6 +617,49 @@
 										"y": "mancha_y",
 										"create-hierarchy": false,
 										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 794825440765793,
+									"parameters": {
+										"variable": "v_paciencia",
+										"value": "20"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "p_barra_mancha",
+									"sid": 612028105967962,
+									"parameters": {
+										"x": "b_delante.BBoxRight",
+										"y": "b_delante.BBoxMidY"
+									}
+								},
+								{
+									"id": "set-spraying",
+									"objectClass": "p_barra_mancha",
+									"sid": 640455749281479,
+									"parameters": {
+										"state": "spraying"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 630140246287735,
+									"parameters": {
+										"seconds": "0.4",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-spraying",
+									"objectClass": "p_barra_mancha",
+									"sid": 291345930375569,
+									"parameters": {
+										"state": "not-spraying"
 									}
 								}
 							],
@@ -377,6 +711,33 @@
 								}
 							],
 							"actions": [
+								{
+									"id": "subtract-from-eventvar",
+									"objectClass": "System",
+									"sid": 797529762663081,
+									"parameters": {
+										"variable": "v_paciencia",
+										"value": "50"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "b_delante",
+									"sid": 136647248697709,
+									"parameters": {
+										"x": "b_atras.X",
+										"y": "b_atras.Y"
+									}
+								},
+								{
+									"id": "set-size",
+									"objectClass": "b_delante",
+									"sid": 871694077149789,
+									"parameters": {
+										"width": "v_paciencia",
+										"height": "b_atras.Height-10"
+									}
+								},
 								{
 									"id": "tween-one-property",
 									"objectClass": "e_mancha",
@@ -786,7 +1147,63 @@
 							}
 						}
 					],
-					"sid": 569563261986490
+					"sid": 569563261986490,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 893011051182577,
+									"parameters": {
+										"variable": "v_paciencia",
+										"comparison": 3,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-size",
+									"objectClass": "b_delante",
+									"sid": 997769464795977,
+									"parameters": {
+										"width": "1",
+										"height": "b_atras.Height-10"
+									}
+								}
+							],
+							"sid": 570245160116669
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 796758333712380,
+									"parameters": {
+										"variable": "v_paciencia",
+										"comparison": 4,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-size",
+									"objectClass": "b_delante",
+									"sid": 958652467092512,
+									"parameters": {
+										"width": "v_paciencia",
+										"height": "b_atras.Height-10"
+									}
+								}
+							],
+							"sid": 484478619306335
+						}
+					]
 				},
 				{
 					"eventType": "block",

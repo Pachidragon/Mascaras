@@ -27,6 +27,16 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "tiempoEnElBanio",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 546892806883459
+		},
+		{
+			"eventType": "variable",
 			"name": "v_paciencia",
 			"type": "number",
 			"initialValue": "0",
@@ -83,7 +93,7 @@
 			"eventType": "variable",
 			"name": "mancha_spot",
 			"type": "number",
-			"initialValue": "0",
+			"initialValue": "6",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,

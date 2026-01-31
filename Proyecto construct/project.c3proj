@@ -207,7 +207,8 @@
 					{
 						"items": [
 							"e_mancha",
-							"UI_mascaras"
+							"UI_mascaras",
+							"p_barra_mancha"
 						],
 						"subfolders": [
 							{
