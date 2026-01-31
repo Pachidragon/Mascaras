@@ -1371,6 +1371,15 @@
 									}
 								},
 								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 458781424052659,
+									"parameters": {
+										"variable": "v_pj_estado",
+										"value": "1"
+									}
+								},
+								{
 									"id": "wait",
 									"objectClass": "System",
 									"sid": 309428404252790,
@@ -1380,21 +1389,21 @@
 									}
 								},
 								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 242420997998326,
+									"parameters": {
+										"variable": "v_pj_estado",
+										"value": "0"
+									}
+								},
+								{
 									"id": "set-instvar-value",
 									"objectClass": "e_mancha",
 									"sid": 550886208388953,
 									"parameters": {
 										"instance-variable": "mancha",
 										"value": "3"
-									}
-								},
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 160876016579523,
-									"parameters": {
-										"variable": "v_pj_estado",
-										"value": "1"
 									}
 								}
 							],
@@ -4144,7 +4153,528 @@
 			"title": "jugadore",
 			"description": "",
 			"isActiveOnStart": true,
-			"children": [],
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "caminata",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 777930083664591,
+									"parameters": {
+										"variable": "v_pj_estado",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 334524345729855,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 313288364946559,
+											"parameters": {
+												"variable": "v_pj_mirada",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Jugadore",
+											"sid": 766576333137337,
+											"parameters": {
+												"animation": "\"norm_cam_arriba\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 935945532135932
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 173112222944468,
+											"parameters": {
+												"variable": "v_pj_mirada",
+												"comparison": 0,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Jugadore",
+											"sid": 664166013424547,
+											"parameters": {
+												"animation": "\"norm_cam_der\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 418199797829763
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 561887164651051,
+											"parameters": {
+												"variable": "v_pj_mirada",
+												"comparison": 0,
+												"value": "3"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Jugadore",
+											"sid": 446931322520201,
+											"parameters": {
+												"animation": "\"norm_cam_abaj\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 185441594021464
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 578113290871946,
+											"parameters": {
+												"variable": "v_pj_mirada",
+												"comparison": 0,
+												"value": "4"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Jugadore",
+											"sid": 844725278592412,
+											"parameters": {
+												"animation": "\"norm_cam_izq\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 860102177695265
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 761612862500409,
+									"parameters": {
+										"variable": "v_pj_estado",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 221562269450698,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 803622339183274,
+											"parameters": {
+												"variable": "v_pj_mirada",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Jugadore",
+											"sid": 196856786767992,
+											"parameters": {
+												"animation": "\"norm_barre_arriba\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 994534571354210
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 318149740364776,
+											"parameters": {
+												"variable": "v_pj_mirada",
+												"comparison": 0,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Jugadore",
+											"sid": 522092325971176,
+											"parameters": {
+												"animation": "\"norm_barre_der\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 504608021098497
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 200069841548180,
+											"parameters": {
+												"variable": "v_pj_mirada",
+												"comparison": 0,
+												"value": "3"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Jugadore",
+											"sid": 102025418512872,
+											"parameters": {
+												"animation": "\"norm_barre_abajo\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 730199451283389
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 821762103235033,
+											"parameters": {
+												"variable": "v_pj_mirada",
+												"comparison": 0,
+												"value": "4"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Jugadore",
+											"sid": 380535849720061,
+											"parameters": {
+												"animation": "\"norm_barre_izq\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 313526886738793
+								}
+							]
+						}
+					],
+					"sid": 412352037778649
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "v_mirada",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 374055862910292,
+									"parameters": {
+										"key": 38
+									}
+								},
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 130948367393510,
+									"parameters": {
+										"key": 87
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 529970985462426,
+									"parameters": {
+										"variable": "v_pj_mirada",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 396845188940927,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 575634349590759,
+									"parameters": {
+										"key": 39
+									}
+								},
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 618751364145641,
+									"parameters": {
+										"key": 68
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 994084924655132,
+									"parameters": {
+										"variable": "v_pj_mirada",
+										"value": "2"
+									}
+								}
+							],
+							"sid": 815648870972074,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 608179195442996,
+									"parameters": {
+										"key": 40
+									}
+								},
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 321609890365856,
+									"parameters": {
+										"key": 83
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 169862182554204,
+									"parameters": {
+										"variable": "v_pj_mirada",
+										"value": "3"
+									}
+								}
+							],
+							"sid": 674852344683162,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 127775956225556,
+									"parameters": {
+										"key": 37
+									}
+								},
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 873576701812528,
+									"parameters": {
+										"key": 65
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 110271206567014,
+									"parameters": {
+										"variable": "v_pj_mirada",
+										"value": "4"
+									}
+								}
+							],
+							"sid": 585004566511538,
+							"isOrBlock": true
+						}
+					],
+					"sid": 382444219672247
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "wasd",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 538581501581901,
+									"parameters": {
+										"key": 87
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Jugadore",
+									"sid": 175648154794112,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "up"
+									}
+								}
+							],
+							"sid": 688997718258840
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 661755311956184,
+									"parameters": {
+										"key": 68
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Jugadore",
+									"sid": 999496970950294,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "right"
+									}
+								}
+							],
+							"sid": 910197156910312
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 761384414941435,
+									"parameters": {
+										"key": 83
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Jugadore",
+									"sid": 640794095232721,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "down"
+									}
+								}
+							],
+							"sid": 978656780244597
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 175556465142285,
+									"parameters": {
+										"key": 65
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Jugadore",
+									"sid": 264754994485143,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "left"
+									}
+								}
+							],
+							"sid": 766149756816806
+						}
+					],
+					"sid": 721457658976664
+				}
+			],
 			"sid": 167678604110729
 		}
 	],

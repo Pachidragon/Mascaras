@@ -3176,7 +3176,7 @@
 					"type": "Jugadore",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "idle",
+						"initial-animation": "norm_barre_der",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -3190,9 +3190,9 @@
 							"properties": {
 								"max-speed": 600,
 								"acceleration": 600,
-								"deceleration": 500,
-								"directions": "dir-8",
-								"set-angle": "smooth",
+								"deceleration": 600,
+								"directions": "dir-4",
+								"set-angle": "no",
 								"allow-sliding": false,
 								"default-controls": true,
 								"enabled": true
@@ -3200,7 +3200,7 @@
 						},
 						"BoundToLayout": {
 							"properties": {
-								"bound-by": "edge"
+								"bound-by": "origin"
 							}
 						}
 					},
@@ -3211,10 +3211,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 265,
-						"y": 343,
-						"width": 58.6750884007884,
-						"height": 72.96119688098035,
+						"x": 202,
+						"y": 334,
+						"width": 454.60689893515206,
+						"height": 454.60689893515206,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -3732,8 +3732,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1045,
-						"y": 86,
+						"x": 811,
+						"y": 77,
 						"width": 543.4303350902816,
 						"height": 223.43033509028155,
 						"originX": 0,
