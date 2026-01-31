@@ -1230,6 +1230,7 @@
 									"id": "add-to-eventvar",
 									"objectClass": "System",
 									"sid": 794825440765793,
+									"disabled": true,
 									"parameters": {
 										"variable": "v_paciencia",
 										"value": "20"
@@ -1239,6 +1240,7 @@
 									"id": "set-position",
 									"objectClass": "p_barra_mancha",
 									"sid": 612028105967962,
+									"disabled": true,
 									"parameters": {
 										"x": "b_delante.BBoxRight",
 										"y": "b_delante.BBoxMidY"
@@ -1248,6 +1250,7 @@
 									"id": "set-spraying",
 									"objectClass": "p_barra_mancha",
 									"sid": 640455749281479,
+									"disabled": true,
 									"parameters": {
 										"state": "spraying"
 									}
@@ -1256,6 +1259,7 @@
 									"id": "wait",
 									"objectClass": "System",
 									"sid": 630140246287735,
+									"disabled": true,
 									"parameters": {
 										"seconds": "0.4",
 										"use-timescale": true
@@ -1265,6 +1269,7 @@
 									"id": "set-spraying",
 									"objectClass": "p_barra_mancha",
 									"sid": 291345930375569,
+									"disabled": true,
 									"parameters": {
 										"state": "not-spraying"
 									}
@@ -1322,6 +1327,7 @@
 									"id": "subtract-from-eventvar",
 									"objectClass": "System",
 									"sid": 797529762663081,
+									"disabled": true,
 									"parameters": {
 										"variable": "v_paciencia",
 										"value": "50"
@@ -1331,6 +1337,7 @@
 									"id": "set-position",
 									"objectClass": "b_delante",
 									"sid": 136647248697709,
+									"disabled": true,
 									"parameters": {
 										"x": "b_atras.X",
 										"y": "b_atras.Y"
@@ -1340,6 +1347,7 @@
 									"id": "set-size",
 									"objectClass": "b_delante",
 									"sid": 871694077149789,
+									"disabled": true,
 									"parameters": {
 										"width": "v_paciencia",
 										"height": "b_atras.Height-10"

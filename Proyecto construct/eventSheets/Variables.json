@@ -118,6 +118,34 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 959673279328539
+		},
+		{
+			"eventType": "comment",
+			"text": "direcciones - 1 arriba 2 derecha 3 abajo 4 izquierda"
+		},
+		{
+			"eventType": "variable",
+			"name": "v_pj_mirada",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 433510335531527
+		},
+		{
+			"eventType": "comment",
+			"text": "estado - 0 camina 1 - barre"
+		},
+		{
+			"eventType": "variable",
+			"name": "v_pj_estado",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 270401921251010
 		}
 	],
 	"sid": 627737672315670
