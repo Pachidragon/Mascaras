@@ -3154,26 +3154,26 @@
 							"actions": [
 								{
 									"id": "set-enabled",
-									"objectClass": "o_armario3",
-									"sid": 587152261368531,
-									"behaviorType": "Rotate",
-									"parameters": {
-										"state": "enabled"
-									}
-								},
-								{
-									"id": "set-enabled",
-									"objectClass": "o_armario3",
-									"sid": 213356673640784,
+									"objectClass": "o_aguadisp",
+									"sid": 580134905854072,
 									"behaviorType": "MoveTo",
 									"parameters": {
 										"enabled": true
 									}
 								},
 								{
+									"id": "set-enabled",
+									"objectClass": "o_aguadisp",
+									"sid": 404594616045293,
+									"behaviorType": "Rotate",
+									"parameters": {
+										"state": "enabled"
+									}
+								},
+								{
 									"id": "move-to-position",
-									"objectClass": "o_armario3",
-									"sid": 991035384763267,
+									"objectClass": "o_aguadisp",
+									"sid": 236832261845221,
 									"behaviorType": "MoveTo",
 									"parameters": {
 										"x": "-500",
@@ -3184,7 +3184,319 @@
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 881318505176515,
+									"sid": 291831249919246,
+									"parameters": {
+										"object-to-create": "p_rage",
+										"layer": "4",
+										"x": "o_aguadisp.BBoxMidX",
+										"y": "o_aguadisp.BBoxMidY",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 325960093621986
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 376805425434467,
+									"parameters": {
+										"key": 32
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Jugadore",
+									"sid": 370804729072111,
+									"parameters": {
+										"object": "o_aguadisp2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "move-to-position",
+									"objectClass": "o_aguadisp2",
+									"sid": 579078073270851,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"x": "-500",
+										"y": "random(0, LayoutHeight)",
+										"mode": "direct"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_aguadisp2",
+									"sid": 520334526409503,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"enabled": true
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_aguadisp2",
+									"sid": 239282079304981,
+									"behaviorType": "Rotate",
+									"parameters": {
+										"state": "enabled"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 745570475969948,
+									"parameters": {
+										"object-to-create": "p_rage",
+										"layer": "4",
+										"x": "o_aguadisp2.BBoxMidX",
+										"y": "o_aguadisp2.BBoxMidY",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 440980858199521
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 399955418421721,
+									"parameters": {
+										"key": 32
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Jugadore",
+									"sid": 193315267294751,
+									"parameters": {
+										"object": "o_armario"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "move-to-position",
+									"objectClass": "o_armario",
+									"sid": 385806562041914,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"x": "-500",
+										"y": "random(0, LayoutHeight)",
+										"mode": "direct"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 220485081726396,
+									"parameters": {
+										"object-to-create": "p_rage",
+										"layer": "4",
+										"x": "o_armario.BBoxMidX",
+										"y": "o_armario.BBoxMidY",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_armario",
+									"sid": 842503358902362,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"enabled": true
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_armario",
+									"sid": 483575291734542,
+									"behaviorType": "Rotate",
+									"parameters": {
+										"state": "enabled"
+									}
+								}
+							],
+							"sid": 598929206777172
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 452159944977327,
+									"parameters": {
+										"key": 32
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Jugadore",
+									"sid": 211948921521419,
+									"parameters": {
+										"object": "o_cubo2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "move-to-position",
+									"objectClass": "o_cubo2",
+									"sid": 663616512220812,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"x": "-500",
+										"y": "random(0, LayoutHeight)",
+										"mode": "direct"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 876095539141897,
+									"parameters": {
+										"object-to-create": "p_rage",
+										"layer": "4",
+										"x": "o_cubo2.BBoxMidX",
+										"y": "o_cubo2.BBoxMidY",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_cubo2",
+									"sid": 858812917521173,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"enabled": true
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_cubo2",
+									"sid": 863882394319975,
+									"behaviorType": "Rotate",
+									"parameters": {
+										"state": "enabled"
+									}
+								}
+							],
+							"sid": 852147226105467
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 952861037824503,
+									"parameters": {
+										"key": 32
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Jugadore",
+									"sid": 466838424382050,
+									"parameters": {
+										"object": "o_armario2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "move-to-position",
+									"objectClass": "o_armario2",
+									"sid": 430039874667918,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"x": "-500",
+										"y": "random(0, LayoutHeight)",
+										"mode": "direct"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 312615250630258,
+									"parameters": {
+										"object-to-create": "p_rage",
+										"layer": "4",
+										"x": "o_armario2.BBoxMidX",
+										"y": "o_armario2.BBoxMidY",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_armario2",
+									"sid": 771244813942151,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"enabled": true
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_armario2",
+									"sid": 405591171230067,
+									"behaviorType": "Rotate",
+									"parameters": {
+										"state": "enabled"
+									}
+								}
+							],
+							"sid": 773345674612394
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 524472364961670,
+									"parameters": {
+										"key": 32
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Jugadore",
+									"sid": 854326727280552,
+									"parameters": {
+										"object": "o_armario3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "move-to-position",
+									"objectClass": "o_armario3",
+									"sid": 375362328945078,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"x": "-500",
+										"y": "random(0, LayoutHeight)",
+										"mode": "direct"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 940856764758206,
 									"parameters": {
 										"object-to-create": "p_rage",
 										"layer": "4",
@@ -3193,574 +3505,560 @@
 										"create-hierarchy": false,
 										"template-name": "\"\""
 									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_armario3",
+									"sid": 454549806806631,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"enabled": true
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_armario3",
+									"sid": 848436305389538,
+									"behaviorType": "Rotate",
+									"parameters": {
+										"state": "enabled"
+									}
 								}
 							],
-							"sid": 325960093621986
+							"sid": 136898434083464
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 227102334298015,
+									"parameters": {
+										"key": 32
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Jugadore",
+									"sid": 584880081958193,
+									"parameters": {
+										"object": "o_cubolargo"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "move-to-position",
+									"objectClass": "o_cubolargo",
+									"sid": 786128050574161,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"x": "-500",
+										"y": "random(0, LayoutHeight)",
+										"mode": "direct"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 878286615888528,
+									"parameters": {
+										"object-to-create": "p_rage",
+										"layer": "4",
+										"x": "o_cubolargo.BBoxMidX",
+										"y": "o_cubolargo.BBoxMidY",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_cubolargo",
+									"sid": 128152860713691,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"enabled": true
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_cubolargo",
+									"sid": 768969174882981,
+									"behaviorType": "Rotate",
+									"parameters": {
+										"state": "enabled"
+									}
+								}
+							],
+							"sid": 617163902488201
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 127954579153433,
+									"parameters": {
+										"key": 32
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Jugadore",
+									"sid": 626884043284486,
+									"parameters": {
+										"object": "o_escritorio3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "move-to-position",
+									"objectClass": "o_escritorio3",
+									"sid": 202092442132731,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"x": "-500",
+										"y": "random(0, LayoutHeight)",
+										"mode": "direct"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 815368986163284,
+									"parameters": {
+										"object-to-create": "p_rage",
+										"layer": "4",
+										"x": "o_cubolargo.BBoxMidX",
+										"y": "o_cubolargo.BBoxMidY",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_escritorio3",
+									"sid": 677435537091222,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"enabled": true
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_escritorio3",
+									"sid": 719854016666532,
+									"behaviorType": "Rotate",
+									"parameters": {
+										"state": "enabled"
+									}
+								}
+							],
+							"sid": 698409141483559
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 373083814751153,
+									"parameters": {
+										"key": 32
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Jugadore",
+									"sid": 657129388314248,
+									"parameters": {
+										"object": "o_escritoriov"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "move-to-position",
+									"objectClass": "o_escritoriov",
+									"sid": 150997597775228,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"x": "-500",
+										"y": "random(0, LayoutHeight)",
+										"mode": "direct"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 418909899701524,
+									"parameters": {
+										"object-to-create": "p_rage",
+										"layer": "4",
+										"x": "o_escritoriov.BBoxMidX",
+										"y": "o_escritoriov.BBoxMidY",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_escritoriov",
+									"sid": 335128367897133,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"enabled": true
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_escritoriov",
+									"sid": 262165082543879,
+									"behaviorType": "Rotate",
+									"parameters": {
+										"state": "enabled"
+									}
+								}
+							],
+							"sid": 620764488408057
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 363542575184976,
+									"parameters": {
+										"key": 32
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Jugadore",
+									"sid": 569520415321007,
+									"parameters": {
+										"object": "o_estanteria"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "move-to-position",
+									"objectClass": "o_estanteria",
+									"sid": 248359885199247,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"x": "-500",
+										"y": "random(0, LayoutHeight)",
+										"mode": "direct"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 261478244556492,
+									"parameters": {
+										"object-to-create": "p_rage",
+										"layer": "4",
+										"x": "o_estanteria.BBoxMidX",
+										"y": "o_estanteria.BBoxMidY",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_estanteria",
+									"sid": 696531984760244,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"enabled": true
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_estanteria",
+									"sid": 227529249282141,
+									"behaviorType": "Rotate",
+									"parameters": {
+										"state": "enabled"
+									}
+								}
+							],
+							"sid": 380471439629453
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 159966430108102,
+									"parameters": {
+										"key": 32
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Jugadore",
+									"sid": 166336286613497,
+									"parameters": {
+										"object": "o_fotocopiadora"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "move-to-position",
+									"objectClass": "o_fotocopiadora",
+									"sid": 350932377478542,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"x": "-500",
+										"y": "random(0, LayoutHeight)",
+										"mode": "direct"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 527490951627354,
+									"parameters": {
+										"object-to-create": "p_rage",
+										"layer": "4",
+										"x": "o_fotocopiadora.BBoxMidX",
+										"y": "o_fotocopiadora.BBoxMidY",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_fotocopiadora",
+									"sid": 519087889996818,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"enabled": true
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_fotocopiadora",
+									"sid": 516239702968823,
+									"behaviorType": "Rotate",
+									"parameters": {
+										"state": "enabled"
+									}
+								}
+							],
+							"sid": 968312458272872
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 135605023886369,
+									"parameters": {
+										"key": 32
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Jugadore",
+									"sid": 427196389312609,
+									"parameters": {
+										"object": "o_fotocopiadora2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "move-to-position",
+									"objectClass": "o_fotocopiadora2",
+									"sid": 250192878672782,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"x": "-500",
+										"y": "random(0, LayoutHeight)",
+										"mode": "direct"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 661214920429122,
+									"parameters": {
+										"object-to-create": "p_rage",
+										"layer": "4",
+										"x": "o_fotocopiadora2.BBoxMidX",
+										"y": "o_fotocopiadora2.BBoxMidY",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_fotocopiadora2",
+									"sid": 984600989255855,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"enabled": true
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_fotocopiadora2",
+									"sid": 382178456076074,
+									"behaviorType": "Rotate",
+									"parameters": {
+										"state": "enabled"
+									}
+								}
+							],
+							"sid": 179918984258544
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 961683145177184,
+									"parameters": {
+										"key": 32
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Jugadore",
+									"sid": 933182661095549,
+									"parameters": {
+										"object": "o_maceta"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "move-to-position",
+									"objectClass": "o_maceta",
+									"sid": 476626305570812,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"x": "-500",
+										"y": "random(0, LayoutHeight)",
+										"mode": "direct"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 519089650197296,
+									"parameters": {
+										"object-to-create": "p_rage",
+										"layer": "4",
+										"x": "o_maceta.BBoxMidX",
+										"y": "o_maceta.BBoxMidY",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_maceta",
+									"sid": 375567932883826,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"enabled": true
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_maceta",
+									"sid": 148177613326508,
+									"behaviorType": "Rotate",
+									"parameters": {
+										"state": "enabled"
+									}
+								}
+							],
+							"sid": 203850911556257
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 428339563791225,
+									"parameters": {
+										"key": 32
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Jugadore",
+									"sid": 797045354434789,
+									"parameters": {
+										"object": "o_maceta2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "move-to-position",
+									"objectClass": "o_maceta2",
+									"sid": 871976104937696,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"x": "-500",
+										"y": "random(0, LayoutHeight)",
+										"mode": "direct"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 654940103110566,
+									"parameters": {
+										"object-to-create": "p_rage",
+										"layer": "4",
+										"x": "o_maceta2.BBoxMidX",
+										"y": "o_maceta2.BBoxMidY",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_maceta2",
+									"sid": 281675234991984,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"enabled": true
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "o_maceta2",
+									"sid": 410556532220112,
+									"behaviorType": "Rotate",
+									"parameters": {
+										"state": "enabled"
+									}
+								}
+							],
+							"sid": 598507317800585
 						}
 					]
 				}
 			],
 			"sid": 758795650613997
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 915444684434513
-				}
-			],
-			"actions": [
-				{
-					"id": "set-enabled",
-					"objectClass": "o_aguadisp",
-					"sid": 288239545446829,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"enabled": false
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "o_aguadisp",
-					"sid": 567723816295331,
-					"behaviorType": "Rotate",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "o_aguadisp",
-					"sid": 782179542998429,
-					"behaviorType": "Solid",
-					"parameters": {
-						"state": "enabled"
-					}
-				}
-			],
-			"sid": 127785866819163
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 390344221817609
-				}
-			],
-			"actions": [
-				{
-					"id": "set-enabled",
-					"objectClass": "o_aguadisp2",
-					"sid": 580623038811595,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"enabled": false
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "o_aguadisp2",
-					"sid": 204768905092090,
-					"behaviorType": "Rotate",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "o_aguadisp2",
-					"sid": 981430568996771,
-					"behaviorType": "Solid",
-					"parameters": {
-						"state": "enabled"
-					}
-				}
-			],
-			"sid": 740492371177827
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 291628777341819
-				}
-			],
-			"actions": [
-				{
-					"id": "set-enabled",
-					"objectClass": "o_armario",
-					"sid": 806012707233925,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"enabled": false
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "o_armario",
-					"sid": 570924264708991,
-					"behaviorType": "Rotate",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "o_armario",
-					"sid": 612153805395657,
-					"behaviorType": "Solid",
-					"parameters": {
-						"state": "enabled"
-					}
-				}
-			],
-			"sid": 261580140830418
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 547524766309972
-				}
-			],
-			"actions": [
-				{
-					"id": "set-enabled",
-					"objectClass": "o_armario2",
-					"sid": 303938425403643,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"enabled": false
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "o_armario2",
-					"sid": 587032269888763,
-					"behaviorType": "Rotate",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "o_armario2",
-					"sid": 785578699293026,
-					"behaviorType": "Solid",
-					"parameters": {
-						"state": "enabled"
-					}
-				}
-			],
-			"sid": 968803335310989
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 615705789278693
-				}
-			],
-			"actions": [
-				{
-					"id": "set-enabled",
-					"objectClass": "o_armario3",
-					"sid": 739451228328944,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"enabled": false
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "o_armario3",
-					"sid": 514428210157779,
-					"behaviorType": "Rotate",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "o_armario3",
-					"sid": 447438975453897,
-					"behaviorType": "Solid",
-					"parameters": {
-						"state": "enabled"
-					}
-				}
-			],
-			"sid": 514473945541158
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 820588822448727
-				}
-			],
-			"actions": [
-				{
-					"id": "set-enabled",
-					"objectClass": "o_cubo2",
-					"sid": 741211399591890,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"enabled": false
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "o_cubo2",
-					"sid": 337216906845210,
-					"behaviorType": "Rotate",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "o_cubo2",
-					"sid": 142462309959135,
-					"behaviorType": "Solid",
-					"parameters": {
-						"state": "enabled"
-					}
-				}
-			],
-			"sid": 349745756887204
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 678354264407626
-				}
-			],
-			"actions": [
-				{
-					"id": "set-enabled",
-					"objectClass": "o_cubolargo",
-					"sid": 719817110807379,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"enabled": false
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "o_cubolargo",
-					"sid": 379481761850212,
-					"behaviorType": "Rotate",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "o_cubolargo",
-					"sid": 931438390939335,
-					"behaviorType": "Solid",
-					"parameters": {
-						"state": "enabled"
-					}
-				}
-			],
-			"sid": 656604368395803
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 107868433060328
-				}
-			],
-			"actions": [
-				{
-					"id": "set-enabled",
-					"objectClass": "o_escritorio3",
-					"sid": 842697232024361,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"enabled": false
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "o_escritorio3",
-					"sid": 156867359668577,
-					"behaviorType": "Rotate",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "o_escritorio3",
-					"sid": 784385600275908,
-					"behaviorType": "Solid",
-					"parameters": {
-						"state": "disabled"
-					}
-				}
-			],
-			"sid": 415223724085488
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 830312757701105
-				}
-			],
-			"actions": [
-				{
-					"id": "set-enabled",
-					"objectClass": "o_escritoriov",
-					"sid": 231236440293567,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"enabled": false
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "o_escritoriov",
-					"sid": 530693512344890,
-					"behaviorType": "Rotate",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "o_escritoriov",
-					"sid": 725045689046955,
-					"behaviorType": "Solid",
-					"parameters": {
-						"state": "enabled"
-					}
-				}
-			],
-			"sid": 367864713637823
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 657474938227309
-				}
-			],
-			"actions": [
-				{
-					"id": "set-enabled",
-					"objectClass": "o_estanteria",
-					"sid": 827439921230536,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"enabled": false
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "o_estanteria",
-					"sid": 137237292188858,
-					"behaviorType": "Rotate",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "o_estanteria",
-					"sid": 194278592797856,
-					"behaviorType": "Solid",
-					"parameters": {
-						"state": "enabled"
-					}
-				}
-			],
-			"sid": 162204459073485
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 974132931913757
-				}
-			],
-			"actions": [
-				{
-					"id": "set-enabled",
-					"objectClass": "o_fotocopiadora",
-					"sid": 267431562882228,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"enabled": false
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "o_fotocopiadora",
-					"sid": 392451616926926,
-					"behaviorType": "Rotate",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "o_fotocopiadora",
-					"sid": 391634245560340,
-					"behaviorType": "Solid",
-					"parameters": {
-						"state": "enabled"
-					}
-				}
-			],
-			"sid": 563941258904978
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 466896775002619
-				}
-			],
-			"actions": [
-				{
-					"id": "set-enabled",
-					"objectClass": "o_fotocopiadora2",
-					"sid": 488695922639898,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"enabled": false
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "o_fotocopiadora2",
-					"sid": 399045777368668,
-					"behaviorType": "Rotate",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "o_fotocopiadora2",
-					"sid": 218859001753306,
-					"behaviorType": "Solid",
-					"parameters": {
-						"state": "enabled"
-					}
-				}
-			],
-			"sid": 509718835000679
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 479073333742651
-				}
-			],
-			"actions": [
-				{
-					"id": "set-enabled",
-					"objectClass": "o_maceta",
-					"sid": 940329777567904,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"enabled": false
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "o_maceta",
-					"sid": 242686515084295,
-					"behaviorType": "Rotate",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "o_maceta",
-					"sid": 418580318279798,
-					"behaviorType": "Solid",
-					"parameters": {
-						"state": "enabled"
-					}
-				}
-			],
-			"sid": 408122151245911
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 350757218756540
-				}
-			],
-			"actions": [
-				{
-					"id": "set-enabled",
-					"objectClass": "o_maceta2",
-					"sid": 634570632448773,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"enabled": false
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "o_maceta2",
-					"sid": 509389026416948,
-					"behaviorType": "Rotate",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "o_maceta2",
-					"sid": 396266739641044,
-					"behaviorType": "Solid",
-					"parameters": {
-						"state": "enabled"
-					}
-				}
-			],
-			"sid": 507847722611774
 		},
 		{
 			"eventType": "block",
