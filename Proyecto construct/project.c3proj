@@ -305,7 +305,16 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "VFX_Barrido.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 536705329204275,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"music": {

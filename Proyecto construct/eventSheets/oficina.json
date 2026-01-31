@@ -1387,6 +1387,15 @@
 										"instance-variable": "mancha",
 										"value": "3"
 									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 160876016579523,
+									"parameters": {
+										"variable": "v_pj_estado",
+										"value": "1"
+									}
 								}
 							],
 							"sid": 747699235951090
@@ -2714,12 +2723,11 @@
 							],
 							"actions": [
 								{
-									"id": "set-boolean-eventvar",
+									"id": "go-to-layout",
 									"objectClass": "System",
-									"sid": 237068535446635,
+									"sid": 743015912598710,
 									"parameters": {
-										"variable": "crashbarra",
-										"value": "true"
+										"layout": "L_victoria2"
 									}
 								}
 							],
@@ -4061,39 +4069,83 @@
 			"sid": 758795650613997
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "trucos",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 313455815464683,
-					"parameters": {
-						"key": 75
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 132375127754426,
-					"disabled": true,
-					"parameters": {
-						"variable": "t_reloj",
-						"value": "2"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 183595439234854,
+							"parameters": {
+								"key": 75
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 472586694669068,
+							"disabled": true,
+							"parameters": {
+								"variable": "t_reloj",
+								"value": "2"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 599656827045154,
+							"parameters": {
+								"variable": "crashbarra",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 919997071419891
 				},
 				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 633741360063309,
-					"parameters": {
-						"variable": "crashbarra",
-						"value": "true"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 906520069447189,
+							"parameters": {
+								"key": 84
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 666553138488878,
+							"parameters": {
+								"variable": "t_reloj",
+								"value": "2"
+							}
+						}
+					],
+					"sid": 597327156907691
 				}
 			],
-			"sid": 670473954844559
+			"sid": 856502238220285
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "jugadore",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [],
+			"sid": 167678604110729
 		}
 	],
 	"sid": 324755378402390
