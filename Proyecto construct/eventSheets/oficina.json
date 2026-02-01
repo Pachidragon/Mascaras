@@ -4657,35 +4657,7 @@
 									}
 								}
 							],
-							"actions": [
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 393930262175441,
-									"parameters": {
-										"variable": "v_pj_estado",
-										"value": "1"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 735978896804168,
-									"parameters": {
-										"seconds": "1",
-										"use-timescale": true
-									}
-								},
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 357555999972096,
-									"parameters": {
-										"variable": "v_pj_estado",
-										"value": "0"
-									}
-								}
-							],
+							"actions": [],
 							"sid": 672549248685167,
 							"children": [
 								{
@@ -6870,35 +6842,7 @@
 									}
 								}
 							],
-							"actions": [
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 328858073030195,
-									"parameters": {
-										"variable": "v_pj_estado",
-										"value": "1"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 650000490570305,
-									"parameters": {
-										"seconds": "1",
-										"use-timescale": true
-									}
-								},
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 159905181258488,
-									"parameters": {
-										"variable": "v_pj_estado",
-										"value": "0"
-									}
-								}
-							],
+							"actions": [],
 							"sid": 593956406012070,
 							"children": [
 								{
@@ -7999,6 +7943,138 @@
 											"sid": 674663845129826
 										}
 									]
+								}
+							],
+							"isOrBlock": true
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 968110319921746,
+							"parameters": {
+								"variable": "fase_juego",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"type": "comment",
+							"text": "escoba"
+						}
+					],
+					"sid": 563679756978896,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 372770503807200,
+									"parameters": {
+										"key": 32
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 535324618912809,
+									"parameters": {
+										"variable": "v_pj_estado",
+										"value": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 459864949842512,
+									"parameters": {
+										"seconds": "0.7",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 732795811208585,
+									"parameters": {
+										"variable": "v_pj_estado",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 975387013807779,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 703264065726973,
+									"parameters": {
+										"object": "celucontrol",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 132381303386231,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "celucontrol",
+											"sid": 770843527236863,
+											"parameters": {
+												"instance-variable": "control",
+												"comparison": 0,
+												"value": "5"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 516121412478927,
+											"parameters": {
+												"variable": "v_pj_estado",
+												"value": "1"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 720812791820148,
+											"parameters": {
+												"seconds": "0.7",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 635652272575017,
+											"parameters": {
+												"variable": "v_pj_estado",
+												"value": "0"
+											}
+										}
+									],
+									"sid": 659349121530219
 								}
 							],
 							"isOrBlock": true
