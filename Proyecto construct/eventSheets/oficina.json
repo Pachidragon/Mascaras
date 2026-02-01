@@ -3144,6 +3144,20 @@
 										"create-hierarchy": false,
 										"template-name": "\"\""
 									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 621151543101102,
+									"parameters": {
+										"audio-file": {
+											"path": "VFX_Viento2"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 726612471994830
@@ -3209,6 +3223,20 @@
 										"y": "o_aguadisp.BBoxMidY",
 										"create-hierarchy": false,
 										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 610712704528589,
+									"parameters": {
+										"audio-file": {
+											"path": "VFX_Viento2"
+										},
+										"loop": "not-looping",
+										"volume": "5",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								}
 							],
@@ -3276,6 +3304,20 @@
 										"create-hierarchy": false,
 										"template-name": "\"\""
 									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 197224264347676,
+									"parameters": {
+										"audio-file": {
+											"path": "VFX_Viento2"
+										},
+										"loop": "not-looping",
+										"volume": "5",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 440980858199521
@@ -3341,6 +3383,20 @@
 									"behaviorType": "Rotate",
 									"parameters": {
 										"state": "enabled"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 915316113304871,
+									"parameters": {
+										"audio-file": {
+											"path": "VFX_Viento2"
+										},
+										"loop": "not-looping",
+										"volume": "5",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								}
 							],
@@ -3408,6 +3464,20 @@
 									"parameters": {
 										"state": "enabled"
 									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 192467954619777,
+									"parameters": {
+										"audio-file": {
+											"path": "VFX_Viento2"
+										},
+										"loop": "not-looping",
+										"volume": "5",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 852147226105467
@@ -3473,6 +3543,20 @@
 									"behaviorType": "Rotate",
 									"parameters": {
 										"state": "enabled"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 741690664638340,
+									"parameters": {
+										"audio-file": {
+											"path": "VFX_Viento2"
+										},
+										"loop": "not-looping",
+										"volume": "5",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								}
 							],
@@ -3540,6 +3624,20 @@
 									"parameters": {
 										"state": "enabled"
 									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 358054359372915,
+									"parameters": {
+										"audio-file": {
+											"path": "VFX_Viento2"
+										},
+										"loop": "not-looping",
+										"volume": "5",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 136898434083464
@@ -3605,6 +3703,20 @@
 									"behaviorType": "Rotate",
 									"parameters": {
 										"state": "enabled"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 467703022046395,
+									"parameters": {
+										"audio-file": {
+											"path": "VFX_Viento2"
+										},
+										"loop": "not-looping",
+										"volume": "5",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								}
 							],
@@ -3672,6 +3784,20 @@
 									"parameters": {
 										"state": "enabled"
 									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 515677973419993,
+									"parameters": {
+										"audio-file": {
+											"path": "VFX_Viento2"
+										},
+										"loop": "not-looping",
+										"volume": "5",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 698409141483559
@@ -3737,6 +3863,20 @@
 									"behaviorType": "Rotate",
 									"parameters": {
 										"state": "enabled"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 350119497904660,
+									"parameters": {
+										"audio-file": {
+											"path": "VFX_Viento2"
+										},
+										"loop": "not-looping",
+										"volume": "5",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								}
 							],
@@ -3804,6 +3944,20 @@
 									"parameters": {
 										"state": "enabled"
 									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 927525169170872,
+									"parameters": {
+										"audio-file": {
+											"path": "VFX_Viento2"
+										},
+										"loop": "not-looping",
+										"volume": "5",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 380471439629453
@@ -3869,6 +4023,20 @@
 									"behaviorType": "Rotate",
 									"parameters": {
 										"state": "enabled"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 401153912947342,
+									"parameters": {
+										"audio-file": {
+											"path": "VFX_Viento2"
+										},
+										"loop": "not-looping",
+										"volume": "5",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								}
 							],
@@ -3936,6 +4104,20 @@
 									"parameters": {
 										"state": "enabled"
 									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 909303567338425,
+									"parameters": {
+										"audio-file": {
+											"path": "VFX_Viento2"
+										},
+										"loop": "not-looping",
+										"volume": "5",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 179918984258544
@@ -4002,6 +4184,20 @@
 									"parameters": {
 										"state": "enabled"
 									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 783523115573502,
+									"parameters": {
+										"audio-file": {
+											"path": "VFX_Viento2"
+										},
+										"loop": "not-looping",
+										"volume": "5",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 203850911556257
@@ -4067,6 +4263,20 @@
 									"behaviorType": "Rotate",
 									"parameters": {
 										"state": "enabled"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 100665807114910,
+									"parameters": {
+										"audio-file": {
+											"path": "VFX_Viento2"
+										},
+										"loop": "not-looping",
+										"volume": "5",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								}
 							],
