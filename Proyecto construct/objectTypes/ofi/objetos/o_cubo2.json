@@ -374,6 +374,57 @@
 				"repeatCount": 1,
 				"repeatTo": 0,
 				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 128,
+						"height": 177,
+						"originX": 0.90625,
+						"originY": 1.0112994350282485,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4821313,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0,
+								0,
+								0.828125,
+								0.02824858757062147,
+								0.921875,
+								0.7627118644067796,
+								0.296875,
+								0.9887005649717514,
+								0,
+								1,
+								0,
+								0.864406779661017,
+								0,
+								0.3446327683615819,
+								0,
+								0.1807909604519774,
+								0,
+								0,
+								0,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 576944070514802,
+				"name": "Animation 8",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
 			}
 		],
 		"subfolders": []

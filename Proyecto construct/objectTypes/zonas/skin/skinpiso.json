@@ -1,38 +1,32 @@
 {
-	"name": "pared",
+	"name": "skinpiso",
 	"plugin-id": "Sprite",
-	"sid": 263899796372855,
+	"sid": 365026648861466,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 185897722075781
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 2850,
+						"height": 2159,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 4479187,
+						"imageSpriteId": 3817456,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 361307970771100,
+				"sid": 924764006503131,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

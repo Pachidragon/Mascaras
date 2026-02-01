@@ -248,7 +248,8 @@
 				"items": [
 					"Jugadore",
 					"sp_particula",
-					"p_rage"
+					"p_rage",
+					"osvaldo"
 				],
 				"subfolders": [],
 				"name": "jugadore"
@@ -260,7 +261,15 @@
 					"z_banio",
 					"pared"
 				],
-				"subfolders": [],
+				"subfolders": [
+					{
+						"items": [
+							"skinpiso"
+						],
+						"subfolders": [],
+						"name": "skin"
+					}
+				],
 				"name": "zonas"
 			}
 		]
