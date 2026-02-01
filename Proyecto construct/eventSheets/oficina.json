@@ -902,7 +902,8 @@
 											}
 										}
 									],
-									"sid": 518572543379324
+									"sid": 518572543379324,
+									"disabled": true
 								}
 							]
 						}
@@ -958,7 +959,8 @@
 									}
 								}
 							],
-							"sid": 254380843774876
+							"sid": 254380843774876,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -995,7 +997,8 @@
 									}
 								}
 							],
-							"sid": 966274167840459
+							"sid": 966274167840459,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -1022,7 +1025,8 @@
 									}
 								}
 							],
-							"sid": 635420191498654
+							"sid": 635420191498654,
+							"disabled": true
 						}
 					]
 				},
@@ -1038,7 +1042,17 @@
 							}
 						}
 					],
-					"actions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 451068979575967,
+							"parameters": {
+								"variable": "v_ansiedad",
+								"value": "-5"
+							}
+						}
+					],
 					"sid": 717371882948971,
 					"children": [
 						{
@@ -1066,7 +1080,8 @@
 									}
 								}
 							],
-							"sid": 912794587148020
+							"sid": 912794587148020,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -1103,7 +1118,8 @@
 									}
 								}
 							],
-							"sid": 659679006839047
+							"sid": 659679006839047,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -1130,7 +1146,8 @@
 									}
 								}
 							],
-							"sid": 500815337149157
+							"sid": 500815337149157,
+							"disabled": true
 						}
 					]
 				},
@@ -1180,7 +1197,8 @@
 									}
 								}
 							],
-							"sid": 750600548137375
+							"sid": 750600548137375,
+							"disabled": true
 						}
 					],
 					"isOrBlock": true
@@ -1582,42 +1600,6 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 782465357915962,
-									"parameters": {
-										"variable": "mancha_spot",
-										"comparison": 0,
-										"value": "6"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 560253150191908,
-									"parameters": {
-										"variable": "mancha_x",
-										"value": "585"
-									}
-								},
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 192473997685877,
-									"parameters": {
-										"variable": "mancha_y",
-										"value": "696"
-									}
-								}
-							],
-							"sid": 622329347145284
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
 									"sid": 541416092150733,
 									"parameters": {
 										"variable": "mancha_spot",
@@ -1791,6 +1773,42 @@
 								}
 							],
 							"sid": 161695982008690
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 513527145455674,
+									"parameters": {
+										"variable": "mancha_spot",
+										"comparison": 0,
+										"value": "6"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 936340639256202,
+									"parameters": {
+										"variable": "mancha_x",
+										"value": "585"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 904938878239798,
+									"parameters": {
+										"variable": "mancha_y",
+										"value": "696"
+									}
+								}
+							],
+							"sid": 741900938955587
 						},
 						{
 							"eventType": "block",

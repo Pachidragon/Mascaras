@@ -3652,6 +3652,51 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "e_mancha",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 80,
+					"sid": 364424462008338,
+					"tags": "",
+					"instanceVariables": {
+						"mancha": 1
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 364424462008338,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 2303,
+						"y": 114,
+						"width": 108.29143173877695,
+						"height": 73.23755788113817,
+						"originX": 0.4421965317919075,
+						"originY": 0.5512820512820513,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 214025737923534,
@@ -3733,51 +3778,6 @@
 						"height": 454.60689893515206,
 						"originX": 0.5,
 						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "e_mancha",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 80,
-					"sid": 364424462008338,
-					"tags": "",
-					"instanceVariables": {
-						"mancha": 1
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 364424462008338,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 2303,
-						"y": 114,
-						"width": 108.29143173877695,
-						"height": 73.23755788113817,
-						"originX": 0.4421965317919075,
-						"originY": 0.5512820512820513,
 						"color": [
 							1,
 							1,
