@@ -146,7 +146,15 @@
 					"Gamepad",
 					"Audio"
 				],
-				"subfolders": [],
+				"subfolders": [
+					{
+						"items": [
+							"Sprite2"
+						],
+						"subfolders": [],
+						"name": "celu"
+					}
+				],
 				"name": "controladores"
 			},
 			{

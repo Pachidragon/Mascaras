@@ -4671,6 +4671,14 @@
 									"parameters": {
 										"key": 87
 									}
+								},
+								{
+									"id": "is-touching-object",
+									"objectClass": "Touch",
+									"sid": 282884475807275,
+									"parameters": {
+										"object": "Sprite2"
+									}
 								}
 							],
 							"actions": [
