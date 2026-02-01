@@ -103,7 +103,7 @@
 			"eventType": "variable",
 			"name": "t_reloj",
 			"type": "number",
-			"initialValue": "100",
+			"initialValue": "70",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,

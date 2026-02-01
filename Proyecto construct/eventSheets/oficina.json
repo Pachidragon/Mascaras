@@ -1371,6 +1371,20 @@
 									}
 								},
 								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 599124182037969,
+									"parameters": {
+										"audio-file": {
+											"path": "VFX_Barrido"
+										},
+										"loop": "not-looping",
+										"volume": "5",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
 									"id": "set-eventvar-value",
 									"objectClass": "System",
 									"sid": 458781424052659,
