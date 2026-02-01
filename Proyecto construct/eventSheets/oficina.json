@@ -789,6 +789,15 @@
 									"parameters": {
 										"state": "enabled"
 									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "pared",
+									"sid": 693203782126711,
+									"behaviorType": "Solid",
+									"parameters": {
+										"state": "disabled"
+									}
 								}
 							],
 							"sid": 346803022221296
@@ -3164,6 +3173,15 @@
 									"id": "set-enabled",
 									"objectClass": "o_maceta2",
 									"sid": 485255758213459,
+									"behaviorType": "Solid",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "pared",
+									"sid": 404040340476253,
 									"behaviorType": "Solid",
 									"parameters": {
 										"state": "disabled"
