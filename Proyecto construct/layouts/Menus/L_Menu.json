@@ -101,10 +101,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 972,
-						"y": 942,
-						"width": 510.72382761243017,
-						"height": 162.13454844839052,
+						"x": 955,
+						"y": 937,
+						"width": 479.1229162761373,
+						"height": 129.70763875871242,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -120,7 +120,7 @@
 				{
 					"type": "menuses",
 					"properties": {
-						"text": "Creditos",
+						"text": "Créditos",
 						"enable-bbcode": true,
 						"font": "font",
 						"size": 48,
@@ -156,8 +156,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 761,
-						"y": 894,
+						"x": 798,
+						"y": 887,
 						"width": 329,
 						"height": 100,
 						"originX": 0,
@@ -195,10 +195,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1560,
+						"x": 1499,
 						"y": 933,
-						"width": 510.72382761243017,
-						"height": 162.13454844839052,
+						"width": 511.1229162761373,
+						"height": 129.70763875871242,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -250,8 +250,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1349,
-						"y": 889,
+						"x": 1358,
+						"y": 883,
 						"width": 329,
 						"height": 100,
 						"originX": 0,
@@ -289,10 +289,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 379,
-						"y": 934,
-						"width": 510.72382761243017,
-						"height": 162.13454844839052,
+						"x": 426,
+						"y": 936,
+						"width": 449.1229162761373,
+						"height": 129.70763875871242,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -321,8 +321,8 @@
 							1,
 							1
 						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
 						"wrapping": "word",
 						"text-direction": "ltr",
 						"icon-set": -1,
@@ -344,9 +344,9 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 170,
-						"y": 891,
-						"width": 329,
+						"x": 215,
+						"y": 884,
+						"width": 413,
 						"height": 100,
 						"originX": 0,
 						"originY": 0,
