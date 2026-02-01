@@ -1,10 +1,18 @@
 {
-	"name": "Sprite2",
+	"name": "celucontrol",
 	"plugin-id": "Sprite",
 	"sid": 727500218818805,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "control",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 390826815768613
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Anchor",
@@ -137,8 +145,8 @@
 					{
 						"width": 64,
 						"height": 64,
-						"originX": 1.578125,
-						"originY": -0.484375,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,

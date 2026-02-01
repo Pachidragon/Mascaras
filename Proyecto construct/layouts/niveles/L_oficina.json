@@ -4589,7 +4589,7 @@
 					}
 				},
 				{
-					"type": "Sprite2",
+					"type": "celucontrol",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "der",
@@ -4600,7 +4600,9 @@
 					"uid": 104,
 					"sid": 509820449009069,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"control": 4
+					},
 					"behaviors": {
 						"Anchor": {
 							"properties": {
@@ -4636,7 +4638,7 @@
 					}
 				},
 				{
-					"type": "Sprite2",
+					"type": "celucontrol",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "aba",
@@ -4647,7 +4649,9 @@
 					"uid": 105,
 					"sid": 651445365198882,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"control": 3
+					},
 					"behaviors": {
 						"Anchor": {
 							"properties": {
@@ -4666,8 +4670,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 263,
-						"y": 955,
+						"x": 277,
+						"y": 960,
 						"width": 122.49081598226049,
 						"height": 122.49081598226049,
 						"originX": 0.5,
@@ -4683,7 +4687,7 @@
 					}
 				},
 				{
-					"type": "Sprite2",
+					"type": "celucontrol",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "arri",
@@ -4694,7 +4698,9 @@
 					"uid": 106,
 					"sid": 459123499112375,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"control": 1
+					},
 					"behaviors": {
 						"Anchor": {
 							"properties": {
@@ -4730,7 +4736,7 @@
 					}
 				},
 				{
-					"type": "Sprite2",
+					"type": "celucontrol",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "izq",
@@ -4741,7 +4747,9 @@
 					"uid": 107,
 					"sid": 543985169939767,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"control": 2
+					},
 					"behaviors": {
 						"Anchor": {
 							"properties": {
@@ -4760,12 +4768,12 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 542,
-						"y": 689,
+						"x": 437,
+						"y": 792,
 						"width": 122.49081598226049,
 						"height": 122.49081598226049,
-						"originX": 1.578125,
-						"originY": -0.484375,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -4777,7 +4785,7 @@
 					}
 				},
 				{
-					"type": "Sprite2",
+					"type": "celucontrol",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "botton",
@@ -4788,7 +4796,9 @@
 					"uid": 108,
 					"sid": 367124581104208,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"control": 5
+					},
 					"behaviors": {
 						"Anchor": {
 							"properties": {

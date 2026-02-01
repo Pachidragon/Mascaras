@@ -4671,14 +4671,6 @@
 									"parameters": {
 										"key": 87
 									}
-								},
-								{
-									"id": "is-touching-object",
-									"objectClass": "Touch",
-									"sid": 282884475807275,
-									"parameters": {
-										"object": "Sprite2"
-									}
 								}
 							],
 							"actions": [
@@ -4912,6 +4904,194 @@
 				}
 			],
 			"sid": 167678604110729
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "celu",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 290614342195824,
+							"parameters": {
+								"object": "celucontrol"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 613855659525256,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "celucontrol",
+									"sid": 939484623242310,
+									"parameters": {
+										"instance-variable": "control",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 511215212126325,
+									"parameters": {
+										"variable": "v_pj_mirada",
+										"value": "1"
+									}
+								},
+								{
+									"id": "simulate-control",
+									"objectClass": "Jugadore",
+									"sid": 666831306790705,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "up"
+									}
+								}
+							],
+							"sid": 774643771364141
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "celucontrol",
+									"sid": 420617517357625,
+									"parameters": {
+										"instance-variable": "control",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 889039661886171,
+									"parameters": {
+										"variable": "v_pj_mirada",
+										"value": "2"
+									}
+								},
+								{
+									"id": "simulate-control",
+									"objectClass": "Jugadore",
+									"sid": 842812155925573,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "right"
+									}
+								}
+							],
+							"sid": 619498896228301
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "celucontrol",
+									"sid": 801707055849728,
+									"parameters": {
+										"instance-variable": "control",
+										"comparison": 0,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 175207275339109,
+									"parameters": {
+										"variable": "v_pj_mirada",
+										"value": "3"
+									}
+								},
+								{
+									"id": "simulate-control",
+									"objectClass": "Jugadore",
+									"sid": 687973041458004,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "down"
+									}
+								}
+							],
+							"sid": 401275101564303
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "celucontrol",
+									"sid": 740807997398074,
+									"parameters": {
+										"instance-variable": "control",
+										"comparison": 0,
+										"value": "4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 341322624072753,
+									"parameters": {
+										"variable": "v_pj_mirada",
+										"value": "4"
+									}
+								},
+								{
+									"id": "simulate-control",
+									"objectClass": "Jugadore",
+									"sid": 365380803790187,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "left"
+									}
+								}
+							],
+							"sid": 284251806632868
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "celucontrol",
+									"sid": 104058791638068,
+									"parameters": {
+										"instance-variable": "control",
+										"comparison": 0,
+										"value": "5"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 730957649624230
+						}
+					]
+				}
+			],
+			"sid": 618632856337364
 		}
 	],
 	"sid": 324755378402390
