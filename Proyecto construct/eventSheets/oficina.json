@@ -115,6 +115,14 @@
 								"stereo-pan": "0",
 								"tag-optional": "\"ofi\""
 							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 803958781451180,
+							"parameters": {
+								"tag": "\"MENUSES\""
+							}
 						}
 					],
 					"sid": 912885989253601
@@ -3322,7 +3330,7 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 507956501554998,
+							"sid": 752889513074817,
 							"parameters": {
 								"audio-file": {
 									"path": "Fuera3"
@@ -3330,7 +3338,7 @@
 								"loop": "not-looping",
 								"volume": "0",
 								"stereo-pan": "0",
-								"tag-optional": "\"\""
+								"tag-optional": "\"RAGE\""
 							}
 						}
 					],
