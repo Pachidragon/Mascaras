@@ -43,6 +43,15 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
+							"sid": 103207288614152,
+							"parameters": {
+								"variable": "t_reloj",
+								"value": "100"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
 							"sid": 259214773726941,
 							"parameters": {
 								"variable": "v_paciencia",
@@ -92,9 +101,49 @@
 							"parameters": {
 								"visibility": "visible"
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 539390618353810,
+							"parameters": {
+								"audio-file": {
+									"path": "Dentro1"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"ofi\""
+							}
 						}
 					],
 					"sid": 912885989253601
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 220039465440036,
+							"parameters": {
+								"variable": "fase_juego",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 659103504880668,
+							"parameters": {
+								"tag": "\"ofi\""
+							}
+						}
+					],
+					"sid": 677643470257325
 				},
 				{
 					"eventType": "block",
@@ -2558,9 +2607,9 @@
 								{
 									"id": "set-animation",
 									"objectClass": "Jugadore",
-									"sid": 592411797376563,
+									"sid": 304775868276503,
 									"parameters": {
-										"animation": "\"rage\"",
+										"animation": "\"rage_barre_abajo\"",
 										"from": "beginning"
 									}
 								},
@@ -7899,6 +7948,138 @@
 							"isOrBlock": true
 						}
 					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 968110319921746,
+							"parameters": {
+								"variable": "fase_juego",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"type": "comment",
+							"text": "escoba"
+						}
+					],
+					"sid": 563679756978896,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 372770503807200,
+									"parameters": {
+										"key": 32
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 535324618912809,
+									"parameters": {
+										"variable": "v_pj_estado",
+										"value": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 459864949842512,
+									"parameters": {
+										"seconds": "0.7",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 732795811208585,
+									"parameters": {
+										"variable": "v_pj_estado",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 975387013807779,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 703264065726973,
+									"parameters": {
+										"object": "celucontrol",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 132381303386231,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "celucontrol",
+											"sid": 770843527236863,
+											"parameters": {
+												"instance-variable": "control",
+												"comparison": 0,
+												"value": "5"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 516121412478927,
+											"parameters": {
+												"variable": "v_pj_estado",
+												"value": "1"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 720812791820148,
+											"parameters": {
+												"seconds": "0.7",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 635652272575017,
+											"parameters": {
+												"variable": "v_pj_estado",
+												"value": "0"
+											}
+										}
+									],
+									"sid": 659349121530219
+								}
+							],
+							"isOrBlock": true
+						}
+					]
 				}
 			],
 			"sid": 758795650613997
@@ -7993,16 +8174,16 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 777930083664591,
+									"sid": 172346398169934,
 									"parameters": {
-										"variable": "v_pj_estado",
+										"variable": "fase_juego",
 										"comparison": 0,
 										"value": "0"
 									}
 								}
 							],
 							"actions": [],
-							"sid": 334524345729855,
+							"sid": 410405730081832,
 							"children": [
 								{
 									"eventType": "block",
@@ -8010,26 +8191,126 @@
 										{
 											"id": "compare-eventvar",
 											"objectClass": "System",
-											"sid": 313288364946559,
+											"sid": 280322449307097,
 											"parameters": {
-												"variable": "v_pj_mirada",
+												"variable": "v_pj_estado",
 												"comparison": 0,
 												"value": "1"
 											}
 										}
 									],
-									"actions": [
+									"actions": [],
+									"sid": 713105434723896,
+									"children": [
 										{
-											"id": "set-animation",
-											"objectClass": "Jugadore",
-											"sid": 766576333137337,
-											"parameters": {
-												"animation": "\"norm_cam_arriba\"",
-												"from": "beginning"
-											}
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 721983805565846,
+													"parameters": {
+														"variable": "v_pj_mirada",
+														"comparison": 0,
+														"value": "1"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Jugadore",
+													"sid": 904154291785868,
+													"parameters": {
+														"animation": "\"norm_barre_arriba\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 329039024808329
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 252631521245731,
+													"parameters": {
+														"variable": "v_pj_mirada",
+														"comparison": 0,
+														"value": "2"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Jugadore",
+													"sid": 547093699531331,
+													"parameters": {
+														"animation": "\"norm_barre_der\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 991091346713879
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 975069077454142,
+													"parameters": {
+														"variable": "v_pj_mirada",
+														"comparison": 0,
+														"value": "3"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Jugadore",
+													"sid": 864448898926383,
+													"parameters": {
+														"animation": "\"norm_barre_abajo\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 827034966966934
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 532911829466069,
+													"parameters": {
+														"variable": "v_pj_mirada",
+														"comparison": 0,
+														"value": "4"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Jugadore",
+													"sid": 639025416981993,
+													"parameters": {
+														"animation": "\"norm_barre_izq\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 412515928948761
 										}
-									],
-									"sid": 935945532135932
+									]
 								},
 								{
 									"eventType": "block",
@@ -8037,80 +8318,126 @@
 										{
 											"id": "compare-eventvar",
 											"objectClass": "System",
-											"sid": 173112222944468,
+											"sid": 963778126158784,
 											"parameters": {
-												"variable": "v_pj_mirada",
+												"variable": "v_pj_estado",
 												"comparison": 0,
-												"value": "2"
+												"value": "0"
 											}
 										}
 									],
-									"actions": [
+									"actions": [],
+									"sid": 479699561776733,
+									"children": [
 										{
-											"id": "set-animation",
-											"objectClass": "Jugadore",
-											"sid": 664166013424547,
-											"parameters": {
-												"animation": "\"norm_cam_der\"",
-												"from": "beginning"
-											}
-										}
-									],
-									"sid": 418199797829763
-								},
-								{
-									"eventType": "block",
-									"conditions": [
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 809463981326196,
+													"parameters": {
+														"variable": "v_pj_mirada",
+														"comparison": 0,
+														"value": "1"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Jugadore",
+													"sid": 545295523190551,
+													"parameters": {
+														"animation": "\"norm_cam_arriba\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 753556163389148
+										},
 										{
-											"id": "compare-eventvar",
-											"objectClass": "System",
-											"sid": 561887164651051,
-											"parameters": {
-												"variable": "v_pj_mirada",
-												"comparison": 0,
-												"value": "3"
-											}
-										}
-									],
-									"actions": [
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 956748089303842,
+													"parameters": {
+														"variable": "v_pj_mirada",
+														"comparison": 0,
+														"value": "2"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Jugadore",
+													"sid": 529021454925126,
+													"parameters": {
+														"animation": "\"norm_cam_der\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 586884385571843
+										},
 										{
-											"id": "set-animation",
-											"objectClass": "Jugadore",
-											"sid": 446931322520201,
-											"parameters": {
-												"animation": "\"norm_cam_abaj\"",
-												"from": "beginning"
-											}
-										}
-									],
-									"sid": 185441594021464
-								},
-								{
-									"eventType": "block",
-									"conditions": [
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 518020948381017,
+													"parameters": {
+														"variable": "v_pj_mirada",
+														"comparison": 0,
+														"value": "3"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Jugadore",
+													"sid": 752191811873845,
+													"parameters": {
+														"animation": "\"norm_cam_abaj\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 460877890551787
+										},
 										{
-											"id": "compare-eventvar",
-											"objectClass": "System",
-											"sid": 578113290871946,
-											"parameters": {
-												"variable": "v_pj_mirada",
-												"comparison": 0,
-												"value": "4"
-											}
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 877460654271071,
+													"parameters": {
+														"variable": "v_pj_mirada",
+														"comparison": 0,
+														"value": "4"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Jugadore",
+													"sid": 524957413751865,
+													"parameters": {
+														"animation": "\"norm_cam_izq\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 337514947678387
 										}
-									],
-									"actions": [
-										{
-											"id": "set-animation",
-											"objectClass": "Jugadore",
-											"sid": 844725278592412,
-											"parameters": {
-												"animation": "\"norm_cam_izq\"",
-												"from": "beginning"
-											}
-										}
-									],
-									"sid": 860102177695265
+									]
 								}
 							]
 						},
@@ -8120,16 +8447,35 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 761612862500409,
+									"sid": 431646258108331,
 									"parameters": {
-										"variable": "v_pj_estado",
+										"variable": "fase_juego",
 										"comparison": 0,
-										"value": "1"
+										"value": "2"
 									}
 								}
 							],
-							"actions": [],
-							"sid": 221562269450698,
+							"actions": [
+								{
+									"id": "tween-two-properties",
+									"objectClass": "Jugadore",
+									"sid": 577931960024072,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "600",
+										"end-y": "600",
+										"time": "1",
+										"ease": "default",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 423466409420028,
 							"children": [
 								{
 									"eventType": "block",
@@ -8137,26 +8483,126 @@
 										{
 											"id": "compare-eventvar",
 											"objectClass": "System",
-											"sid": 803622339183274,
+											"sid": 751984781666943,
 											"parameters": {
-												"variable": "v_pj_mirada",
+												"variable": "v_pj_estado",
 												"comparison": 0,
 												"value": "1"
 											}
 										}
 									],
-									"actions": [
+									"actions": [],
+									"sid": 299591466844264,
+									"children": [
 										{
-											"id": "set-animation",
-											"objectClass": "Jugadore",
-											"sid": 196856786767992,
-											"parameters": {
-												"animation": "\"norm_barre_arriba\"",
-												"from": "beginning"
-											}
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 441847035209632,
+													"parameters": {
+														"variable": "v_pj_mirada",
+														"comparison": 0,
+														"value": "1"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Jugadore",
+													"sid": 938198622427831,
+													"parameters": {
+														"animation": "\"rage_barre_arriba\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 988889384107540
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 135204019182020,
+													"parameters": {
+														"variable": "v_pj_mirada",
+														"comparison": 0,
+														"value": "2"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Jugadore",
+													"sid": 460012926321939,
+													"parameters": {
+														"animation": "\"rage_barre_der\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 884286726824114
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 665022037697401,
+													"parameters": {
+														"variable": "v_pj_mirada",
+														"comparison": 0,
+														"value": "3"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Jugadore",
+													"sid": 708567062210058,
+													"parameters": {
+														"animation": "\"rage_barre_abajo\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 497112784405782
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 922198353816586,
+													"parameters": {
+														"variable": "v_pj_mirada",
+														"comparison": 0,
+														"value": "4"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Jugadore",
+													"sid": 477533141558474,
+													"parameters": {
+														"animation": "\"rage_barre_izq\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 333853190464453
 										}
-									],
-									"sid": 994534571354210
+									]
 								},
 								{
 									"eventType": "block",
@@ -8164,80 +8610,126 @@
 										{
 											"id": "compare-eventvar",
 											"objectClass": "System",
-											"sid": 318149740364776,
+											"sid": 199431107425256,
 											"parameters": {
-												"variable": "v_pj_mirada",
+												"variable": "v_pj_estado",
 												"comparison": 0,
-												"value": "2"
+												"value": "0"
 											}
 										}
 									],
-									"actions": [
+									"actions": [],
+									"sid": 239058860545150,
+									"children": [
 										{
-											"id": "set-animation",
-											"objectClass": "Jugadore",
-											"sid": 522092325971176,
-											"parameters": {
-												"animation": "\"norm_barre_der\"",
-												"from": "beginning"
-											}
-										}
-									],
-									"sid": 504608021098497
-								},
-								{
-									"eventType": "block",
-									"conditions": [
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 584428000416413,
+													"parameters": {
+														"variable": "v_pj_mirada",
+														"comparison": 0,
+														"value": "1"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Jugadore",
+													"sid": 246393932548875,
+													"parameters": {
+														"animation": "\"rage_cam_abajo\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 654242847050881
+										},
 										{
-											"id": "compare-eventvar",
-											"objectClass": "System",
-											"sid": 200069841548180,
-											"parameters": {
-												"variable": "v_pj_mirada",
-												"comparison": 0,
-												"value": "3"
-											}
-										}
-									],
-									"actions": [
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 458132148246744,
+													"parameters": {
+														"variable": "v_pj_mirada",
+														"comparison": 0,
+														"value": "2"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Jugadore",
+													"sid": 468787986490651,
+													"parameters": {
+														"animation": "\"rage_cam_derecha\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 478773090261062
+										},
 										{
-											"id": "set-animation",
-											"objectClass": "Jugadore",
-											"sid": 102025418512872,
-											"parameters": {
-												"animation": "\"norm_barre_abajo\"",
-												"from": "beginning"
-											}
-										}
-									],
-									"sid": 730199451283389
-								},
-								{
-									"eventType": "block",
-									"conditions": [
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 901441825950973,
+													"parameters": {
+														"variable": "v_pj_mirada",
+														"comparison": 0,
+														"value": "3"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Jugadore",
+													"sid": 524314519376112,
+													"parameters": {
+														"animation": "\"rage_cam_abajo\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 795256081488508
+										},
 										{
-											"id": "compare-eventvar",
-											"objectClass": "System",
-											"sid": 821762103235033,
-											"parameters": {
-												"variable": "v_pj_mirada",
-												"comparison": 0,
-												"value": "4"
-											}
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 827384397655402,
+													"parameters": {
+														"variable": "v_pj_mirada",
+														"comparison": 0,
+														"value": "4"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Jugadore",
+													"sid": 956517004270514,
+													"parameters": {
+														"animation": "\"rage_cam_izq\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 367775662565244
 										}
-									],
-									"actions": [
-										{
-											"id": "set-animation",
-											"objectClass": "Jugadore",
-											"sid": 380535849720061,
-											"parameters": {
-												"animation": "\"norm_barre_izq\"",
-												"from": "beginning"
-											}
-										}
-									],
-									"sid": 313526886738793
+									]
 								}
 							]
 						}
