@@ -1310,14 +1310,6 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "on-key-pressed",
-									"objectClass": "Keyboard",
-									"sid": 463522909480777,
-									"parameters": {
-										"key": 32
-									}
-								},
-								{
 									"id": "is-overlapping-another-object",
 									"objectClass": "Jugadore",
 									"sid": 680170188799952,
@@ -1425,7 +1417,195 @@
 									}
 								}
 							],
-							"sid": 747699235951090
+							"sid": 747699235951090,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-touched-object",
+											"objectClass": "Touch",
+											"sid": 968693176582228,
+											"parameters": {
+												"object": "celucontrol",
+												"type": "start"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 933319516072226,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "celucontrol",
+													"sid": 697483618133225,
+													"parameters": {
+														"instance-variable": "control",
+														"comparison": 0,
+														"value": "5"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "tween-one-property",
+													"objectClass": "e_mancha",
+													"sid": 910504102015617,
+													"behaviorType": "Tween",
+													"parameters": {
+														"tags": "\"\"",
+														"property": "offsetHeight",
+														"end-value": "0",
+														"time": "1",
+														"ease": "default",
+														"destroy-on-complete": "no",
+														"loop": "no",
+														"ping-pong": "no",
+														"repeat-count": "1"
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 555564321567612,
+													"parameters": {
+														"audio-file": {
+															"path": "VFX_Barrido"
+														},
+														"loop": "not-looping",
+														"volume": "5",
+														"stereo-pan": "0",
+														"tag-optional": "\"\""
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 732019331289723,
+													"parameters": {
+														"variable": "v_pj_estado",
+														"value": "1"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 765202087201618,
+													"parameters": {
+														"seconds": "1.0",
+														"use-timescale": true
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 249278070881896,
+													"parameters": {
+														"variable": "v_pj_estado",
+														"value": "0"
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "e_mancha",
+													"sid": 158190887726713,
+													"parameters": {
+														"instance-variable": "mancha",
+														"value": "3"
+													}
+												}
+											],
+											"sid": 652084945753318
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-key-pressed",
+											"objectClass": "Keyboard",
+											"sid": 115056476288187,
+											"parameters": {
+												"key": 32
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "tween-one-property",
+											"objectClass": "e_mancha",
+											"sid": 872665966669654,
+											"behaviorType": "Tween",
+											"parameters": {
+												"tags": "\"\"",
+												"property": "offsetHeight",
+												"end-value": "0",
+												"time": "1",
+												"ease": "default",
+												"destroy-on-complete": "no",
+												"loop": "no",
+												"ping-pong": "no",
+												"repeat-count": "1"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 578341117736579,
+											"parameters": {
+												"audio-file": {
+													"path": "VFX_Barrido"
+												},
+												"loop": "not-looping",
+												"volume": "5",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 108975561389155,
+											"parameters": {
+												"variable": "v_pj_estado",
+												"value": "1"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 876589050083918,
+											"parameters": {
+												"seconds": "1.0",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 255346028483169,
+											"parameters": {
+												"variable": "v_pj_estado",
+												"value": "0"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "e_mancha",
+											"sid": 171498839933794,
+											"parameters": {
+												"instance-variable": "mancha",
+												"value": "3"
+											}
+										}
+									],
+									"sid": 163829444509615
+								}
+							]
 						}
 					]
 				},
@@ -6514,11 +6694,12 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "is-touching-object",
+									"id": "on-touched-object",
 									"objectClass": "Touch",
-									"sid": 220139145195647,
+									"sid": 554148219019285,
 									"parameters": {
-										"object": "celucontrol"
+										"object": "celucontrol",
+										"type": "start"
 									}
 								}
 							],
