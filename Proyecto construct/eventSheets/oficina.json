@@ -3164,12 +3164,17 @@
 									}
 								},
 								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 759286011484551,
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 590444419589591,
 									"parameters": {
-										"variable": "s_furia",
-										"value": "int(random(1,4))"
+										"audio-file": {
+											"path": "VFX_Golpe1"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								}
 							],
@@ -3239,12 +3244,17 @@
 									}
 								},
 								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 802971646567439,
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 716705242833240,
 									"parameters": {
-										"variable": "s_furia",
-										"value": "int(random(1,4))"
+										"audio-file": {
+											"path": "VFX_Golpe2"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								}
 							],
@@ -3314,12 +3324,17 @@
 									}
 								},
 								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 206041216791757,
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 825437143138619,
 									"parameters": {
-										"variable": "s_furia",
-										"value": "int(random(1,4))"
+										"audio-file": {
+											"path": "VFX_Golpe3"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								}
 							],
@@ -3389,12 +3404,17 @@
 									}
 								},
 								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 390040708692461,
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 554707993078303,
 									"parameters": {
-										"variable": "s_furia",
-										"value": "int(random(1,4))"
+										"audio-file": {
+											"path": "VFX_Golpe1"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								}
 							],
@@ -3464,12 +3484,17 @@
 									}
 								},
 								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 723081904379779,
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 726961570531029,
 									"parameters": {
-										"variable": "s_furia",
-										"value": "int(random(1,4))"
+										"audio-file": {
+											"path": "VFX_Cachetada2"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								}
 							],
@@ -3539,12 +3564,17 @@
 									}
 								},
 								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 186871776499387,
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 767567554215397,
 									"parameters": {
-										"variable": "s_furia",
-										"value": "int(random(1,4))"
+										"audio-file": {
+											"path": "VFX_Golpe2"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								}
 							],
@@ -3614,12 +3644,17 @@
 									}
 								},
 								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 173666439561271,
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 759690180939610,
 									"parameters": {
-										"variable": "s_furia",
-										"value": "int(random(1,4))"
+										"audio-file": {
+											"path": "VFX_Golpe3"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								}
 							],
@@ -3689,12 +3724,17 @@
 									}
 								},
 								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 939759775650838,
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 386445284626715,
 									"parameters": {
-										"variable": "s_furia",
-										"value": "int(random(1,4))"
+										"audio-file": {
+											"path": "VFX_Golpe1"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								}
 							],
@@ -3764,12 +3804,17 @@
 									}
 								},
 								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 940632385393548,
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 348490599920767,
 									"parameters": {
-										"variable": "s_furia",
-										"value": "int(random(1,4))"
+										"audio-file": {
+											"path": "VFX_Golpe2"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								}
 							],
@@ -3839,12 +3884,17 @@
 									}
 								},
 								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 886004711915088,
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 739099506139538,
 									"parameters": {
-										"variable": "s_furia",
-										"value": "int(random(1,4))"
+										"audio-file": {
+											"path": "VFX_Golpe3"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								}
 							],
@@ -3914,12 +3964,17 @@
 									}
 								},
 								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 257382437266726,
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 236409400700992,
 									"parameters": {
-										"variable": "s_furia",
-										"value": "int(random(1,4))"
+										"audio-file": {
+											"path": "VFX_Golpe1"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								}
 							],
@@ -3989,12 +4044,17 @@
 									}
 								},
 								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 836620712354271,
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 224581363949929,
 									"parameters": {
-										"variable": "s_furia",
-										"value": "int(random(1,4))"
+										"audio-file": {
+											"path": "VFX_Golpe2"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								}
 							],
@@ -4064,12 +4124,17 @@
 									}
 								},
 								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 982995693379049,
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 393233412799512,
 									"parameters": {
-										"variable": "s_furia",
-										"value": "int(random(1,4))"
+										"audio-file": {
+											"path": "VFX_Golpe3"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								}
 							],
@@ -4139,12 +4204,17 @@
 									}
 								},
 								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 786755827402379,
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 749092963389421,
 									"parameters": {
-										"variable": "s_furia",
-										"value": "int(random(1,4))"
+										"audio-file": {
+											"path": "VFX_Golpe1"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								}
 							],
@@ -4214,12 +4284,17 @@
 									}
 								},
 								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 301909069929666,
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 218813947707230,
 									"parameters": {
-										"variable": "s_furia",
-										"value": "int(random(1,4))"
+										"audio-file": {
+											"path": "VFX_Golpe2"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								}
 							],

@@ -338,6 +338,30 @@
 					"file-info": {
 						"purpose": "none"
 					}
+				},
+				{
+					"name": "VFX_Cachetada1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 356402535240015,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "VFX_Cachetada2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 734768620645866,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "VFX_Cachetada3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 373378431631757,
+					"file-info": {
+						"purpose": "none"
+					}
 				}
 			],
 			"subfolders": []
