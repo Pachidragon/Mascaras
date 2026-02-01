@@ -299,6 +299,80 @@
 				}
 			],
 			"sid": 883854685854139
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "titulo",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [],
+			"sid": 189798273144851
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 360427897662130,
+					"parameters": {
+						"interval-seconds": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "titulo1",
+					"sid": 648967258479999,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"Pulse\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 471862430017078,
+					"parameters": {
+						"seconds": "0.5",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "titulo1",
+					"sid": 894131639004129,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"Pulse\""
+					}
+				}
+			],
+			"sid": 720484965115125
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 820680001636161
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "titulo1",
+					"sid": 372507249102374,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"Pulse\""
+					}
+				}
+			],
+			"sid": 170809937890137
 		}
 	],
 	"sid": 146252143284568
