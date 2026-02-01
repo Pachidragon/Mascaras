@@ -138,6 +138,20 @@
 			"name": "Adjust HSL",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "pulse",
+			"name": "Pulse",
+			"author": "Danguafer/Silexars",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "softlight",
+			"name": "Soft light",
+			"author": "Scirra",
+			"bundled": false
 		}
 	],
 	"uniqueId": "2bgrqoca75u",
@@ -172,7 +186,8 @@
 					"logo_ggj",
 					"logo_bagd",
 					"Text",
-					"Sprite"
+					"Sprite",
+					"titulo1"
 				],
 				"subfolders": [
 					{

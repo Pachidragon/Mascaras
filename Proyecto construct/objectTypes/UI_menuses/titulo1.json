@@ -1,0 +1,25 @@
+{
+	"name": "titulo1",
+	"plugin-id": "Text",
+	"sid": 295740423363455,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 174804858860288
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "softlight",
+			"name": "SoftLight"
+		},
+		{
+			"effectId": "pulse",
+			"name": "Pulse"
+		}
+	]
+}
