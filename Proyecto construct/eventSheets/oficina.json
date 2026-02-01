@@ -3260,6 +3260,43 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
+							"sid": 861055169724853,
+							"parameters": {
+								"variable": "fase_juego",
+								"comparison": 0,
+								"value": "2"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 119873211624572
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 507956501554998,
+							"parameters": {
+								"audio-file": {
+									"path": "Fuera3"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 786325105500389
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
 							"sid": 816994591692754,
 							"parameters": {
 								"variable": "fase_juego",
