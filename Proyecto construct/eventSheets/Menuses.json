@@ -373,6 +373,62 @@
 				}
 			],
 			"sid": 170809937890137
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 183832019259467
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 832505706190847,
+					"parameters": {
+						"audio-file": {
+							"path": "MenuNosu1"
+						},
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"MENUSES\""
+					}
+				}
+			],
+			"sid": 970105694446379
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 417064879899600
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 132363244806204,
+					"parameters": {
+						"tag": "\"ofi\""
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 786260561611956,
+					"parameters": {
+						"tag": "\"RAGE\""
+					}
+				}
+			],
+			"sid": 929987600123187
 		}
 	],
 	"sid": 146252143284568
