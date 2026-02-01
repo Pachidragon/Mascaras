@@ -146,6 +146,16 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 270401921251010
+		},
+		{
+			"eventType": "variable",
+			"name": "s_furia",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 544796489524911
 		}
 	],
 	"sid": 627737672315670

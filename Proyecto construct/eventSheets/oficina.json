@@ -2,6 +2,10 @@
 	"name": "oficina",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "audio"
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "camara e inicio",
@@ -3160,17 +3164,12 @@
 									}
 								},
 								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 621151543101102,
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 759286011484551,
 									"parameters": {
-										"audio-file": {
-											"path": "VFX_Viento2"
-										},
-										"loop": "not-looping",
-										"volume": "0",
-										"stereo-pan": "0",
-										"tag-optional": "\"\""
+										"variable": "s_furia",
+										"value": "int(random(1,4))"
 									}
 								}
 							],
@@ -3240,17 +3239,12 @@
 									}
 								},
 								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 610712704528589,
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 802971646567439,
 									"parameters": {
-										"audio-file": {
-											"path": "VFX_Viento2"
-										},
-										"loop": "not-looping",
-										"volume": "5",
-										"stereo-pan": "0",
-										"tag-optional": "\"\""
+										"variable": "s_furia",
+										"value": "int(random(1,4))"
 									}
 								}
 							],
@@ -3320,17 +3314,12 @@
 									}
 								},
 								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 197224264347676,
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 206041216791757,
 									"parameters": {
-										"audio-file": {
-											"path": "VFX_Viento2"
-										},
-										"loop": "not-looping",
-										"volume": "5",
-										"stereo-pan": "0",
-										"tag-optional": "\"\""
+										"variable": "s_furia",
+										"value": "int(random(1,4))"
 									}
 								}
 							],
@@ -3400,17 +3389,12 @@
 									}
 								},
 								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 915316113304871,
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 390040708692461,
 									"parameters": {
-										"audio-file": {
-											"path": "VFX_Viento2"
-										},
-										"loop": "not-looping",
-										"volume": "5",
-										"stereo-pan": "0",
-										"tag-optional": "\"\""
+										"variable": "s_furia",
+										"value": "int(random(1,4))"
 									}
 								}
 							],
@@ -3480,17 +3464,12 @@
 									}
 								},
 								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 192467954619777,
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 723081904379779,
 									"parameters": {
-										"audio-file": {
-											"path": "VFX_Viento2"
-										},
-										"loop": "not-looping",
-										"volume": "5",
-										"stereo-pan": "0",
-										"tag-optional": "\"\""
+										"variable": "s_furia",
+										"value": "int(random(1,4))"
 									}
 								}
 							],
@@ -3560,17 +3539,12 @@
 									}
 								},
 								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 741690664638340,
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 186871776499387,
 									"parameters": {
-										"audio-file": {
-											"path": "VFX_Viento2"
-										},
-										"loop": "not-looping",
-										"volume": "5",
-										"stereo-pan": "0",
-										"tag-optional": "\"\""
+										"variable": "s_furia",
+										"value": "int(random(1,4))"
 									}
 								}
 							],
@@ -3640,17 +3614,12 @@
 									}
 								},
 								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 358054359372915,
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 173666439561271,
 									"parameters": {
-										"audio-file": {
-											"path": "VFX_Viento2"
-										},
-										"loop": "not-looping",
-										"volume": "5",
-										"stereo-pan": "0",
-										"tag-optional": "\"\""
+										"variable": "s_furia",
+										"value": "int(random(1,4))"
 									}
 								}
 							],
@@ -3720,17 +3689,12 @@
 									}
 								},
 								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 467703022046395,
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 939759775650838,
 									"parameters": {
-										"audio-file": {
-											"path": "VFX_Viento2"
-										},
-										"loop": "not-looping",
-										"volume": "5",
-										"stereo-pan": "0",
-										"tag-optional": "\"\""
+										"variable": "s_furia",
+										"value": "int(random(1,4))"
 									}
 								}
 							],
@@ -3800,17 +3764,12 @@
 									}
 								},
 								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 515677973419993,
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 940632385393548,
 									"parameters": {
-										"audio-file": {
-											"path": "VFX_Viento2"
-										},
-										"loop": "not-looping",
-										"volume": "5",
-										"stereo-pan": "0",
-										"tag-optional": "\"\""
+										"variable": "s_furia",
+										"value": "int(random(1,4))"
 									}
 								}
 							],
@@ -3880,17 +3839,12 @@
 									}
 								},
 								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 350119497904660,
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 886004711915088,
 									"parameters": {
-										"audio-file": {
-											"path": "VFX_Viento2"
-										},
-										"loop": "not-looping",
-										"volume": "5",
-										"stereo-pan": "0",
-										"tag-optional": "\"\""
+										"variable": "s_furia",
+										"value": "int(random(1,4))"
 									}
 								}
 							],
@@ -3960,17 +3914,12 @@
 									}
 								},
 								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 927525169170872,
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 257382437266726,
 									"parameters": {
-										"audio-file": {
-											"path": "VFX_Viento2"
-										},
-										"loop": "not-looping",
-										"volume": "5",
-										"stereo-pan": "0",
-										"tag-optional": "\"\""
+										"variable": "s_furia",
+										"value": "int(random(1,4))"
 									}
 								}
 							],
@@ -4040,17 +3989,12 @@
 									}
 								},
 								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 401153912947342,
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 836620712354271,
 									"parameters": {
-										"audio-file": {
-											"path": "VFX_Viento2"
-										},
-										"loop": "not-looping",
-										"volume": "5",
-										"stereo-pan": "0",
-										"tag-optional": "\"\""
+										"variable": "s_furia",
+										"value": "int(random(1,4))"
 									}
 								}
 							],
@@ -4120,17 +4064,12 @@
 									}
 								},
 								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 909303567338425,
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 982995693379049,
 									"parameters": {
-										"audio-file": {
-											"path": "VFX_Viento2"
-										},
-										"loop": "not-looping",
-										"volume": "5",
-										"stereo-pan": "0",
-										"tag-optional": "\"\""
+										"variable": "s_furia",
+										"value": "int(random(1,4))"
 									}
 								}
 							],
@@ -4200,17 +4139,12 @@
 									}
 								},
 								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 783523115573502,
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 786755827402379,
 									"parameters": {
-										"audio-file": {
-											"path": "VFX_Viento2"
-										},
-										"loop": "not-looping",
-										"volume": "5",
-										"stereo-pan": "0",
-										"tag-optional": "\"\""
+										"variable": "s_furia",
+										"value": "int(random(1,4))"
 									}
 								}
 							],
@@ -4280,17 +4214,12 @@
 									}
 								},
 								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 100665807114910,
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 301909069929666,
 									"parameters": {
-										"audio-file": {
-											"path": "VFX_Viento2"
-										},
-										"loop": "not-looping",
-										"volume": "5",
-										"stereo-pan": "0",
-										"tag-optional": "\"\""
+										"variable": "s_furia",
+										"value": "int(random(1,4))"
 									}
 								}
 							],

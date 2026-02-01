@@ -92,13 +92,6 @@
 		},
 		{
 			"type": "behavior",
-			"id": "Pathfinding",
-			"name": "Pathfinding",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
 			"id": "Rotate",
 			"name": "Rotate",
 			"author": "Scirra",
@@ -200,14 +193,6 @@
 						],
 						"subfolders": [],
 						"name": "objetos"
-					},
-					{
-						"items": [
-							"P_1",
-							"P_2"
-						],
-						"subfolders": [],
-						"name": "personos"
 					},
 					{
 						"items": [
@@ -326,6 +311,30 @@
 					"name": "VFX_Viento2.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 932846604332518,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "VFX_Golpe3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 596093588119925,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "VFX_Golpe1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 965329132446329,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "VFX_Golpe2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 604268970242178,
 					"file-info": {
 						"purpose": "none"
 					}
