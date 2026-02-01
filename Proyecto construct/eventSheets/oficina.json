@@ -32,6 +32,33 @@
 							}
 						},
 						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 980322139115937,
+							"parameters": {
+								"variable": "timer_fase2",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 259214773726941,
+							"parameters": {
+								"variable": "v_paciencia",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 132743286279248,
+							"parameters": {
+								"variable": "crashbarra",
+								"value": "false"
+							}
+						},
+						{
 							"id": "set-enabled",
 							"objectClass": "f_reloj",
 							"sid": 408357637855404,
@@ -1347,73 +1374,6 @@
 									"parameters": {
 										"width": "v_paciencia",
 										"height": "b_atras.Height-10"
-									}
-								},
-								{
-									"id": "tween-one-property",
-									"objectClass": "e_mancha",
-									"sid": 869524170465804,
-									"behaviorType": "Tween",
-									"parameters": {
-										"tags": "\"\"",
-										"property": "offsetHeight",
-										"end-value": "0",
-										"time": "1",
-										"ease": "default",
-										"destroy-on-complete": "no",
-										"loop": "no",
-										"ping-pong": "no",
-										"repeat-count": "1"
-									}
-								},
-								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 599124182037969,
-									"parameters": {
-										"audio-file": {
-											"path": "VFX_Barrido"
-										},
-										"loop": "not-looping",
-										"volume": "5",
-										"stereo-pan": "0",
-										"tag-optional": "\"\""
-									}
-								},
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 458781424052659,
-									"parameters": {
-										"variable": "v_pj_estado",
-										"value": "1"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 309428404252790,
-									"parameters": {
-										"seconds": "1.0",
-										"use-timescale": true
-									}
-								},
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 242420997998326,
-									"parameters": {
-										"variable": "v_pj_estado",
-										"value": "0"
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "e_mancha",
-									"sid": 550886208388953,
-									"parameters": {
-										"instance-variable": "mancha",
-										"value": "3"
 									}
 								}
 							],
@@ -3297,6 +3257,76 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
+							"sid": 580059616393058,
+							"parameters": {
+								"variable": "fase_juego",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 412527926366675,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 297221918759406,
+									"parameters": {
+										"interval-seconds": "1.0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 476642451112789,
+									"parameters": {
+										"variable": "timer_fase2",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 548808586142551
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 789832514352187,
+									"parameters": {
+										"variable": "timer_fase2",
+										"comparison": 5,
+										"value": "40"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 100967624878002,
+									"parameters": {
+										"layout": "L_Derrota"
+									}
+								}
+							],
+							"sid": 250816076930632
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
 							"sid": 816994591692754,
 							"parameters": {
 								"variable": "fase_juego",
@@ -4540,7 +4570,12 @@
 							}
 						}
 					],
-					"actions": [],
+					"actions": [
+						{
+							"type": "comment",
+							"text": "explosiones"
+						}
+					],
 					"sid": 806604041541542,
 					"children": [
 						{

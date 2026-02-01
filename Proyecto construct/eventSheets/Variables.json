@@ -156,6 +156,16 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 544796489524911
+		},
+		{
+			"eventType": "variable",
+			"name": "timer_fase2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 621940796140753
 		}
 	],
 	"sid": 627737672315670
