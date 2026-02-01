@@ -375,7 +375,16 @@
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "Fuera3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 650559127524832,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"video": {

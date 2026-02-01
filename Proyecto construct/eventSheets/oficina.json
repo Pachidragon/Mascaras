@@ -2279,15 +2279,6 @@
 									}
 								},
 								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 876713007405735,
-									"parameters": {
-										"seconds": "1.0",
-										"use-timescale": true
-									}
-								},
-								{
 									"id": "set-boolean-eventvar",
 									"objectClass": "System",
 									"sid": 634919432317743,
@@ -2299,10 +2290,10 @@
 								{
 									"id": "set-eventvar-value",
 									"objectClass": "System",
-									"sid": 689358612822298,
+									"sid": 344390278840985,
 									"parameters": {
 										"variable": "fase_juego",
-										"value": "1"
+										"value": "2"
 									}
 								}
 							],
@@ -2365,6 +2356,15 @@
 									"text": "ocultar barra de vida"
 								},
 								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 223664053069157,
+									"parameters": {
+										"variable": "fase_juego",
+										"value": "2"
+									}
+								},
+								{
 									"id": "set-visible",
 									"objectClass": "b_atras",
 									"sid": 323747519457718,
@@ -2396,15 +2396,6 @@
 								{
 									"type": "comment",
 									"text": "cambio apariencia del personaje"
-								},
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 493834440539218,
-									"parameters": {
-										"variable": "fase_juego",
-										"value": "2"
-									}
 								},
 								{
 									"id": "set-animation",
@@ -3099,6 +3090,7 @@
 					],
 					"actions": [],
 					"sid": 757910501451943,
+					"disabled": true,
 					"children": [
 						{
 							"eventType": "block",
@@ -3178,7 +3170,8 @@
 									}
 								}
 							],
-							"sid": 726612471994830
+							"sid": 726612471994830,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -3258,7 +3251,8 @@
 									}
 								}
 							],
-							"sid": 325960093621986
+							"sid": 325960093621986,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -3338,7 +3332,8 @@
 									}
 								}
 							],
-							"sid": 440980858199521
+							"sid": 440980858199521,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -3418,7 +3413,8 @@
 									}
 								}
 							],
-							"sid": 598929206777172
+							"sid": 598929206777172,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -3498,7 +3494,8 @@
 									}
 								}
 							],
-							"sid": 852147226105467
+							"sid": 852147226105467,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -3578,7 +3575,8 @@
 									}
 								}
 							],
-							"sid": 773345674612394
+							"sid": 773345674612394,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -3658,7 +3656,8 @@
 									}
 								}
 							],
-							"sid": 136898434083464
+							"sid": 136898434083464,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -3738,7 +3737,8 @@
 									}
 								}
 							],
-							"sid": 617163902488201
+							"sid": 617163902488201,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -3818,7 +3818,8 @@
 									}
 								}
 							],
-							"sid": 698409141483559
+							"sid": 698409141483559,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -3898,7 +3899,8 @@
 									}
 								}
 							],
-							"sid": 620764488408057
+							"sid": 620764488408057,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -3978,7 +3980,8 @@
 									}
 								}
 							],
-							"sid": 380471439629453
+							"sid": 380471439629453,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -4058,7 +4061,8 @@
 									}
 								}
 							],
-							"sid": 968312458272872
+							"sid": 968312458272872,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -4138,7 +4142,8 @@
 									}
 								}
 							],
-							"sid": 179918984258544
+							"sid": 179918984258544,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -4218,7 +4223,8 @@
 									}
 								}
 							],
-							"sid": 203850911556257
+							"sid": 203850911556257,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -4298,7 +4304,3328 @@
 									}
 								}
 							],
-							"sid": 598507317800585
+							"sid": 598507317800585,
+							"disabled": true
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 759902794747291,
+							"parameters": {
+								"variable": "fase_juego",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 806604041541542,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 684940303632330,
+									"parameters": {
+										"key": 32
+									}
+								}
+							],
+							"actions": [],
+							"sid": 672549248685167,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Jugadore",
+											"sid": 825689984052186,
+											"parameters": {
+												"object": "o_armario3"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-enabled",
+											"objectClass": "o_armario3",
+											"sid": 252674908731685,
+											"behaviorType": "Rotate",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_armario3",
+											"sid": 859214813865949,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": true
+											}
+										},
+										{
+											"id": "move-to-position",
+											"objectClass": "o_armario3",
+											"sid": 435969741066198,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "-500",
+												"y": "random(0, LayoutHeight)",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 822601304518038,
+											"parameters": {
+												"object-to-create": "p_rage",
+												"layer": "4",
+												"x": "o_armario3.BBoxMidX",
+												"y": "o_armario3.BBoxMidY",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 206577538246929,
+											"parameters": {
+												"audio-file": {
+													"path": "VFX_Golpe1"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 915286774442172
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Jugadore",
+											"sid": 662929803710353,
+											"parameters": {
+												"object": "o_aguadisp"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-enabled",
+											"objectClass": "o_aguadisp",
+											"sid": 127670054584933,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_aguadisp",
+											"sid": 219933096879700,
+											"behaviorType": "Rotate",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "move-to-position",
+											"objectClass": "o_aguadisp",
+											"sid": 208146985657344,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "-500",
+												"y": "random(0, LayoutHeight)",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 605881102572172,
+											"parameters": {
+												"object-to-create": "p_rage",
+												"layer": "4",
+												"x": "o_aguadisp.BBoxMidX",
+												"y": "o_aguadisp.BBoxMidY",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 360267719399533,
+											"parameters": {
+												"audio-file": {
+													"path": "VFX_Golpe2"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 948172275345318
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Jugadore",
+											"sid": 388097290586932,
+											"parameters": {
+												"object": "o_aguadisp2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "o_aguadisp2",
+											"sid": 998762163431362,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "-500",
+												"y": "random(0, LayoutHeight)",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_aguadisp2",
+											"sid": 705529230297492,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_aguadisp2",
+											"sid": 234361953484581,
+											"behaviorType": "Rotate",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 399484766526033,
+											"parameters": {
+												"object-to-create": "p_rage",
+												"layer": "4",
+												"x": "o_aguadisp2.BBoxMidX",
+												"y": "o_aguadisp2.BBoxMidY",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 808273897588494,
+											"parameters": {
+												"audio-file": {
+													"path": "VFX_Golpe3"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 917233759310581
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Jugadore",
+											"sid": 361637700434214,
+											"parameters": {
+												"object": "o_armario"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "o_armario",
+											"sid": 452613297481984,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "-500",
+												"y": "random(0, LayoutHeight)",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 966199501800877,
+											"parameters": {
+												"object-to-create": "p_rage",
+												"layer": "4",
+												"x": "o_armario.BBoxMidX",
+												"y": "o_armario.BBoxMidY",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_armario",
+											"sid": 433057436681956,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_armario",
+											"sid": 286079611973876,
+											"behaviorType": "Rotate",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 586001791705298,
+											"parameters": {
+												"audio-file": {
+													"path": "VFX_Golpe1"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 274950399819412
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Jugadore",
+											"sid": 477786914172851,
+											"parameters": {
+												"object": "o_cubo2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "o_cubo2",
+											"sid": 344792888976066,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "-500",
+												"y": "random(0, LayoutHeight)",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 502942114875929,
+											"parameters": {
+												"object-to-create": "p_rage",
+												"layer": "4",
+												"x": "o_cubo2.BBoxMidX",
+												"y": "o_cubo2.BBoxMidY",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_cubo2",
+											"sid": 111399067138657,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_cubo2",
+											"sid": 190232242015009,
+											"behaviorType": "Rotate",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 238355940955421,
+											"parameters": {
+												"audio-file": {
+													"path": "VFX_Cachetada2"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 149002275212807
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Jugadore",
+											"sid": 428499138660113,
+											"parameters": {
+												"object": "o_armario2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "o_armario2",
+											"sid": 690328697272797,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "-500",
+												"y": "random(0, LayoutHeight)",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 202084778079091,
+											"parameters": {
+												"object-to-create": "p_rage",
+												"layer": "4",
+												"x": "o_armario2.BBoxMidX",
+												"y": "o_armario2.BBoxMidY",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_armario2",
+											"sid": 401783215636170,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_armario2",
+											"sid": 120007714689138,
+											"behaviorType": "Rotate",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 247571181551973,
+											"parameters": {
+												"audio-file": {
+													"path": "VFX_Golpe2"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 734621260668954
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Jugadore",
+											"sid": 147656994747804,
+											"parameters": {
+												"object": "o_armario3"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "o_armario3",
+											"sid": 275615730732056,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "-500",
+												"y": "random(0, LayoutHeight)",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 114749781233605,
+											"parameters": {
+												"object-to-create": "p_rage",
+												"layer": "4",
+												"x": "o_armario3.BBoxMidX",
+												"y": "o_armario3.BBoxMidY",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_armario3",
+											"sid": 197844316878195,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_armario3",
+											"sid": 150583105104431,
+											"behaviorType": "Rotate",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 569282572853444,
+											"parameters": {
+												"audio-file": {
+													"path": "VFX_Golpe3"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 688245210226465
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Jugadore",
+											"sid": 735548710639731,
+											"parameters": {
+												"object": "o_cubolargo"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "o_cubolargo",
+											"sid": 153112931006513,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "-500",
+												"y": "random(0, LayoutHeight)",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 819764963959527,
+											"parameters": {
+												"object-to-create": "p_rage",
+												"layer": "4",
+												"x": "o_cubolargo.BBoxMidX",
+												"y": "o_cubolargo.BBoxMidY",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_cubolargo",
+											"sid": 959457714398520,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_cubolargo",
+											"sid": 782304609481091,
+											"behaviorType": "Rotate",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 888519179167932,
+											"parameters": {
+												"audio-file": {
+													"path": "VFX_Golpe1"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 752985777898906
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Jugadore",
+											"sid": 213887682158480,
+											"parameters": {
+												"object": "o_escritorio3"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "o_escritorio3",
+											"sid": 346305826606930,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "-500",
+												"y": "random(0, LayoutHeight)",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 769788885304164,
+											"parameters": {
+												"object-to-create": "p_rage",
+												"layer": "4",
+												"x": "o_cubolargo.BBoxMidX",
+												"y": "o_cubolargo.BBoxMidY",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_escritorio3",
+											"sid": 932234842351384,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_escritorio3",
+											"sid": 635141680164409,
+											"behaviorType": "Rotate",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 505529447113986,
+											"parameters": {
+												"audio-file": {
+													"path": "VFX_Golpe2"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 669865201939388
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Jugadore",
+											"sid": 847300355693557,
+											"parameters": {
+												"object": "o_escritoriov"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "o_escritoriov",
+											"sid": 375870024342462,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "-500",
+												"y": "random(0, LayoutHeight)",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 579947242619114,
+											"parameters": {
+												"object-to-create": "p_rage",
+												"layer": "4",
+												"x": "o_escritoriov.BBoxMidX",
+												"y": "o_escritoriov.BBoxMidY",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_escritoriov",
+											"sid": 977625428249920,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_escritoriov",
+											"sid": 452047189706649,
+											"behaviorType": "Rotate",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 738295978825549,
+											"parameters": {
+												"audio-file": {
+													"path": "VFX_Golpe3"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 467708436697585
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Jugadore",
+											"sid": 137833798656067,
+											"parameters": {
+												"object": "o_estanteria"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "o_estanteria",
+											"sid": 194049677227752,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "-500",
+												"y": "random(0, LayoutHeight)",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 628201304844785,
+											"parameters": {
+												"object-to-create": "p_rage",
+												"layer": "4",
+												"x": "o_estanteria.BBoxMidX",
+												"y": "o_estanteria.BBoxMidY",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_estanteria",
+											"sid": 414684854028464,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_estanteria",
+											"sid": 925723471156186,
+											"behaviorType": "Rotate",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 541507875998271,
+											"parameters": {
+												"audio-file": {
+													"path": "VFX_Golpe1"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 535552576072990
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Jugadore",
+											"sid": 765107460649656,
+											"parameters": {
+												"object": "o_fotocopiadora"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "o_fotocopiadora",
+											"sid": 807664175578912,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "-500",
+												"y": "random(0, LayoutHeight)",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 856413138117734,
+											"parameters": {
+												"object-to-create": "p_rage",
+												"layer": "4",
+												"x": "o_fotocopiadora.BBoxMidX",
+												"y": "o_fotocopiadora.BBoxMidY",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_fotocopiadora",
+											"sid": 346227524056196,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_fotocopiadora",
+											"sid": 421748218247822,
+											"behaviorType": "Rotate",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 460372528008475,
+											"parameters": {
+												"audio-file": {
+													"path": "VFX_Golpe2"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 331020973919446
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Jugadore",
+											"sid": 765471644887726,
+											"parameters": {
+												"object": "o_fotocopiadora2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "o_fotocopiadora2",
+											"sid": 285979018149693,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "-500",
+												"y": "random(0, LayoutHeight)",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 569071123193012,
+											"parameters": {
+												"object-to-create": "p_rage",
+												"layer": "4",
+												"x": "o_fotocopiadora2.BBoxMidX",
+												"y": "o_fotocopiadora2.BBoxMidY",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_fotocopiadora2",
+											"sid": 973230111209486,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_fotocopiadora2",
+											"sid": 277752773345463,
+											"behaviorType": "Rotate",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 348070599958487,
+											"parameters": {
+												"audio-file": {
+													"path": "VFX_Golpe3"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 889196299477234
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Jugadore",
+											"sid": 219929581748908,
+											"parameters": {
+												"object": "o_maceta"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "o_maceta",
+											"sid": 553520245899976,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "-500",
+												"y": "random(0, LayoutHeight)",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 815370611702747,
+											"parameters": {
+												"object-to-create": "p_rage",
+												"layer": "4",
+												"x": "o_maceta.BBoxMidX",
+												"y": "o_maceta.BBoxMidY",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_maceta",
+											"sid": 385347397494115,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_maceta",
+											"sid": 178160389982614,
+											"behaviorType": "Rotate",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 592743790226310,
+											"parameters": {
+												"audio-file": {
+													"path": "VFX_Golpe1"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 716952546330574
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Jugadore",
+											"sid": 214059482173255,
+											"parameters": {
+												"object": "o_maceta2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "o_maceta2",
+											"sid": 920738384961590,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "-500",
+												"y": "random(0, LayoutHeight)",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 148400745882327,
+											"parameters": {
+												"object-to-create": "p_rage",
+												"layer": "4",
+												"x": "o_maceta2.BBoxMidX",
+												"y": "o_maceta2.BBoxMidY",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_maceta2",
+											"sid": 219905679046249,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_maceta2",
+											"sid": 895023748034783,
+											"behaviorType": "Rotate",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 762534819472791,
+											"parameters": {
+												"audio-file": {
+													"path": "VFX_Golpe2"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 851334704085094
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [],
+									"sid": 756542554425562
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Jugadore",
+											"sid": 475486285709849,
+											"parameters": {
+												"object": "o_armario3"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-enabled",
+											"objectClass": "o_armario3",
+											"sid": 455652667161423,
+											"behaviorType": "Rotate",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_armario3",
+											"sid": 855358173276478,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": true
+											}
+										},
+										{
+											"id": "move-to-position",
+											"objectClass": "o_armario3",
+											"sid": 616549954070868,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "-500",
+												"y": "random(0, LayoutHeight)",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 505405058172798,
+											"parameters": {
+												"object-to-create": "p_rage",
+												"layer": "4",
+												"x": "o_armario3.BBoxMidX",
+												"y": "o_armario3.BBoxMidY",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 966719224769433,
+											"parameters": {
+												"audio-file": {
+													"path": "VFX_Golpe1"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 534340401171332
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Jugadore",
+											"sid": 741967977826427,
+											"parameters": {
+												"object": "o_aguadisp"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-enabled",
+											"objectClass": "o_aguadisp",
+											"sid": 185974426240163,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_aguadisp",
+											"sid": 152338540440835,
+											"behaviorType": "Rotate",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "move-to-position",
+											"objectClass": "o_aguadisp",
+											"sid": 476205130014287,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "-500",
+												"y": "random(0, LayoutHeight)",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 811353567153562,
+											"parameters": {
+												"object-to-create": "p_rage",
+												"layer": "4",
+												"x": "o_aguadisp.BBoxMidX",
+												"y": "o_aguadisp.BBoxMidY",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 695859556846161,
+											"parameters": {
+												"audio-file": {
+													"path": "VFX_Golpe2"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 503632049975709
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Jugadore",
+											"sid": 151591086888618,
+											"parameters": {
+												"object": "o_aguadisp2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "o_aguadisp2",
+											"sid": 310730343594710,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "-500",
+												"y": "random(0, LayoutHeight)",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_aguadisp2",
+											"sid": 477939118974519,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_aguadisp2",
+											"sid": 581302703795511,
+											"behaviorType": "Rotate",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 297870217233544,
+											"parameters": {
+												"object-to-create": "p_rage",
+												"layer": "4",
+												"x": "o_aguadisp2.BBoxMidX",
+												"y": "o_aguadisp2.BBoxMidY",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 488637285440965,
+											"parameters": {
+												"audio-file": {
+													"path": "VFX_Golpe3"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 541842383617141
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Jugadore",
+											"sid": 256287453447979,
+											"parameters": {
+												"object": "o_armario"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "o_armario",
+											"sid": 951216950796964,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "-500",
+												"y": "random(0, LayoutHeight)",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 437068086563436,
+											"parameters": {
+												"object-to-create": "p_rage",
+												"layer": "4",
+												"x": "o_armario.BBoxMidX",
+												"y": "o_armario.BBoxMidY",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_armario",
+											"sid": 977507170479744,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_armario",
+											"sid": 741885448988557,
+											"behaviorType": "Rotate",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 822400542435642,
+											"parameters": {
+												"audio-file": {
+													"path": "VFX_Golpe1"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 168432067564044
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Jugadore",
+											"sid": 614208100796641,
+											"parameters": {
+												"object": "o_cubo2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "o_cubo2",
+											"sid": 152021942548379,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "-500",
+												"y": "random(0, LayoutHeight)",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 213593858596758,
+											"parameters": {
+												"object-to-create": "p_rage",
+												"layer": "4",
+												"x": "o_cubo2.BBoxMidX",
+												"y": "o_cubo2.BBoxMidY",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_cubo2",
+											"sid": 184044458434531,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_cubo2",
+											"sid": 754980866582697,
+											"behaviorType": "Rotate",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 238315354608644,
+											"parameters": {
+												"audio-file": {
+													"path": "VFX_Cachetada2"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 296527964526270
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Jugadore",
+											"sid": 834072957810073,
+											"parameters": {
+												"object": "o_armario2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "o_armario2",
+											"sid": 662143246431595,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "-500",
+												"y": "random(0, LayoutHeight)",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 677145751133226,
+											"parameters": {
+												"object-to-create": "p_rage",
+												"layer": "4",
+												"x": "o_armario2.BBoxMidX",
+												"y": "o_armario2.BBoxMidY",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_armario2",
+											"sid": 707769982167544,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_armario2",
+											"sid": 562768696933590,
+											"behaviorType": "Rotate",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 973916441245260,
+											"parameters": {
+												"audio-file": {
+													"path": "VFX_Golpe2"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 826592260754746
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Jugadore",
+											"sid": 262229124426492,
+											"parameters": {
+												"object": "o_armario3"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "o_armario3",
+											"sid": 442888852566485,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "-500",
+												"y": "random(0, LayoutHeight)",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 973911642975649,
+											"parameters": {
+												"object-to-create": "p_rage",
+												"layer": "4",
+												"x": "o_armario3.BBoxMidX",
+												"y": "o_armario3.BBoxMidY",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_armario3",
+											"sid": 502977943877193,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_armario3",
+											"sid": 134032469433483,
+											"behaviorType": "Rotate",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 891323453839259,
+											"parameters": {
+												"audio-file": {
+													"path": "VFX_Golpe3"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 113307969173439
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Jugadore",
+											"sid": 637204698711856,
+											"parameters": {
+												"object": "o_cubolargo"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "o_cubolargo",
+											"sid": 355104442808413,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "-500",
+												"y": "random(0, LayoutHeight)",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 528953747479169,
+											"parameters": {
+												"object-to-create": "p_rage",
+												"layer": "4",
+												"x": "o_cubolargo.BBoxMidX",
+												"y": "o_cubolargo.BBoxMidY",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_cubolargo",
+											"sid": 643934851059659,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_cubolargo",
+											"sid": 976061458904527,
+											"behaviorType": "Rotate",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 691331894529778,
+											"parameters": {
+												"audio-file": {
+													"path": "VFX_Golpe1"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 886070564034104
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Jugadore",
+											"sid": 582445848954513,
+											"parameters": {
+												"object": "o_escritorio3"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "o_escritorio3",
+											"sid": 841214641326398,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "-500",
+												"y": "random(0, LayoutHeight)",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 591262135253823,
+											"parameters": {
+												"object-to-create": "p_rage",
+												"layer": "4",
+												"x": "o_cubolargo.BBoxMidX",
+												"y": "o_cubolargo.BBoxMidY",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_escritorio3",
+											"sid": 176442172911101,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_escritorio3",
+											"sid": 319185887220346,
+											"behaviorType": "Rotate",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 502124336981859,
+											"parameters": {
+												"audio-file": {
+													"path": "VFX_Golpe2"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 844676188403790
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Jugadore",
+											"sid": 568829202330596,
+											"parameters": {
+												"object": "o_escritoriov"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "o_escritoriov",
+											"sid": 369810505820604,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "-500",
+												"y": "random(0, LayoutHeight)",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 528039015993299,
+											"parameters": {
+												"object-to-create": "p_rage",
+												"layer": "4",
+												"x": "o_escritoriov.BBoxMidX",
+												"y": "o_escritoriov.BBoxMidY",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_escritoriov",
+											"sid": 391756122294254,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_escritoriov",
+											"sid": 573043515145306,
+											"behaviorType": "Rotate",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 602923262038920,
+											"parameters": {
+												"audio-file": {
+													"path": "VFX_Golpe3"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 618995073156699
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Jugadore",
+											"sid": 949754124479934,
+											"parameters": {
+												"object": "o_estanteria"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "o_estanteria",
+											"sid": 765949918160306,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "-500",
+												"y": "random(0, LayoutHeight)",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 132843747128247,
+											"parameters": {
+												"object-to-create": "p_rage",
+												"layer": "4",
+												"x": "o_estanteria.BBoxMidX",
+												"y": "o_estanteria.BBoxMidY",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_estanteria",
+											"sid": 437305129185582,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_estanteria",
+											"sid": 987971752588648,
+											"behaviorType": "Rotate",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 192537779964415,
+											"parameters": {
+												"audio-file": {
+													"path": "VFX_Golpe1"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 265469366767176
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Jugadore",
+											"sid": 761111413667405,
+											"parameters": {
+												"object": "o_fotocopiadora"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "o_fotocopiadora",
+											"sid": 602156601530206,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "-500",
+												"y": "random(0, LayoutHeight)",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 391992974968052,
+											"parameters": {
+												"object-to-create": "p_rage",
+												"layer": "4",
+												"x": "o_fotocopiadora.BBoxMidX",
+												"y": "o_fotocopiadora.BBoxMidY",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_fotocopiadora",
+											"sid": 140104004925973,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_fotocopiadora",
+											"sid": 882342632276859,
+											"behaviorType": "Rotate",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 397265793538121,
+											"parameters": {
+												"audio-file": {
+													"path": "VFX_Golpe2"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 240061680419209
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Jugadore",
+											"sid": 510206360606383,
+											"parameters": {
+												"object": "o_fotocopiadora2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "o_fotocopiadora2",
+											"sid": 116915122034497,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "-500",
+												"y": "random(0, LayoutHeight)",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 967350101640200,
+											"parameters": {
+												"object-to-create": "p_rage",
+												"layer": "4",
+												"x": "o_fotocopiadora2.BBoxMidX",
+												"y": "o_fotocopiadora2.BBoxMidY",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_fotocopiadora2",
+											"sid": 634728630498956,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_fotocopiadora2",
+											"sid": 630694047840813,
+											"behaviorType": "Rotate",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 470744611062472,
+											"parameters": {
+												"audio-file": {
+													"path": "VFX_Golpe3"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 873204198821910
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Jugadore",
+											"sid": 261912251317997,
+											"parameters": {
+												"object": "o_maceta"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "o_maceta",
+											"sid": 636197373241771,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "-500",
+												"y": "random(0, LayoutHeight)",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 305736942573879,
+											"parameters": {
+												"object-to-create": "p_rage",
+												"layer": "4",
+												"x": "o_maceta.BBoxMidX",
+												"y": "o_maceta.BBoxMidY",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_maceta",
+											"sid": 286487666751587,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_maceta",
+											"sid": 794546111481025,
+											"behaviorType": "Rotate",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 595316520637697,
+											"parameters": {
+												"audio-file": {
+													"path": "VFX_Golpe1"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 619962110445731
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Jugadore",
+											"sid": 483431189085621,
+											"parameters": {
+												"object": "o_maceta2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "o_maceta2",
+											"sid": 448053582689316,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "-500",
+												"y": "random(0, LayoutHeight)",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 346048337611458,
+											"parameters": {
+												"object-to-create": "p_rage",
+												"layer": "4",
+												"x": "o_maceta2.BBoxMidX",
+												"y": "o_maceta2.BBoxMidY",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_maceta2",
+											"sid": 328290730461925,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "o_maceta2",
+											"sid": 190777618595609,
+											"behaviorType": "Rotate",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 956400294368637,
+											"parameters": {
+												"audio-file": {
+													"path": "VFX_Golpe2"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 748986447118375
+								}
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-touching-object",
+									"objectClass": "Touch",
+									"sid": 220139145195647,
+									"parameters": {
+										"object": "celucontrol"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 593956406012070,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "celucontrol",
+											"sid": 378457145752643,
+											"parameters": {
+												"instance-variable": "control",
+												"comparison": 0,
+												"value": "5"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 790528315610219,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Jugadore",
+													"sid": 765147332068083,
+													"parameters": {
+														"object": "o_armario3"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-enabled",
+													"objectClass": "o_armario3",
+													"sid": 940972479537133,
+													"behaviorType": "Rotate",
+													"parameters": {
+														"state": "enabled"
+													}
+												},
+												{
+													"id": "set-enabled",
+													"objectClass": "o_armario3",
+													"sid": 920200646426388,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"enabled": true
+													}
+												},
+												{
+													"id": "move-to-position",
+													"objectClass": "o_armario3",
+													"sid": 136833466171616,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"x": "-500",
+														"y": "random(0, LayoutHeight)",
+														"mode": "direct"
+													}
+												},
+												{
+													"id": "create-object",
+													"objectClass": "System",
+													"sid": 978166173826007,
+													"parameters": {
+														"object-to-create": "p_rage",
+														"layer": "4",
+														"x": "o_armario3.BBoxMidX",
+														"y": "o_armario3.BBoxMidY",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 816426744247552,
+													"parameters": {
+														"audio-file": {
+															"path": "VFX_Golpe1"
+														},
+														"loop": "not-looping",
+														"volume": "0",
+														"stereo-pan": "0",
+														"tag-optional": "\"\""
+													}
+												}
+											],
+											"sid": 667309083174921
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Jugadore",
+													"sid": 592378461123291,
+													"parameters": {
+														"object": "o_aguadisp"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-enabled",
+													"objectClass": "o_aguadisp",
+													"sid": 598166126182600,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"enabled": true
+													}
+												},
+												{
+													"id": "set-enabled",
+													"objectClass": "o_aguadisp",
+													"sid": 190454934024852,
+													"behaviorType": "Rotate",
+													"parameters": {
+														"state": "enabled"
+													}
+												},
+												{
+													"id": "move-to-position",
+													"objectClass": "o_aguadisp",
+													"sid": 397734666178377,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"x": "-500",
+														"y": "random(0, LayoutHeight)",
+														"mode": "direct"
+													}
+												},
+												{
+													"id": "create-object",
+													"objectClass": "System",
+													"sid": 271663222518074,
+													"parameters": {
+														"object-to-create": "p_rage",
+														"layer": "4",
+														"x": "o_aguadisp.BBoxMidX",
+														"y": "o_aguadisp.BBoxMidY",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 119932113042441,
+													"parameters": {
+														"audio-file": {
+															"path": "VFX_Golpe2"
+														},
+														"loop": "not-looping",
+														"volume": "0",
+														"stereo-pan": "0",
+														"tag-optional": "\"\""
+													}
+												}
+											],
+											"sid": 812223239092459
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Jugadore",
+													"sid": 635725082607690,
+													"parameters": {
+														"object": "o_aguadisp2"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "move-to-position",
+													"objectClass": "o_aguadisp2",
+													"sid": 847378241001439,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"x": "-500",
+														"y": "random(0, LayoutHeight)",
+														"mode": "direct"
+													}
+												},
+												{
+													"id": "set-enabled",
+													"objectClass": "o_aguadisp2",
+													"sid": 703980167966255,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"enabled": true
+													}
+												},
+												{
+													"id": "set-enabled",
+													"objectClass": "o_aguadisp2",
+													"sid": 373861466990114,
+													"behaviorType": "Rotate",
+													"parameters": {
+														"state": "enabled"
+													}
+												},
+												{
+													"id": "create-object",
+													"objectClass": "System",
+													"sid": 878321331787065,
+													"parameters": {
+														"object-to-create": "p_rage",
+														"layer": "4",
+														"x": "o_aguadisp2.BBoxMidX",
+														"y": "o_aguadisp2.BBoxMidY",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 508091534764338,
+													"parameters": {
+														"audio-file": {
+															"path": "VFX_Golpe3"
+														},
+														"loop": "not-looping",
+														"volume": "0",
+														"stereo-pan": "0",
+														"tag-optional": "\"\""
+													}
+												}
+											],
+											"sid": 619351764188889
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Jugadore",
+													"sid": 740534921335038,
+													"parameters": {
+														"object": "o_armario"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "move-to-position",
+													"objectClass": "o_armario",
+													"sid": 971903770993254,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"x": "-500",
+														"y": "random(0, LayoutHeight)",
+														"mode": "direct"
+													}
+												},
+												{
+													"id": "create-object",
+													"objectClass": "System",
+													"sid": 300293607796054,
+													"parameters": {
+														"object-to-create": "p_rage",
+														"layer": "4",
+														"x": "o_armario.BBoxMidX",
+														"y": "o_armario.BBoxMidY",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-enabled",
+													"objectClass": "o_armario",
+													"sid": 145538990530951,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"enabled": true
+													}
+												},
+												{
+													"id": "set-enabled",
+													"objectClass": "o_armario",
+													"sid": 953660807515354,
+													"behaviorType": "Rotate",
+													"parameters": {
+														"state": "enabled"
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 608587399491080,
+													"parameters": {
+														"audio-file": {
+															"path": "VFX_Golpe1"
+														},
+														"loop": "not-looping",
+														"volume": "0",
+														"stereo-pan": "0",
+														"tag-optional": "\"\""
+													}
+												}
+											],
+											"sid": 168764840338565
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Jugadore",
+													"sid": 188711582196889,
+													"parameters": {
+														"object": "o_cubo2"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "move-to-position",
+													"objectClass": "o_cubo2",
+													"sid": 280706800685472,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"x": "-500",
+														"y": "random(0, LayoutHeight)",
+														"mode": "direct"
+													}
+												},
+												{
+													"id": "create-object",
+													"objectClass": "System",
+													"sid": 792220448660881,
+													"parameters": {
+														"object-to-create": "p_rage",
+														"layer": "4",
+														"x": "o_cubo2.BBoxMidX",
+														"y": "o_cubo2.BBoxMidY",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-enabled",
+													"objectClass": "o_cubo2",
+													"sid": 666429787149672,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"enabled": true
+													}
+												},
+												{
+													"id": "set-enabled",
+													"objectClass": "o_cubo2",
+													"sid": 462351570896147,
+													"behaviorType": "Rotate",
+													"parameters": {
+														"state": "enabled"
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 265973590543418,
+													"parameters": {
+														"audio-file": {
+															"path": "VFX_Cachetada2"
+														},
+														"loop": "not-looping",
+														"volume": "0",
+														"stereo-pan": "0",
+														"tag-optional": "\"\""
+													}
+												}
+											],
+											"sid": 275555941556679
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Jugadore",
+													"sid": 894636059310066,
+													"parameters": {
+														"object": "o_armario2"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "move-to-position",
+													"objectClass": "o_armario2",
+													"sid": 521815764096996,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"x": "-500",
+														"y": "random(0, LayoutHeight)",
+														"mode": "direct"
+													}
+												},
+												{
+													"id": "create-object",
+													"objectClass": "System",
+													"sid": 216297184809718,
+													"parameters": {
+														"object-to-create": "p_rage",
+														"layer": "4",
+														"x": "o_armario2.BBoxMidX",
+														"y": "o_armario2.BBoxMidY",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-enabled",
+													"objectClass": "o_armario2",
+													"sid": 476785405722417,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"enabled": true
+													}
+												},
+												{
+													"id": "set-enabled",
+													"objectClass": "o_armario2",
+													"sid": 483471011709526,
+													"behaviorType": "Rotate",
+													"parameters": {
+														"state": "enabled"
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 422593230778757,
+													"parameters": {
+														"audio-file": {
+															"path": "VFX_Golpe2"
+														},
+														"loop": "not-looping",
+														"volume": "0",
+														"stereo-pan": "0",
+														"tag-optional": "\"\""
+													}
+												}
+											],
+											"sid": 622369039134973
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Jugadore",
+													"sid": 958022879964147,
+													"parameters": {
+														"object": "o_armario3"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "move-to-position",
+													"objectClass": "o_armario3",
+													"sid": 263747676993364,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"x": "-500",
+														"y": "random(0, LayoutHeight)",
+														"mode": "direct"
+													}
+												},
+												{
+													"id": "create-object",
+													"objectClass": "System",
+													"sid": 104009763660664,
+													"parameters": {
+														"object-to-create": "p_rage",
+														"layer": "4",
+														"x": "o_armario3.BBoxMidX",
+														"y": "o_armario3.BBoxMidY",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-enabled",
+													"objectClass": "o_armario3",
+													"sid": 190764381481993,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"enabled": true
+													}
+												},
+												{
+													"id": "set-enabled",
+													"objectClass": "o_armario3",
+													"sid": 711322562331588,
+													"behaviorType": "Rotate",
+													"parameters": {
+														"state": "enabled"
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 867912656104009,
+													"parameters": {
+														"audio-file": {
+															"path": "VFX_Golpe3"
+														},
+														"loop": "not-looping",
+														"volume": "0",
+														"stereo-pan": "0",
+														"tag-optional": "\"\""
+													}
+												}
+											],
+											"sid": 502735607572061
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Jugadore",
+													"sid": 609541345749122,
+													"parameters": {
+														"object": "o_cubolargo"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "move-to-position",
+													"objectClass": "o_cubolargo",
+													"sid": 577708511083842,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"x": "-500",
+														"y": "random(0, LayoutHeight)",
+														"mode": "direct"
+													}
+												},
+												{
+													"id": "create-object",
+													"objectClass": "System",
+													"sid": 850966050396809,
+													"parameters": {
+														"object-to-create": "p_rage",
+														"layer": "4",
+														"x": "o_cubolargo.BBoxMidX",
+														"y": "o_cubolargo.BBoxMidY",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-enabled",
+													"objectClass": "o_cubolargo",
+													"sid": 836738648889319,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"enabled": true
+													}
+												},
+												{
+													"id": "set-enabled",
+													"objectClass": "o_cubolargo",
+													"sid": 380173018293036,
+													"behaviorType": "Rotate",
+													"parameters": {
+														"state": "enabled"
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 749851194178098,
+													"parameters": {
+														"audio-file": {
+															"path": "VFX_Golpe1"
+														},
+														"loop": "not-looping",
+														"volume": "0",
+														"stereo-pan": "0",
+														"tag-optional": "\"\""
+													}
+												}
+											],
+											"sid": 689464219112810
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Jugadore",
+													"sid": 219916228608960,
+													"parameters": {
+														"object": "o_escritorio3"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "move-to-position",
+													"objectClass": "o_escritorio3",
+													"sid": 303563080731115,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"x": "-500",
+														"y": "random(0, LayoutHeight)",
+														"mode": "direct"
+													}
+												},
+												{
+													"id": "create-object",
+													"objectClass": "System",
+													"sid": 720879176149390,
+													"parameters": {
+														"object-to-create": "p_rage",
+														"layer": "4",
+														"x": "o_cubolargo.BBoxMidX",
+														"y": "o_cubolargo.BBoxMidY",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-enabled",
+													"objectClass": "o_escritorio3",
+													"sid": 596636981437233,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"enabled": true
+													}
+												},
+												{
+													"id": "set-enabled",
+													"objectClass": "o_escritorio3",
+													"sid": 504866125605077,
+													"behaviorType": "Rotate",
+													"parameters": {
+														"state": "enabled"
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 938631896080870,
+													"parameters": {
+														"audio-file": {
+															"path": "VFX_Golpe2"
+														},
+														"loop": "not-looping",
+														"volume": "0",
+														"stereo-pan": "0",
+														"tag-optional": "\"\""
+													}
+												}
+											],
+											"sid": 827514966001654
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Jugadore",
+													"sid": 727875565405698,
+													"parameters": {
+														"object": "o_escritoriov"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "move-to-position",
+													"objectClass": "o_escritoriov",
+													"sid": 167175861247463,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"x": "-500",
+														"y": "random(0, LayoutHeight)",
+														"mode": "direct"
+													}
+												},
+												{
+													"id": "create-object",
+													"objectClass": "System",
+													"sid": 238617267415480,
+													"parameters": {
+														"object-to-create": "p_rage",
+														"layer": "4",
+														"x": "o_escritoriov.BBoxMidX",
+														"y": "o_escritoriov.BBoxMidY",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-enabled",
+													"objectClass": "o_escritoriov",
+													"sid": 493376449086014,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"enabled": true
+													}
+												},
+												{
+													"id": "set-enabled",
+													"objectClass": "o_escritoriov",
+													"sid": 723532460588894,
+													"behaviorType": "Rotate",
+													"parameters": {
+														"state": "enabled"
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 981217760824924,
+													"parameters": {
+														"audio-file": {
+															"path": "VFX_Golpe3"
+														},
+														"loop": "not-looping",
+														"volume": "0",
+														"stereo-pan": "0",
+														"tag-optional": "\"\""
+													}
+												}
+											],
+											"sid": 194104311871070
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Jugadore",
+													"sid": 403529646961551,
+													"parameters": {
+														"object": "o_estanteria"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "move-to-position",
+													"objectClass": "o_estanteria",
+													"sid": 909158817455513,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"x": "-500",
+														"y": "random(0, LayoutHeight)",
+														"mode": "direct"
+													}
+												},
+												{
+													"id": "create-object",
+													"objectClass": "System",
+													"sid": 687782570778181,
+													"parameters": {
+														"object-to-create": "p_rage",
+														"layer": "4",
+														"x": "o_estanteria.BBoxMidX",
+														"y": "o_estanteria.BBoxMidY",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-enabled",
+													"objectClass": "o_estanteria",
+													"sid": 428590879749817,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"enabled": true
+													}
+												},
+												{
+													"id": "set-enabled",
+													"objectClass": "o_estanteria",
+													"sid": 179054977606002,
+													"behaviorType": "Rotate",
+													"parameters": {
+														"state": "enabled"
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 388358936993848,
+													"parameters": {
+														"audio-file": {
+															"path": "VFX_Golpe1"
+														},
+														"loop": "not-looping",
+														"volume": "0",
+														"stereo-pan": "0",
+														"tag-optional": "\"\""
+													}
+												}
+											],
+											"sid": 804458367206388
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Jugadore",
+													"sid": 716616181680154,
+													"parameters": {
+														"object": "o_fotocopiadora"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "move-to-position",
+													"objectClass": "o_fotocopiadora",
+													"sid": 153252389706087,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"x": "-500",
+														"y": "random(0, LayoutHeight)",
+														"mode": "direct"
+													}
+												},
+												{
+													"id": "create-object",
+													"objectClass": "System",
+													"sid": 251740207588583,
+													"parameters": {
+														"object-to-create": "p_rage",
+														"layer": "4",
+														"x": "o_fotocopiadora.BBoxMidX",
+														"y": "o_fotocopiadora.BBoxMidY",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-enabled",
+													"objectClass": "o_fotocopiadora",
+													"sid": 748133169053995,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"enabled": true
+													}
+												},
+												{
+													"id": "set-enabled",
+													"objectClass": "o_fotocopiadora",
+													"sid": 552603599518028,
+													"behaviorType": "Rotate",
+													"parameters": {
+														"state": "enabled"
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 951152744568721,
+													"parameters": {
+														"audio-file": {
+															"path": "VFX_Golpe2"
+														},
+														"loop": "not-looping",
+														"volume": "0",
+														"stereo-pan": "0",
+														"tag-optional": "\"\""
+													}
+												}
+											],
+											"sid": 320868876354852
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Jugadore",
+													"sid": 913303467397956,
+													"parameters": {
+														"object": "o_fotocopiadora2"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "move-to-position",
+													"objectClass": "o_fotocopiadora2",
+													"sid": 937113855777114,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"x": "-500",
+														"y": "random(0, LayoutHeight)",
+														"mode": "direct"
+													}
+												},
+												{
+													"id": "create-object",
+													"objectClass": "System",
+													"sid": 938581971921934,
+													"parameters": {
+														"object-to-create": "p_rage",
+														"layer": "4",
+														"x": "o_fotocopiadora2.BBoxMidX",
+														"y": "o_fotocopiadora2.BBoxMidY",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-enabled",
+													"objectClass": "o_fotocopiadora2",
+													"sid": 301721731889040,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"enabled": true
+													}
+												},
+												{
+													"id": "set-enabled",
+													"objectClass": "o_fotocopiadora2",
+													"sid": 760934706606562,
+													"behaviorType": "Rotate",
+													"parameters": {
+														"state": "enabled"
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 969365920075395,
+													"parameters": {
+														"audio-file": {
+															"path": "VFX_Golpe3"
+														},
+														"loop": "not-looping",
+														"volume": "0",
+														"stereo-pan": "0",
+														"tag-optional": "\"\""
+													}
+												}
+											],
+											"sid": 206326388730596
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Jugadore",
+													"sid": 928766288635740,
+													"parameters": {
+														"object": "o_maceta"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "move-to-position",
+													"objectClass": "o_maceta",
+													"sid": 632147782821218,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"x": "-500",
+														"y": "random(0, LayoutHeight)",
+														"mode": "direct"
+													}
+												},
+												{
+													"id": "create-object",
+													"objectClass": "System",
+													"sid": 260754742089106,
+													"parameters": {
+														"object-to-create": "p_rage",
+														"layer": "4",
+														"x": "o_maceta.BBoxMidX",
+														"y": "o_maceta.BBoxMidY",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-enabled",
+													"objectClass": "o_maceta",
+													"sid": 112063655429654,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"enabled": true
+													}
+												},
+												{
+													"id": "set-enabled",
+													"objectClass": "o_maceta",
+													"sid": 334561850974836,
+													"behaviorType": "Rotate",
+													"parameters": {
+														"state": "enabled"
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 848682680571806,
+													"parameters": {
+														"audio-file": {
+															"path": "VFX_Golpe1"
+														},
+														"loop": "not-looping",
+														"volume": "0",
+														"stereo-pan": "0",
+														"tag-optional": "\"\""
+													}
+												}
+											],
+											"sid": 526073584892490
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Jugadore",
+													"sid": 914897718741802,
+													"parameters": {
+														"object": "o_maceta2"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "move-to-position",
+													"objectClass": "o_maceta2",
+													"sid": 829286265602007,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"x": "-500",
+														"y": "random(0, LayoutHeight)",
+														"mode": "direct"
+													}
+												},
+												{
+													"id": "create-object",
+													"objectClass": "System",
+													"sid": 887458704713741,
+													"parameters": {
+														"object-to-create": "p_rage",
+														"layer": "4",
+														"x": "o_maceta2.BBoxMidX",
+														"y": "o_maceta2.BBoxMidY",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-enabled",
+													"objectClass": "o_maceta2",
+													"sid": 148592662111511,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"enabled": true
+													}
+												},
+												{
+													"id": "set-enabled",
+													"objectClass": "o_maceta2",
+													"sid": 574684493445039,
+													"behaviorType": "Rotate",
+													"parameters": {
+														"state": "enabled"
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 306044877772608,
+													"parameters": {
+														"audio-file": {
+															"path": "VFX_Golpe2"
+														},
+														"loop": "not-looping",
+														"volume": "0",
+														"stereo-pan": "0",
+														"tag-optional": "\"\""
+													}
+												}
+											],
+											"sid": 674663845129826
+										}
+									]
+								}
+							],
+							"isOrBlock": true
 						}
 					]
 				}
@@ -5089,6 +8416,43 @@
 							"sid": 730957649624230
 						}
 					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 768234816842300,
+							"parameters": {
+								"variable": "v_celu"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 624498703103844
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 978692959600850,
+							"parameters": {
+								"variable": "v_celu"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "celucontrol",
+							"sid": 948670885997364
+						}
+					],
+					"sid": 358998539488769
 				}
 			],
 			"sid": 618632856337364
