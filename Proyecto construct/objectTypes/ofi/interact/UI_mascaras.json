@@ -18,6 +18,11 @@
 			"behaviorId": "Anchor",
 			"name": "Anchor",
 			"sid": 136298001136272
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 409703038644409
 		}
 	],
 	"effectTypes": [],

@@ -205,7 +205,9 @@
 				"name": "UI_menuses"
 			},
 			{
-				"items": [],
+				"items": [
+					"EFECTO"
+				],
 				"subfolders": [
 					{
 						"items": [

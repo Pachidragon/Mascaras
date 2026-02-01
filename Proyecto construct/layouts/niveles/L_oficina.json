@@ -489,6 +489,63 @@
 							}
 						},
 						{
+							"type": "EFECTO",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 130,
+							"sid": 904857856649476,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {
+								"Anchor": {
+									"properties": {
+										"left-edge": "window-left",
+										"top-edge": "window-top",
+										"right-edge": "none",
+										"bottom-edge": "none",
+										"enabled": true
+									}
+								}
+							},
+							"effects": {
+								"AdjustHSL": {
+									"isEnabled": true,
+									"parameters": {
+										"hue": 0,
+										"saturation": 1,
+										"luminosity": 1
+									}
+								}
+							},
+							"instanceFolderItem": {
+								"sid": 904857856649476,
+								"expanded": true
+							},
+							"showing": true,
+							"locked": false,
+							"world": {
+								"x": 965,
+								"y": 543,
+								"width": 1942,
+								"height": 1094,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									0.5
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
 							"type": "o_cubo2",
 							"properties": {
 								"initially-visible": true,
@@ -5194,6 +5251,20 @@
 								"right-edge": "window-right",
 								"bottom-edge": "window-bottom",
 								"enabled": true
+							}
+						},
+						"Sine": {
+							"properties": {
+								"movement": "size",
+								"wave": "sine",
+								"period": 1,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 25,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
 							}
 						}
 					},

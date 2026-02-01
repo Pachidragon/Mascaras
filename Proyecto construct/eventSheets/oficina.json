@@ -123,6 +123,23 @@
 							"parameters": {
 								"tag": "\"MENUSES\""
 							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "UI_mascaras",
+							"sid": 537395696072969,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "EFECTO",
+							"sid": 784860435724874,
+							"parameters": {
+								"visibility": "invisible"
+							}
 						}
 					],
 					"sid": 912885989253601
@@ -2609,6 +2626,15 @@
 									"text": "mascara"
 								},
 								{
+									"id": "set-active",
+									"objectClass": "UI_mascaras",
+									"sid": 127974109097292,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "active"
+									}
+								},
+								{
 									"id": "set-animation",
 									"objectClass": "UI_mascaras",
 									"sid": 182552396858358,
@@ -3219,6 +3245,14 @@
 						{
 							"type": "comment",
 							"text": "particulas arcoiris"
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "EFECTO",
+							"sid": 804355898154920,
+							"parameters": {
+								"visibility": "visible"
+							}
 						}
 					],
 					"sid": 836212246632640,
@@ -3240,6 +3274,16 @@
 									"id": "set-effect-parameter",
 									"objectClass": "sp_particula",
 									"sid": 203201942781773,
+									"parameters": {
+										"effect": "\"AdjustHSL\"",
+										"parameter-index": "0",
+										"value": "huearcoiris"
+									}
+								},
+								{
+									"id": "set-effect-parameter",
+									"objectClass": "EFECTO",
+									"sid": 770678631875160,
 									"parameters": {
 										"effect": "\"AdjustHSL\"",
 										"parameter-index": "0",
