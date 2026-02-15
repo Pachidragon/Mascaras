@@ -323,30 +323,12 @@
 			],
 			"actions": [
 				{
-					"id": "set-effect-enabled",
-					"objectClass": "titulo1",
-					"sid": 648967258479999,
-					"parameters": {
-						"mode": "enable",
-						"effect": "\"Pulse\""
-					}
-				},
-				{
 					"id": "wait",
 					"objectClass": "System",
 					"sid": 471862430017078,
 					"parameters": {
 						"seconds": "0.5",
 						"use-timescale": true
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "titulo1",
-					"sid": 894131639004129,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"Pulse\""
 					}
 				}
 			],
@@ -361,17 +343,7 @@
 					"sid": 820680001636161
 				}
 			],
-			"actions": [
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "titulo1",
-					"sid": 372507249102374,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"Pulse\""
-					}
-				}
-			],
+			"actions": [],
 			"sid": 170809937890137
 		},
 		{

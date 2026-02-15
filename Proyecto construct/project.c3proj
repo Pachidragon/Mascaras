@@ -141,15 +141,8 @@
 		},
 		{
 			"type": "effect",
-			"id": "pulse",
-			"name": "Pulse",
-			"author": "Danguafer/Silexars",
-			"bundled": false
-		},
-		{
-			"type": "effect",
-			"id": "softlight",
-			"name": "Soft light",
+			"id": "warpobject",
+			"name": "Warp object",
 			"author": "Scirra",
 			"bundled": false
 		}
@@ -187,7 +180,7 @@
 					"logo_bagd",
 					"Text",
 					"Sprite",
-					"titulo1"
+					"Sprite3"
 				],
 				"subfolders": [
 					{

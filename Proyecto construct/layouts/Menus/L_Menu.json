@@ -27,10 +27,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 961.1370130038621,
-						"y": 538.3541102696163,
-						"width": 2061.708600617702,
-						"height": 1103.2189068205982,
+						"x": 967,
+						"y": 534,
+						"width": 1944.5079833657942,
+						"height": 1100.289839967633,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -133,8 +133,8 @@
 							1,
 							1
 						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
 						"wrapping": "word",
 						"text-direction": "ltr",
 						"icon-set": -1,
@@ -156,8 +156,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 798,
-						"y": 887,
+						"x": 797,
+						"y": 883,
 						"width": 329,
 						"height": 100,
 						"originX": 0,
@@ -227,8 +227,8 @@
 							1,
 							1
 						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
 						"wrapping": "word",
 						"text-direction": "ltr",
 						"icon-set": -1,
@@ -250,7 +250,7 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1338,
+						"x": 1336,
 						"y": 881,
 						"width": 329,
 						"height": 100,
@@ -361,175 +361,53 @@
 					}
 				},
 				{
-					"type": "titulo1",
+					"type": "Sprite3",
 					"properties": {
-						"text": "Meltdown",
-						"enable-bbcode": true,
-						"font": "font",
-						"size": 126,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"text-direction": "ltr",
-						"icon-set": -1,
 						"initially-visible": true,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 129,
-					"sid": 158326258422926,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {
-						"Sine": {
-							"properties": {
-								"movement": "horizontal",
-								"wave": "sine",
-								"period": 10,
-								"period-random": 0,
-								"period-offset": 0,
-								"period-offset-random": 0,
-								"magnitude": 20,
-								"magnitude-random": 0,
-								"enabled": true,
-								"live-preview": true
-							}
-						}
-					},
-					"effects": {
-						"SoftLight": {
-							"isEnabled": true,
-							"parameters": {}
-						},
-						"Pulse": {
-							"isEnabled": true,
-							"parameters": {
-								"intensity": 0.3,
-								"lighting": 0.5,
-								"speed": 10,
-								"frequency": 1,
-								"center-x": 0.5,
-								"center-y": 0.5
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 158326258422926,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 922,
-						"y": 413,
-						"width": 981.6035611707903,
-						"height": 349.20340632108395,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0.038575241270690175,
-						"zElevation": 0,
-						"blendMode": "additive"
-					}
-				},
-				{
-					"type": "titulo1",
-					"properties": {
-						"text": "Memphis ",
-						"enable-bbcode": true,
-						"font": "font",
-						"size": 126,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"text-direction": "ltr",
-						"icon-set": -1,
-						"initially-visible": true,
-						"origin": "top-left",
-						"read-aloud": false
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
 					},
 					"uid": 127,
-					"sid": 377090108724779,
+					"sid": 627867947557971,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {
-						"Sine": {
-							"properties": {
-								"movement": "forwards-backwards",
-								"wave": "sine",
-								"period": 10,
-								"period-random": 0,
-								"period-offset": 0,
-								"period-offset-random": 0,
-								"magnitude": 20,
-								"magnitude-random": 0,
-								"enabled": true,
-								"live-preview": true
-							}
-						}
-					},
+					"behaviors": {},
 					"effects": {
-						"SoftLight": {
-							"isEnabled": true,
-							"parameters": {}
-						},
-						"Pulse": {
+						"WarpObject": {
 							"isEnabled": true,
 							"parameters": {
-								"intensity": 0.3,
-								"lighting": 0.5,
-								"speed": 10,
-								"frequency": 1,
-								"center-x": 0.5,
-								"center-y": 0.5
+								"x-frequency": 4,
+								"y-frequency": 4,
+								"x-amplitude": 5,
+								"y-amplitude": 5,
+								"x-speed": 0.5,
+								"y-speed": 0.5
 							}
 						}
 					},
 					"instanceFolderItem": {
-						"sid": 377090108724779,
+						"sid": 627867947557971,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 919,
-						"y": 234,
-						"width": 872,
-						"height": 317,
-						"originX": 0,
-						"originY": 0,
+						"x": 1271,
+						"y": 445,
+						"width": 1131.0699613148624,
+						"height": 780.3623625715962,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
 							1,
 							1
 						],
-						"angle": 6.172047284643448,
-						"zElevation": 0,
-						"blendMode": "additive"
+						"angle": 0,
+						"zElevation": 0
 					}
 				}
 			],

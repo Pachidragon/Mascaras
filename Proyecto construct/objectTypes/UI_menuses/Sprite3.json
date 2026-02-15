@@ -1,0 +1,71 @@
+{
+	"name": "Sprite3",
+	"plugin-id": "Sprite",
+	"sid": 495216560312602,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "warpobject",
+			"name": "WarpObject"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 745,
+						"height": 514,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7930514,
+						"collisionPoly": {
+							"points": [
+								0.3838926174496644,
+								0.027237354085603113,
+								0.8228187919463087,
+								0.09727626459143969,
+								0.8912751677852349,
+								0.1517509727626459,
+								0.959731543624161,
+								0.8443579766536965,
+								0.8711409395973154,
+								0.9766536964980544,
+								0.4375838926174497,
+								0.8813229571984436,
+								0.29261744966442954,
+								0.8287937743190662,
+								0.04563758389261745,
+								0.642023346303502,
+								0.053691275167785234,
+								0.23346303501945526,
+								0.15704697986577182,
+								0.14007782101167315,
+								0.29395973154362415,
+								0.0622568093385214
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 282505340962099,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
