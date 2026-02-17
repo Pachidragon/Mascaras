@@ -223,6 +223,96 @@
 				"repeatCount": 1,
 				"repeatTo": 0,
 				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5098480,
+						"collisionPoly": {
+							"points": [
+								0.28125000000000006,
+								0.017187499999999977,
+								0.6929687499999999,
+								0.01796874999999997,
+								0.928125,
+								0.16562499999999994,
+								0.9796875000000004,
+								0.5000000000000002,
+								0.8671875,
+								0.8718749999999996,
+								0.42499999999999993,
+								0.9843750000000001,
+								0.025000000000000005,
+								0.7250000000000001,
+								0.003125000000000004,
+								0.23593749999999997
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 361087773600400,
+				"name": "escoba",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4275745,
+						"collisionPoly": {
+							"points": [
+								0.28125000000000006,
+								0.017187499999999977,
+								0.6929687499999999,
+								0.01796874999999997,
+								0.928125,
+								0.16562499999999994,
+								0.9796875000000004,
+								0.5000000000000002,
+								0.8671875,
+								0.8718749999999996,
+								0.42499999999999993,
+								0.9843750000000001,
+								0.025000000000000005,
+								0.7250000000000001,
+								0.003125000000000004,
+								0.23593749999999997
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 548098641525052,
+				"name": "mascara",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
 			}
 		],
 		"subfolders": []

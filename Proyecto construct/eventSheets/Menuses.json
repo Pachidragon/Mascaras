@@ -235,13 +235,39 @@
 								{
 									"id": "go-to-layout",
 									"objectClass": "System",
-									"sid": 875903058900174,
+									"sid": 780656844583090,
+									"parameters": {
+										"layout": "L_instrucciones"
+									}
+								}
+							],
+							"sid": 657137749401426
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "b_boton",
+									"sid": 522893206017276,
+									"parameters": {
+										"instance-variable": "boton",
+										"comparison": 0,
+										"value": "\"Comenz\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 306578736672099,
 									"parameters": {
 										"layout": "L_oficina"
 									}
 								}
 							],
-							"sid": 657137749401426
+							"sid": 806614833730096
 						},
 						{
 							"eventType": "block",
@@ -313,49 +339,21 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "every-x-seconds",
-					"objectClass": "System",
-					"sid": 360427897662130,
-					"parameters": {
-						"interval-seconds": "3"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 471862430017078,
-					"parameters": {
-						"seconds": "0.5",
-						"use-timescale": true
-					}
-				}
-			],
-			"sid": 720484965115125
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 820680001636161
-				}
-			],
-			"actions": [],
-			"sid": 170809937890137
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-start-of-layout",
 					"objectClass": "System",
 					"sid": 183832019259467
 				}
 			],
 			"actions": [
+				{
+					"id": "set-active",
+					"objectClass": "UI_mascaras",
+					"sid": 529123689539302,
+					"behaviorType": "Sine",
+					"parameters": {
+						"state": "inactive"
+					}
+				},
 				{
 					"id": "play",
 					"objectClass": "Audio",

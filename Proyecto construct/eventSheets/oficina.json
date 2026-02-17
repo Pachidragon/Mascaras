@@ -1285,6 +1285,80 @@
 						}
 					],
 					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 748939254090613,
+							"parameters": {
+								"key": 66
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 788410117959813,
+							"parameters": {
+								"variable": "v_paciencia",
+								"value": "3"
+							}
+						}
+					],
+					"sid": 291008414262617
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 835154542589898,
+							"parameters": {
+								"key": 66
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "UI_mascaras",
+							"sid": 758840066981020,
+							"parameters": {
+								"opacity": "50"
+							}
+						}
+					],
+					"sid": 757488733750543
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 509113463354947,
+							"parameters": {
+								"key": 66
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "UI_mascaras",
+							"sid": 507212980362446,
+							"parameters": {
+								"opacity": "100"
+							}
+						}
+					],
+					"sid": 659139229296413
 				}
 			],
 			"sid": 973640652180768
@@ -2574,6 +2648,20 @@
 									"parameters": {
 										"x": "b_atras.BBoxRight",
 										"y": "b_atras.Y"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 365477235689540,
+									"parameters": {
+										"audio-file": {
+											"path": "VFX_Roto"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								}
 							],
@@ -9247,6 +9335,68 @@
 							],
 							"actions": [],
 							"sid": 730957649624230
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "celucontrol",
+									"sid": 215595717743919,
+									"parameters": {
+										"instance-variable": "control",
+										"comparison": 0,
+										"value": "6"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "subtract-from-eventvar",
+									"objectClass": "System",
+									"sid": 684840344756315,
+									"parameters": {
+										"variable": "v_paciencia",
+										"value": "0.5"
+									}
+								},
+								{
+									"id": "set-opacity",
+									"objectClass": "UI_mascaras",
+									"sid": 912218943062781,
+									"parameters": {
+										"opacity": "50"
+									}
+								}
+							],
+							"sid": 780924693581526
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "celucontrol",
+									"sid": 991833339801082,
+									"parameters": {
+										"instance-variable": "control",
+										"comparison": 0,
+										"value": "6"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-opacity",
+									"objectClass": "UI_mascaras",
+									"sid": 728762905382754,
+									"parameters": {
+										"opacity": "100"
+									}
+								}
+							],
+							"sid": 377152535217326
 						}
 					]
 				},
@@ -9289,6 +9439,58 @@
 				}
 			],
 			"sid": 618632856337364
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "anticrash",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 589514522692240,
+							"parameters": {
+								"first-value": "p_rage.Count",
+								"comparison": 5,
+								"second-value": "5"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 732717111762752,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-highest-lowest-value",
+									"objectClass": "System",
+									"sid": 184952239753406,
+									"parameters": {
+										"object": "p_rage",
+										"which": "lowest",
+										"expression": "p_rage.UID"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "p_rage",
+									"sid": 543454829284434
+								}
+							],
+							"sid": 424329028629758
+						}
+					]
+				}
+			],
+			"sid": 264921189068521
 		}
 	],
 	"sid": 324755378402390

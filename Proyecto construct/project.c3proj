@@ -297,6 +297,7 @@
 			{
 				"items": [
 					"L_Menu",
+					"L_instrucciones",
 					"L_opciones",
 					"L_creditos"
 				],
@@ -396,6 +397,14 @@
 					"name": "VFX_Cachetada3.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 373378431631757,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "VFX_Roto.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 312233136267933,
 					"file-info": {
 						"purpose": "none"
 					}
@@ -541,13 +550,13 @@
 		"subfolders": []
 	},
 	"properties": {
-		"description": "",
+		"description": "Tendras que sobrevivir a tu jornada laboral para llegar al final. Para cuidar tu \"mascara\" (masking) tendras que regular los momentos en que haces tu trabajo y los que te ocultas para descansar. Si la barra llega a su limite ¿Que pasara?",
 		"version": "1.0.0.0",
 		"autoIncrementVersion": false,
 		"author": "Paz Rozen",
 		"authorEmail": "mpazrozen@gmail.com",
 		"authorWebsite": "https://www.pazrozen.com.ar/",
-		"appId": "",
+		"appId": "com.primal.memphismeltdown",
 		"pixelRounding": true,
 		"zAxisScale": "regular",
 		"fov": 0.7853981633974483,
@@ -596,5 +605,5 @@
 	},
 	"viewportWidth": 1920,
 	"viewportHeight": 1080,
-	"firstLayout": null
+	"firstLayout": "L_Menu"
 }
